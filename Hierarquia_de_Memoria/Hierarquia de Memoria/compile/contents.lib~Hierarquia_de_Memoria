@@ -1,0 +1,11 @@
+77
+~E 0 "" 0 \Cache de Instrucoes\
+~A 0 "" 0 cacheinst
+~E 0 "" 0 \Testbench Cache de Instrucoes\
+~A 0 "" 0 \Testbench Cache de Instrucoes\
+~E 1 "./../src/CacheInstrucoes.vhd" 29 CacheInstrucoes
+~A 1 "./../src/CacheInstrucoes.vhd" 45 CacheInst
+~E 1 "./../src/MemoriaPrincipal.vhd" 28 MemoriaPrincipal
+~A 1 "./../src/MemoriaPrincipal.vhd" 47 MemoriaPrincipal
+~E 1 "./../src/TestbenchCacheInstrucoes.vhd" 29 TestbenchCacheInstrucoes
+~A 1 "./../src/TestbenchCacheInstrucoes.vhd" 34 TestbenchCacheInstrucoes

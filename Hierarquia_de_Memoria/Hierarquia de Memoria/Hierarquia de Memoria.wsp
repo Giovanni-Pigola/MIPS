@@ -1,0 +1,25 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Hierarquia_de_Memoria=1
+Built-in symbols=0
+[COMPILESTATUS|.\src\Cache de Instrucoes.bde]
+FileTimeLow=30527489
+Status=Modified
+[CACHEDOC|Aldec.BDE.7|.\Hierarquia de Memoria\src\Cache de Instrucoes.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,50,
+[COMPILESTATUS|.\src\Cache de Instrucoes.vhd]
+FileTimeLow=30528305
+Status=Compiled
+[CACHEDOC|Aldec.Project.Generic.7|.\Hierarquia de Memoria\Hierarquia de Memoria.adf|]
+Path=
+[COMPILESTATUS|.\src\Testbench Cache de Instrucoes.vhd]
+FileTimeLow=30528305
+Status=Compiled
+[COMPILESTATUS|.\src\CacheInstrucoes.vhd]
+FileTimeLow=30528325
+Status=Compiled
+[COMPILESTATUS|.\src\TestbenchCacheInstrucoes.vhd]
+FileTimeLow=30528323
+Status=Compiled
+[Gui config]
+RunFor=600 ns

@@ -1,0 +1,56 @@
+timestamp=1467400466778
+
+[~A]
+ModifyID=77
+Version=74
+
+[\Cache de Instrucoes\]
+A/cacheinst=*21|./../src/Cache de Instrucoes.vhd|45|
+
+[\Testbench Cache de Instrucoes\]
+A/\Testbench Cache de Instrucoes\=*21|./../src/Testbench Cache de Instrucoes.vhd|34|
+
+[cacheinstrucoes]
+A/cacheinst=A/CacheInst 21|./../src/CacheInstrucoes.vhd|45|1*152064
+BinI32/cacheinst=3*23251
+I=0*68805
+I/cacheinst=I/CacheInst 0*108161
+M=11|0|vd0|1467382602976|./../src/CacheInstrucoes.vhd|0*68218*0xeffbc904f95fac9308144058c1928a26d1286b4f|0*68708*0x23b75c12e3e89f2ef000564498faa8c2
+M/cacheinst=M/CacheInst 21|0|vd0|1467385471089|./../src/CacheInstrucoes.vhd|0*106314*0xe62ec52bedb93e9a69b95583bcebbe460c6128b0|0*108051*0x20116f55b147878295aeff36dce7fc50
+R=./../src/CacheInstrucoes.vhd|29
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb7f77fbf50fb9b46fc7247ff0408e4ca92208c6a2ec1fb86820aa76bf15da7ce7
+Version/cacheinst=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|c571acd97d96494f3bfa22a540ef1fdf1abc7d99fa60964a20020dd4f6612656ae48078c26e945856cfc2ed1e202256a
+
+[memoriaprincipal]
+A/memoriaprincipal=A/MemoriaPrincipal 21|./../src/MemoriaPrincipal.vhd|47|1*163383
+BinI32/memoriaprincipal=3*25493
+I=0*117379
+I/memoriaprincipal=I/MemoriaPrincipal 0*117587
+M=11|0|vd0|1467400466754|./../src/MemoriaPrincipal.vhd|0*116697*0xfee3dc12a39ade745ff22eb728e395fe9a0c9b61|0*117280*0x23b75c12e3e89f2ef000564498faa8c2
+M/memoriaprincipal=M/MemoriaPrincipal 21|0|vd0|1467400466759|./../src/MemoriaPrincipal.vhd|0*116071*0xab1ec3a8bfacb084d43a2ae8053b79e8647b7d18|0*116286*0x20116f55b147878295aeff36dce7fc50
+R=./../src/MemoriaPrincipal.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e1c45a0163dbdb9a9f8bf16bab54bdb1f
+Version/memoriaprincipal=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e1c45a0163dbdb9a9f8bf16bab54bdb1f
+
+[testbenchcacheinstrucoes]
+A/testbenchcacheinstrucoes=A/TestbenchCacheInstrucoes 21|./../src/TestbenchCacheInstrucoes.vhd|34|1*155026
+BinI32/testbenchcacheinstrucoes=3*24580
+I=0*4467
+I/testbenchcacheinstrucoes=I/TestbenchCacheInstrucoes 0*111624
+M=11|0|vd0|1467334956416|./../src/TestbenchCacheInstrucoes.vhd|0*4104*0x2de13a272752c53e8cad9272b3bc6ff4095f580a|0*4352*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchcacheinstrucoes=M/TestbenchCacheInstrucoes 21|0|vd0|1467385640107|./../src/TestbenchCacheInstrucoes.vhd|0*108417*0x8088c1cee86f6cdc9107afac82f6d4b799744bdf|0*111481*0x20116f55b147878295aeff36dce7fc50
+R=./../src/TestbenchCacheInstrucoes.vhd|29
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a687204449071da55ff15b473248c8925f9d5e51cdaaa454fa89640feb7b4876323514e4de0b8f581b7e007f07003a3d3e
+Version/testbenchcacheinstrucoes=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a687204449071da55ff15b473248c8925f9d5e51cdaaa454fa89640feb7b4876325348e137186e707f811f27f7085f247d
+
+[~MFT]
+0=10|0Hierarquia_de_Memoria.mgf|117587|108123
+1=2|1Hierarquia_de_Memoria.mgf|163383|156641
+3=2|3Hierarquia_de_Memoria.mgf|25493|23251
+
+[~U]
+\Cache de Instrucoes\=11|0*0|
+\Testbench Cache de Instrucoes\=11|0*276|
+cacheinstrucoes=CacheInstrucoes 11|0*67953|
+memoriaprincipal=MemoriaPrincipal 11|0*116405|
+testbenchcacheinstrucoes=TestbenchCacheInstrucoes 11|0*3950|

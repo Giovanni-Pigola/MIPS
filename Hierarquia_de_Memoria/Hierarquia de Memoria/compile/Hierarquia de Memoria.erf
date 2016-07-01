@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd" 
+MESSAGE "Compile Entity "MemoriaPrincipal"" 
+MESSAGE "Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"" 
+WARNING DAGGEN_0002: "Process has no effect - no sequential statements." "d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd" 50 0
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]" 
