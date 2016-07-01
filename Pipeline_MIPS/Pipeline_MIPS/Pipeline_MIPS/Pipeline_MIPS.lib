@@ -1,0 +1,18 @@
+timestamp=1467402086471
+
+[~A]
+ModifyID=6
+
+[processador]
+NSymbols/processador=NSymbols/Processador 40|0|2*0
+
+[uc]
+NSymbols/uc=40|0|2*21626
+
+[~MFT]
+2=1|2Pipeline_MIPS.mgf|21626|0
+
+[~U]
+processador=Processador 11|||0x3
+uc=11|||0x3
+
