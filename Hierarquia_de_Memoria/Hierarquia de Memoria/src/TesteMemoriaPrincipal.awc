@@ -6,11 +6,11 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="e8de2715264e4bf477577ae435030100">wave.asdb</database>
+        <database id="e8de2715264e69077857ef9080030600">wave.asdb</database>
     </databases>
     <signallists>
         <signallist id="0">
-                AAAAFAACwAAAAAAQAQMBJ4EDATAAb90AABARAAAA
+                AAAAGQAHwAAAAAAQAQMBJwEDYQBwLwGDAYcBeQEAEBEAAAAA
 |
         </signallist>
     </signallists>
@@ -50,7 +50,7 @@
     </propertybases>
     <prefbases>
         <prefbase id="0" >
-            <pref name="End Time" value="507721" />
+            <pref name="End Time" value="508597" />
             <pref name="Start Time" value="0" />
         </prefbase>
     </prefbases>
@@ -60,7 +60,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="500000" label="Cursor 1" locked="0" />
+            <cursor value="529907" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>

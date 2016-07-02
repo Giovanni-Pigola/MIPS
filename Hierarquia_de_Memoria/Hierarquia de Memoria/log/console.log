@@ -1,428 +1,105 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0018: CacheInstrucoes.vhd : (47, 43): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0078: CacheInstrucoes.vhd : (83, 8): Unknown identifier "bloc".
+# Error: COMP96_0133: CacheInstrucoes.vhd : (83, 8): Cannot find object declaration.
+# Error: COMP96_0289: CacheInstrucoes.vhd : (83, 8): Prefix of index must be an array.
+# Error: COMP96_0077: CacheInstrucoes.vhd : (83, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (85, 17): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0078: CacheInstrucoes.vhd : (90, 6): Unknown identifier "bloc".
+# Error: COMP96_0133: CacheInstrucoes.vhd : (90, 6): Cannot find object declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (97, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (99, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (101, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (103, 5): Actual index positions do not correspond to index positions in type declaration.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0049: CacheInstrucoes.vhd : (82, 25): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0078: CacheInstrucoes.vhd : (92, 6): Unknown identifier "bloc".
+# Error: COMP96_0133: CacheInstrucoes.vhd : (92, 6): Cannot find object declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (99, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (101, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (103, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (105, 5): Actual index positions do not correspond to index positions in type declaration.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0078: CacheInstrucoes.vhd : (93, 6): Unknown identifier "bloc".
+# Error: COMP96_0133: CacheInstrucoes.vhd : (93, 6): Cannot find object declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (100, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (102, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (104, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (106, 5): Actual index positions do not correspond to index positions in type declaration.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0283: CacheInstrucoes.vhd : (101, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (103, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (105, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (107, 5): Actual index positions do not correspond to index positions in type declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Error: COMP96_0283: CacheInstrucoes.vhd : (103, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (105, 5): Actual index positions do not correspond to index positions in type declaration.
+# Error: COMP96_0283: CacheInstrucoes.vhd : (107, 5): Actual index positions do not correspond to index positions in type declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# Warning: COMP96_0367: CacheInstrucoes.vhd : (100, 10): Improper array length (4). Expected length is 5.
+# Warning: COMP96_0367: CacheInstrucoes.vhd : (102, 10): Improper array length (4). Expected length is 5.
+# Warning: COMP96_0367: CacheInstrucoes.vhd : (104, 10): Improper array length (4). Expected length is 5.
+# Warning: COMP96_0367: CacheInstrucoes.vhd : (106, 10): Improper array length (4). Expected length is 5.
+# Compile success 0 Errors 4 Warnings  Analysis time :  0.3 [s]
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
 # Compile Entity "CacheInstrucoes"
 # Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:01, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste1}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste2}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste3}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste4}
-# 13 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:04, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste1}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste2}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste3}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste4}
-# 13 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:12, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste1}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste2}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste3}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste4}
-# 13 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:14, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste1}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste2}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste3}
-# add wave -noreg {/TestbenchCacheInstrucoes/teste4}
-# 13 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6733 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:17, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:24, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:32, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:33, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:38, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
@@ -434,136 +111,7 @@ acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstru
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
 # Compile Entity "TestbenchCacheInstrucoes"
 # Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:43, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:45, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:48, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
@@ -592,9 +140,9 @@ asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes Testben
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
+# Allocation: Simulator allocated 6756 kB (elbread=1280 elab2=5327 kernel=149 sdf=0)
 # KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:50, sexta-feira, 1 de julho de 2016
+#  14:02, sábado, 2 de julho de 2016
 #  Simulation has been initialized
 # add wave -noreg {/TestbenchCacheInstrucoes/clock}
 # add wave -noreg {/TestbenchCacheInstrucoes/reset}
@@ -607,115 +155,35 @@ asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes Testben
 # add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
 # 9 signal(s) traced.
 # Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
+run 500 ns
+# KERNEL: stopped at time: 500 ns
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
 # Compile Entity "CacheInstrucoes"
 # Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:51, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:52, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 600 ns
-# KERNEL: stopped at time: 600 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-run 400 ns
-# KERNEL: stopped at time: 1 us
-restart
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
+# Compile Entity "TestbenchCacheInstrucoes"
+# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
 # 
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
@@ -731,69 +199,9 @@ restart
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
+# Allocation: Simulator allocated 6756 kB (elbread=1280 elab2=5327 kernel=149 sdf=0)
 # KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  11:55, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 400 ns
-# KERNEL: stopped at time: 400 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  12:01, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 300 ns
-# KERNEL: stopped at time: 300 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  12:03, sexta-feira, 1 de julho de 2016
+#  14:05, sábado, 2 de julho de 2016
 #  Simulation has been initialized
 # add wave -noreg {/TestbenchCacheInstrucoes/clock}
 # add wave -noreg {/TestbenchCacheInstrucoes/reset}
@@ -806,106 +214,270 @@ asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes Testben
 # add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
 # 9 signal(s) traced.
 # Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 300 ns
-# KERNEL: stopped at time: 300 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/CacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\CacheInstrucoes.vhd
-# Compile Entity "CacheInstrucoes"
-# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6734 kB (elbread=1280 elab2=5304 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  12:04, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 300 ns
-# KERNEL: stopped at time: 300 ns
-acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchCacheInstrucoes.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchCacheInstrucoes.vhd
-# Compile Entity "TestbenchCacheInstrucoes"
-# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+TestbenchCacheInstrucoes TestbenchCacheInstrucoes TestbenchCacheInstrucoes
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6735 kB (elbread=1280 elab2=5305 kernel=149 sdf=0)
-# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
-#  12:07, sexta-feira, 1 de julho de 2016
-#  Simulation has been initialized
-# add wave -noreg {/TestbenchCacheInstrucoes/clock}
-# add wave -noreg {/TestbenchCacheInstrucoes/reset}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemPronta}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoIn}
-# add wave -noreg {/TestbenchCacheInstrucoes/Hit}
-# add wave -noreg {/TestbenchCacheInstrucoes/MemRead}
-# add wave -noreg {/TestbenchCacheInstrucoes/DadoOut}
-# add wave -noreg {/TestbenchCacheInstrucoes/EndOut}
-# 9 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
-run 400 ns
-# KERNEL: stopped at time: 400 ns
+run 500 ns
+# KERNEL: stopped at time: 500 ns
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
 # Compile Entity "MemoriaPrincipal"
 # Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Error: COMP96_0367: MemoriaPrincipal.vhd : (84, 43): Improper array length (32). Expected length is 8.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (91, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (97, 17): Improper array length (32). Expected length is 128.
+# Compile failure 1 Errors 2 Warnings  Analysis time :  0.1 [s]
 acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
 # Compile Entity "MemoriaPrincipal"
-# Compile Architecture "MemoriaPri
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (94, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (100, 17): Improper array length (32). Expected length is 128.
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (94, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (100, 17): Improper array length (32). Expected length is 128.
+# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (97, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (103, 17): Improper array length (32). Expected length is 128.
+# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (97, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (103, 17): Improper array length (32). Expected length is 128.
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (97, 20): Improper array length (32). Expected length is 128.
+# Warning: COMP96_0367: MemoriaPrincipal.vhd : (103, 17): Improper array length (32). Expected length is 128.
+# Compile success 0 Errors 2 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchMemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# Error: COMP96_0015: TestbenchMemoriaPrincipal.vhd : (103, 22): '=>' expected.
+# Error: COMP96_0331: TestbenchMemoriaPrincipal.vhd : (103, 22): Syntax error in expression.
+# Error: COMP96_0015: TestbenchMemoriaPrincipal.vhd : (106, 22): '=>' expected.
+# Error: COMP96_0331: TestbenchMemoriaPrincipal.vhd : (106, 22): Syntax error in expression.
+# Error: COMP96_0015: TestbenchMemoriaPrincipal.vhd : (107, 25): '=>' expected.
+# Error: COMP96_0331: TestbenchMemoriaPrincipal.vhd : (107, 25): Syntax error in expression.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchMemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchMemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+# Adding file d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\testeCacheInstrucoes.awc ... Done
+# Adding file d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\testeCacheInstrucoes.awc ... Done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 54366 kB (elbread=1280 elab2=52933 kernel=152 sdf=0)
+# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
+#  15:07, sábado, 2 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/testeCacheInstrucoes.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
+# add wave -noreg {/TestbenchMemoriaPrincipal/clockmp}
+# add wave -noreg {/TestbenchMemoriaPrincipal/reset}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/WriteDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoIn}
+# add wave -noreg {/TestbenchMemoriaPrincipal/InstPronta}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoPronto}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoOut}
+# add wave -noreg {/TestbenchMemoriaPrincipal/teste}
+# 13 signal(s) traced.
+# add wave -noreg {/TestbenchMemoriaPrincipal/clockmp}
+# add wave -noreg {/TestbenchMemoriaPrincipal/reset}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/WriteDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoIn}
+# add wave -noreg {/TestbenchMemoriaPrincipal/InstPronta}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoPronto}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoOut}
+# add wave -noreg {/TestbenchMemoriaPrincipal/teste}
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/clockmp' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/reset' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/ReadInst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/EndInst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/ReadDado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/WriteDado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/EndDado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/DadoDadoIn' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/InstPronta' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/DadoInst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/DadoPronto' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/DadoDadoOut' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TestbenchMemoriaPrincipal/teste' has already been traced.
+# 0 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchMemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 54365 kB (elbread=1280 elab2=52933 kernel=152 sdf=0)
+# KERNEL: ASDB file was created in location d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\wave.asdb
+#  15:14, sábado, 2 de julho de 2016
+#  Simulation has been initialized
+# add wave -noreg {/TestbenchMemoriaPrincipal/clockmp}
+# add wave -noreg {/TestbenchMemoriaPrincipal/reset}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/ReadDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/WriteDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/EndDado}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoIn}
+# add wave -noreg {/TestbenchMemoriaPrincipal/InstPronta}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoInst}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoPronto}
+# add wave -noreg {/TestbenchMemoriaPrincipal/DadoDadoOut}
+# add wave -noreg {/TestbenchMemoriaPrincipal/teste}
+# 13 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'd:/Documents/Semestre 7/Atquitetura de Computadores/ActiveHDL/Hierarquia_de_Memoria/Hierarquia de Memoria/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/MemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work hierarquia_de_memoria -2002  $dsn/src/TestbenchMemoriaPrincipal.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal TestbenchMemoriaPrincipal
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: War

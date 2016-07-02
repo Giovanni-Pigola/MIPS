@@ -92,7 +92,7 @@ begin
 		wait for 10 ns;
 		reset <= '0';
 		wait for 10 ns;
-		EndIn <= x"1111111D";
+		EndIn <= x"11111114";
 		wait for 20ns;
 		DadoIn <= x"33333333222222221111111100000000";
 		wait for 20ns;
@@ -107,7 +107,7 @@ begin
 		DadoIn <= x"FFFFFFFFEEEEEEEEDDDDDDDDCCCCCCCC";
 		MemPronta <= '1';
 		wait for 40ns;
-		EndIn <= x"11111121";
+		EndIn <= x"11111158";
 		wait for 20ns;
 		DadoIn <= x"33333333222222221111111100000000";
 		wait for 20ns;
@@ -121,6 +121,8 @@ begin
 		wait for 20ns;
 		DadoIn <= x"FFFFFFFFEEEEEEEEDDDDDDDDCCCCCCCC";
 		MemPronta <= '1';
+		wait for 20ns;
+		EndIn <= x"11111118";
 		wait for 1000ns;
 	end process;
 	

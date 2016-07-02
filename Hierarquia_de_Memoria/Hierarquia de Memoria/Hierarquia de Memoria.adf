@@ -46,7 +46,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=testbenchcacheinstrucoes|TestbenchCacheInstrucoes|0 
+HierarchyInformation=  
 ShowHide=ShowTopLevel
 Selected=
 
@@ -55,6 +55,8 @@ Selected=
 /TestbenchCacheInstrucoes.vhd=-1
 /MemoriaPrincipal.vhd=-1
 /testeCacheInstrucoes.awc=-1
+/TestbenchMemoriaPrincipal.vhd=-1
+/TesteMemoriaPrincipal.awc=-1
 
 [Files.Data]
 .\src\CacheInstrucoes.vhd=VHDL Source Code
@@ -62,3 +64,5 @@ Selected=
 
 .\src\MemoriaPrincipal.vhd=VHDL Source Code
 .\src\testeCacheInstrucoes.awc=Accelerated Waveform Configuration
+.\src\TestbenchMemoriaPrincipal.vhd=VHDL Source Code
+.\src\TesteMemoriaPrincipal.awc=Accelerated Waveform Configuration

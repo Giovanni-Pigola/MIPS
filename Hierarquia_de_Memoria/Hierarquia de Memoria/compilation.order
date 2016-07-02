@@ -1,3 +1,4 @@
 .\src\CacheInstrucoes.vhd
 .\src\TestbenchCacheInstrucoes.vhd
 .\src\MemoriaPrincipal.vhd
+.\src\TestbenchMemoriaPrincipal.vhd
