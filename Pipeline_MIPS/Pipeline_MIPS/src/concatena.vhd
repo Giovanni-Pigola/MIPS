@@ -15,8 +15,6 @@ begin
 			saida<="000000"&entrada(25 downto 0);
 		elsif(entrada(31 downto 26)="000100" or entrada(31 downto 26)="000101" or entrada(31 downto 26)="100011" or entrada(31 downto 26)="101011" or entrada(31 downto 26)="001000" or entrada(31 downto 26)="001010") then
 			saida<="0000000000000000"&entrada(15 downto 0);		 
-		else
-			saida<="00000000000000000000000000000000";
 		end if;	 
 	end process;
 end behavior;
