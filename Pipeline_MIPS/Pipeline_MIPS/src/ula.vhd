@@ -4,7 +4,7 @@ use ieee.std_logic_unsigned.all;
 
 entity ula is
 	port(s_op0: in std_logic;
-	e_2521, e_2016: in std_logic_vector(31 downto 0);
+	op1, op2: in std_logic_vector(31 downto 0);
 	saida: out std_logic_vector(31 downto 0)
 	);
 	
@@ -15,9 +15,9 @@ begin
 	ulas: process (s_op0)
 	begin
 		if(s_op0='1') then
-			saida <= e_2521-e_2016;
+			saida <= op1-op2;
 		else
-			saida<= e_2521+e_2016;
+			saida<= op1+op2;
 		end if;
 
 	end process;
