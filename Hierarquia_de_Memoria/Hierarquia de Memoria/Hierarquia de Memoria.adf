@@ -46,7 +46,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=  
+HierarchyInformation=testbenchcachedados|TestbenchCacheDados|0 testbenchcacheinstrucoes|TestbenchCacheInstrucoes|0 testbenchmemoriaprincipal|TestbenchMemoriaPrincipal|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -57,12 +57,39 @@ Selected=
 /testeCacheInstrucoes.awc=-1
 /TestbenchMemoriaPrincipal.vhd=-1
 /TesteMemoriaPrincipal.awc=-1
+/CacheDados.vhd=-1
+/TestbenchCacheDados.vhd=-1
+/TesteCacheDados.awc=-1
+/WriteBufferCache.vhd=-1
+/TesteMemoriaPrincipal.asdb=-1
+/testeCacheInstrucoes.asdb=-1
+/TesteCacheDados.asdb=-1
+/TestbenchWriteBuffer.vhd=-1
+/TesteWriteBuffer.asdb=-1
+/TesteWriteBuffer.awc=-1
+/HierarquiaDeMemoria.bde=-1
+/TestbenchHierarquiaDeMemoria.vhd=-1
 
 [Files.Data]
 .\src\CacheInstrucoes.vhd=VHDL Source Code
 .\src\TestbenchCacheInstrucoes.vhd=VHDL Source Code
-
 .\src\MemoriaPrincipal.vhd=VHDL Source Code
 .\src\testeCacheInstrucoes.awc=Accelerated Waveform Configuration
 .\src\TestbenchMemoriaPrincipal.vhd=VHDL Source Code
 .\src\TesteMemoriaPrincipal.awc=Accelerated Waveform Configuration
+.\src\CacheDados.vhd=VHDL Source Code
+.\src\TestbenchCacheDados.vhd=VHDL Source Code
+.\src\TesteCacheDados.awc=Accelerated Waveform Configuration
+.\src\WriteBufferCache.vhd=VHDL Source Code
+.\src\TesteMemoriaPrincipal.asdb=Accelerated Waveform File
+.\src\testeCacheInstrucoes.asdb=Accelerated Waveform File
+.\src\TesteCacheDados.asdb=Accelerated Waveform File
+.\src\TestbenchWriteBuffer.vhd=VHDL Source Code
+.\src\TesteWriteBuffer.asdb=Accelerated Waveform File
+.\src\TesteWriteBuffer.awc=Accelerated Waveform Configuration
+.\src\HierarquiaDeMemoria.bde=Block Diagram
+.\src\TestbenchHierarquiaDeMemoria.vhd=VHDL Source Code
+
+[file_out:/HierarquiaDeMemoria.bde]
+/..\compile\HierarquiaDeMemoria.vhd=-1
+

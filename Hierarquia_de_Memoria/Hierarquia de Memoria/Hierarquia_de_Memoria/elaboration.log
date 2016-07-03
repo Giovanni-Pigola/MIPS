@@ -1,30 +1,43 @@
-Active-HDL 10.3.3559.6081  2016-07-02 15:26:49
+Active-HDL 10.3.3559.6081  2016-07-03 13:50:21
 
 Elaboration top modules:
-Architecture                  TestbenchMemoriaPrincipal(TestbenchMemoriaPrincipal)
+Architecture                  TestbenchHierarquiaDeMemoria(TestbenchHierarquiaDeMemoria)
 
 
----------------------------------------------------------------------------------------------------------------------------------------
-Entity                    | Architecture              | Library               | Info | Compiler Version          | Compilation Options
----------------------------------------------------------------------------------------------------------------------------------------
-TestbenchMemoriaPrincipal | TestbenchMemoriaPrincipal | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
-MemoriaPrincipal          | MemoriaPrincipal          | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+Entity                       | Architecture                 | Library               | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------------------------------------------------
+TestbenchHierarquiaDeMemoria | TestbenchHierarquiaDeMemoria | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+HierarquiaDeMemoria          | HierarquiaDeMemoria          | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+CacheInstrucoes              | cacheinst                    | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+CacheDados                   | cachedados                   | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+MemoriaPrincipal             | memoriaprincipal             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+WriteBufferCache             | writebuffercache             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+---------------------------------------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------------------------------
-VHDL Package                                          | Library               | Info | Compiler Version          | Compilation Options
----------------------------------------------------------------------------------------------------------------------------------------
-standard                                              | std                   |      |                           | <unavailable>
-TEXTIO                                                | std                   |      | 10.3.3559.6081  (Windows) |  -2008
-std_logic_1164                                        | ieee                  |      | 10.3.3559.6081  (Windows) |  -2008
-STD_LOGIC_TEXTIO                                      | ieee                  |      | 10.3.3559.6081  (Windows) | <unavailable>
-NUMERIC_STD                                           | ieee                  |      | 10.3.3559.6081  (Windows) |  -2008
----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+VHDL Package                                                | Library               | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------------------------------------------------
+standard                                                    | std                   |      |                           | <unavailable>
+TEXTIO                                                      | std                   |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_1164                                              | ieee                  |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_arith                                             | ieee                  |      | 10.3.3559.6081  (Windows) | <unavailable>
+STD_LOGIC_SIGNED                                            | ieee                  |      | 10.3.3559.6081  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED                                          | ieee                  |      | 10.3.3559.6081  (Windows) | <unavailable>
+NUMERIC_STD                                                 | ieee                  |      | 10.3.3559.6081  (Windows) |  -2008
+STD_LOGIC_TEXTIO                                            | ieee                  |      | 10.3.3559.6081  (Windows) | <unavailable>
+---------------------------------------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------------------------------
-Library                                               | Comment
----------------------------------------------------------------------------------------------------------------------------------------
-hierarquia_de_memoria                                 | None
-ieee                                                  | Standard IEEE packages library
-std                                                   | Standard VHDL library
----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+Library                                                     | Comment
+---------------------------------------------------------------------------------------------------------------------------------------------
+hierarquia_de_memoria                                       | None
+ieee                                                        | Standard IEEE packages library
+std                                                         | Standard VHDL library
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+TestbenchHierarquiaDeMemoria TestbenchHierarquiaDeMemoria TestbenchHierarquiaDeMemoria
+
+
+The performance of simulation is reduced. Version Student Edition

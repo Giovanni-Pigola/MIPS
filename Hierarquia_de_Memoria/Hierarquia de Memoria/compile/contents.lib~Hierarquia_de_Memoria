@@ -1,13 +1,25 @@
-141
+298
 ~E 0 "" 0 \Cache de Instrucoes\
 ~A 0 "" 0 cacheinst
 ~E 0 "" 0 \Testbench Cache de Instrucoes\
 ~A 0 "" 0 \Testbench Cache de Instrucoes\
+~E 1 "./../src/CacheDados.vhd" 29 CacheDados
+~A 1 "./../src/CacheDados.vhd" 52 cachedados
 ~E 1 "./../src/CacheInstrucoes.vhd" 29 CacheInstrucoes
-~A 1 "./../src/CacheInstrucoes.vhd" 46 CacheInst
+~A 1 "./../src/CacheInstrucoes.vhd" 46 cacheinst
+~E 1 "./../compile/HierarquiaDeMemoria.vhd" 28 HierarquiaDeMemoria
+~A 1 "./../compile/HierarquiaDeMemoria.vhd" 47 HierarquiaDeMemoria
 ~E 1 "./../src/MemoriaPrincipal.vhd" 31 MemoriaPrincipal
-~A 1 "./../src/MemoriaPrincipal.vhd" 52 MemoriaPrincipal
+~A 1 "./../src/MemoriaPrincipal.vhd" 51 memoriaprincipal
+~E 1 "./../src/TestbenchCacheDados.vhd" 28 TestbenchCacheDados
+~A 1 "./../src/TestbenchCacheDados.vhd" 33 testbenchcachedados
 ~E 1 "./../src/TestbenchCacheInstrucoes.vhd" 29 TestbenchCacheInstrucoes
-~A 1 "./../src/TestbenchCacheInstrucoes.vhd" 34 TestbenchCacheInstrucoes
+~A 1 "./../src/TestbenchCacheInstrucoes.vhd" 34 testbenchcacheinstrucoes
+~E 1 "./../src/TestbenchHierarquiaDeMemoria.vhd" 28 TestbenchHierarquiaDeMemoria
+~A 1 "./../src/TestbenchHierarquiaDeMemoria.vhd" 33 TestbenchHierarquiaDeMemoria
 ~E 1 "./../src/TestbenchMemoriaPrincipal.vhd" 28 TestbenchMemoriaPrincipal
-~A 1 "./../src/TestbenchMemoriaPrincipal.vhd" 33 TestbenchMemoriaPrincipal
+~A 1 "./../src/TestbenchMemoriaPrincipal.vhd" 33 testbenchmemoriaprincipal
+~E 1 "./../src/TestbenchWriteBuffer.vhd" 28 TestbenchWriteBuffer
+~A 1 "./../src/TestbenchWriteBuffer.vhd" 33 testbenchwritebuffer
+~E 1 "./../src/WriteBufferCache.vhd" 28 WriteBufferCache
+~A 1 "./../src/WriteBufferCache.vhd" 43 writebuffercache

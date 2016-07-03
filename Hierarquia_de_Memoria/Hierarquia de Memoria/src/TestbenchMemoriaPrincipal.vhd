@@ -45,8 +45,7 @@ architecture TestbenchMemoriaPrincipal of TestbenchMemoriaPrincipal is
 			InstPronta : out STD_LOGIC;
 			DadoInst : out STD_LOGIC_VECTOR(127 downto 0);
 			DadoPronto : out STD_LOGIC;
-			DadoDadoOut : out STD_LOGIC_VECTOR(127 downto 0);
-			teste : out STD_LOGIC_VECTOR(31 downto 0)
+			DadoDadoOut : out STD_LOGIC_VECTOR(127 downto 0)
 		);
 	end component;
 	
@@ -65,7 +64,6 @@ architecture TestbenchMemoriaPrincipal of TestbenchMemoriaPrincipal is
 	signal DadoInst : STD_LOGIC_VECTOR(127 downto 0);
 	signal DadoPronto : STD_LOGIC;
 	signal DadoDadoOut : STD_LOGIC_VECTOR(127 downto 0);
-	signal teste : STD_LOGIC_VECTOR(31 downto 0);
 	
 	-- Período de clock
 	constant clk : time := 120 ns;
@@ -84,8 +82,7 @@ begin
 		InstPronta => InstPronta,
 		DadoInst => DadoInst,
 		DadoPronto => DadoPronto,
-		DadoDadoOut => DadoDadoOut,
-		teste => teste
+		DadoDadoOut => DadoDadoOut
 	);	
 	
 	clock_process: process
@@ -116,7 +113,20 @@ begin
 		DadoDadoIn <= x"AAAAAAAA";
 		WriteDado <= '1';
 		wait for 120ns;
+		DadoDadoIn <= (others => '0');
 		WriteDado <= '0';
+		ReadDado <= '1';
+		wait for 120ns;
+		ReadDado <= '0';
+		reset <= '1';
+		wait for 120ns;
+		reset <= '0';
+		ReadInst <= '1';
+		EndInst <= x"0000002C";
+		wait for 120ns;
+		EndInst <= (others => '0');
+		ReadInst <= '0';
+		EndDado <= x"00001000";
 		ReadDado <= '1';
 		wait for 500ns;
 	end process;

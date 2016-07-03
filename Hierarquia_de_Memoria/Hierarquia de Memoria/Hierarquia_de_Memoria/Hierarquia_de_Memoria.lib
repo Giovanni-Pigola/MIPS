@@ -1,7 +1,7 @@
-timestamp=1467483790169
+timestamp=1467564613351
 
 [~A]
-ModifyID=141
+ModifyID=298
 Version=74
 
 [\Cache de Instrucoes\]
@@ -10,59 +10,136 @@ A/cacheinst=*21|./../src/Cache de Instrucoes.vhd|45|
 [\Testbench Cache de Instrucoes\]
 A/\Testbench Cache de Instrucoes\=*21|./../src/Testbench Cache de Instrucoes.vhd|34|
 
+[cachedados]
+A/cachedados=21|./../src/CacheDados.vhd|52|1*0
+BinI32/cachedados=3*0
+I=0*26594
+I/cachedados=I/CacheDados 0*26835
+M=11|0|vd0|1467496524455|./../src/CacheDados.vhd|0*4727*0x42b20cb5f53eab54fe4d828985eae26ba8bb3117|0*5416*0x23b75c12e3e89f2ef000564498faa8c2
+M/cachedados=M/CacheDados 21|0|vd0|1467557170357|./../src/CacheDados.vhd|0*17395*0xab8132e893549648eebcd29a3f5ed47c17968cfd|0*23069*0x20116f55b147878295aeff36dce7fc50
+NSymbols/cachedados=NSymbols/CacheDados 40|0|2*3864
+R=./../src/CacheDados.vhd|29
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f0cb1299f1455af5e1a1bf2ba030e840c476e1a897af67686b37bacca9e07ac22689d6bb17236f7b34dc235847dec45f
+Version/cachedados=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f0cb1299f1455af5e1a1bf2ba030e840c476e1a897af67686b37bacca9e07ac2f42104d3e5b209d609e2df79342f3107
+
 [cacheinstrucoes]
-A/cacheinst=A/CacheInst 21|./../src/CacheInstrucoes.vhd|46|1*281948
-BinI32/cacheinst=3*37695
-I=0*164333
-I/cacheinst=I/CacheInst 0*180144
-M=11|0|vd0|1467473857229|./../src/CacheInstrucoes.vhd|0*163724*0xea98a784290e45151ab4da216570edef82f247cc|0*164236*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheinst=M/CacheInst 21|0|vd0|1467479108736|./../src/CacheInstrucoes.vhd|0*178230*0x8eb67a0d63a10fe545054663d10d374a9ca8e78f|0*180034*0x20116f55b147878295aeff36dce7fc50
+A/cacheinst=21|./../src/CacheInstrucoes.vhd|46|1*4248
+BinI32/cacheinst=3*3848
+I=0*27357
+I/cacheinst=I/CacheInst 0*27603
+M=11|0|vd0|1467473857229|./../src/CacheInstrucoes.vhd|0*706*0xea98a784290e45151ab4da216570edef82f247cc|0*1218*0x23b75c12e3e89f2ef000564498faa8c2
+M/cacheinst=M/CacheInst 21|0|vd0|1467561289850|./../src/CacheInstrucoes.vhd|0*15378*0x18ea0cf276b4a2220057705797621a3d14fbe8cb|0*17285*0x20116f55b147878295aeff36dce7fc50
+NSymbols/cacheinstrucoes=NSymbols/CacheInstrucoes 40|0|2*0
 R=./../src/CacheInstrucoes.vhd|29
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb7f77fbf50fb9b46fc7247ff0408e4ca9a90f1d5c88a90037c3d4c4505ab5ce2a
-Version/cacheinst=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|c571acd97d96494f3bfa22a540ef1fdf1abc7d99fa60964a20020dd4f6612656b63449c0efcd3550741198bba666aca7
+Version/cacheinst=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|c571acd97d96494f3bfa22a540ef1fdf1abc7d99fa60964a20020dd4f6612656f16dba27191e6d8d437fc6d04f3f7820
+
+[hierarquiadememoria]
+A/hierarquiadememoria=A/HierarquiaDeMemoria 24|.\..\src\HierarquiaDeMemoria.bde|10000|1*35799
+BinI32/hierarquiadememoria=3*11216
+I=0*33237
+I/hierarquiadememoria=I/HierarquiaDeMemoria 0*41086
+M=11|0|vd0|1467562312828|./../compile/HierarquiaDeMemoria.vhd|0*32399*0x94ff8ce2e7d44f99b1d1d78ab9f27692329346d8|0*33128*0x23b75c12e3e89f2ef000564498faa8c2
+M/hierarquiadememoria=M/HierarquiaDeMemoria 21|0|vd0|1467562377427|./../compile/HierarquiaDeMemoria.vhd|0*37566*0xf8e9fcbcdc244123a85db7d41e2745dc79c19c08|0*40954*0x20116f55b147878295aeff36dce7fc50
+R=./../compile/HierarquiaDeMemoria.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|2ec376b137127bc30f2c9021e43bf726c3e8ee2f86c66beeb8b9b1ac7b982f6939b333c5aecce1ccdcfa5cf4d3ac998c
+Version/hierarquiadememoria=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|2ec376b137127bc30f2c9021e43bf726c3e8ee2f86c66beeb8b9b1ac7b982f699a1322894d2b85736806a48f5950f149
 
 [memoriaprincipal]
-A/memoriaprincipal=A/MemoriaPrincipal 21|./../src/MemoriaPrincipal.vhd|52|1*352262
-BinI32/memoriaprincipal=3*43927
-I=0*156995
-I/memoriaprincipal=I/MemoriaPrincipal 0*205842
-M=11|0|vd0|1467420759605|./../src/MemoriaPrincipal.vhd|0*156172*0x192a7b6e22ea4ed1969028f3db88a5b0f7ee0831|0*156896*0x23b75c12e3e89f2ef000564498faa8c2
-M/memoriaprincipal=M/MemoriaPrincipal 21|0|vd0|1467483777532|./../src/MemoriaPrincipal.vhd|0*204215*0x5c1862ca686338c98d70a2fe70bfb78678790a92|0*205723*0x20116f55b147878295aeff36dce7fc50
+A/memoriaprincipal=21|./../src/MemoriaPrincipal.vhd|51|1*7220
+BinI32/memoriaprincipal=3*5431
+I=0*28156
+I/memoriaprincipal=I/MemoriaPrincipal 0*28441
+M=11|0|vd0|1467503460908|./../src/MemoriaPrincipal.vhd|0*5810*0xf0108d3277f9d46990a041712d60cb9c0b4b7d10|0*6497*0x23b75c12e3e89f2ef000564498faa8c2
+M/memoriaprincipal=M/MemoriaPrincipal 21|0|vd0|1467554425303|./../src/MemoriaPrincipal.vhd|0*13716*0xf501e94c3a9e078facef175a98eebcf741254af3|0*15259*0x20116f55b147878295aeff36dce7fc50
+NSymbols/memoriaprincipal=NSymbols/MemoriaPrincipal 40|0|2*9672
 R=./../src/MemoriaPrincipal.vhd|31
-Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e481d7aa8559833a3fd903e7b86e18fab
-Version/memoriaprincipal=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e445f27c90171655b0e972c931a597851
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e7234b16ea865848d620063ba4d673a9e
+Version/memoriaprincipal=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e3fc8f01dcc035ce4c1f7ae5276a7bcdf
+
+[testbenchcachedados]
+A/testbenchcachedados=21|./../src/TestbenchCacheDados.vhd|33|1*10994
+BinI32/testbenchcachedados=3*6701
+I=0*28922
+I/testbenchcachedados=I/TestbenchCacheDados 0*29133
+M=11|0|vd0|1467503367881|./../src/TestbenchCacheDados.vhd|0*5503*0xd8348a5541b884e5c68e97af8e6d7731bfcebaf2|0*5705*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchcachedados=M/TestbenchCacheDados 21|0|vd0|1467557173376|./../src/TestbenchCacheDados.vhd|0*6596*0x2f3f25d4d457b5456cabf26b94346fb31e2f5f09|0*10637*0x20116f55b147878295aeff36dce7fc50
+R=./../src/TestbenchCacheDados.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a6673b07c0d8b0a774ac3275d54011d992437e49ee8fb8cb23f419fa233619e351
+Version/testbenchcachedados=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a6673b07c0d8b0a774ac3275d54011d992f8fdf9ae9f9685594426f248da4300a9
 
 [testbenchcacheinstrucoes]
-A/testbenchcacheinstrucoes=A/TestbenchCacheInstrucoes 21|./../src/TestbenchCacheInstrucoes.vhd|34|1*284718
-BinI32/testbenchcacheinstrucoes=3*39077
-I=0*4467
-I/testbenchcacheinstrucoes=I/TestbenchCacheInstrucoes 0*180400
-M=11|0|vd0|1467334956416|./../src/TestbenchCacheInstrucoes.vhd|0*4104*0x2de13a272752c53e8cad9272b3bc6ff4095f580a|0*4352*0x23b75c12e3e89f2ef000564498faa8c2
-M/testbenchcacheinstrucoes=M/TestbenchCacheInstrucoes 21|0|vd0|1467479111446|./../src/TestbenchCacheInstrucoes.vhd|0*174627*0x7a5d2a8498993f63e7ad0ab52550c71ba86324dd|0*177762*0x20116f55b147878295aeff36dce7fc50
+A/testbenchcacheinstrucoes=21|./../src/TestbenchCacheInstrucoes.vhd|34|1*15896
+BinI32/testbenchcacheinstrucoes=3*8195
+I=0*29552
+I/testbenchcacheinstrucoes=I/TestbenchCacheInstrucoes 0*29807
+M=11|0|vd0|1467334956416|./../src/TestbenchCacheInstrucoes.vhd|0*0*0x2de13a272752c53e8cad9272b3bc6ff4095f580a|0*248*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchcacheinstrucoes=M/TestbenchCacheInstrucoes 21|0|vd0|1467554872681|./../src/TestbenchCacheInstrucoes.vhd|0*1315*0xc3ee3adda4a9f5c4631356207ceebab98205019d|0*4584*0x20116f55b147878295aeff36dce7fc50
 R=./../src/TestbenchCacheInstrucoes.vhd|29
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a687204449071da55ff15b473248c8925f9d5e51cdaaa454fa89640feb7b4876323514e4de0b8f581b7e007f07003a3d3e
-Version/testbenchcacheinstrucoes=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a687204449071da55ff15b473248c8925f9d5e51cdaaa454fa89640feb7b487632fa429fe13b2e982f1f9fa44f97626976
+Version/testbenchcacheinstrucoes=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|f42a0cac93f61750e605d90060e895a687204449071da55ff15b473248c8925f9d5e51cdaaa454fa89640feb7b487632c9f920883e57d58b655457b77c55be37
+
+[testbenchhierarquiadememoria]
+A/testbenchhierarquiadememoria=A/TestbenchHierarquiaDeMemoria 21|./../src/TestbenchHierarquiaDeMemoria.vhd|33|1*65707
+BinI32/testbenchhierarquiadememoria=3*11421
+I=0*42098
+I/testbenchhierarquiadememoria=I/TestbenchHierarquiaDeMemoria 0*61631
+M=11|0|vd0|1467563398272|./../src/TestbenchHierarquiaDeMemoria.vhd|0*41737*0xbde8641d65d4bc75ce4fd5ec020dfc2cc8f95984|0*41975*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchhierarquiadememoria=M/TestbenchHierarquiaDeMemoria 21|0|vd0|1467564613337|./../src/TestbenchHierarquiaDeMemoria.vhd|0*58851*0xb75c69d7f37f464b84e6d8591ead1d02fdb3796d|0*61476*0x20116f55b147878295aeff36dce7fc50
+R=./../src/TestbenchHierarquiaDeMemoria.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|cc80977d681f5e3e383cb59417e4ed5d69c44b40840770371c10432fd53e7dc174bfcb31ebec5f93484975a32817c9f2bc0b106972cfdd99e9b9a35eef12877b
+Version/testbenchhierarquiadememoria=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|cc80977d681f5e3e383cb59417e4ed5d69c44b40840770371c10432fd53e7dc174bfcb31ebec5f93484975a32817c9f2bc98b37191eeb6deee24cd8a830d1db4
 
 [testbenchmemoriaprincipal]
-A/testbenchmemoriaprincipal=A/TestbenchMemoriaPrincipal 21|./../src/TestbenchMemoriaPrincipal.vhd|33|1*356002
-BinI32/testbenchmemoriaprincipal=3*45091
-I=0*126606
-I/testbenchmemoriaprincipal=I/TestbenchMemoriaPrincipal 0*206179
-M=11|0|vd0|1467414078606|./../src/TestbenchMemoriaPrincipal.vhd|0*126263*0x9a58e2825f0222c65f2f394d020fa156783a3b7b|0*126489*0x23b75c12e3e89f2ef000564498faa8c2
-M/testbenchmemoriaprincipal=M/TestbenchMemoriaPrincipal 21|0|vd0|1467483790143|./../src/TestbenchMemoriaPrincipal.vhd|0*199461*0xa4f00dd39560b1c44b236ce12ed04309489f643f|0*201535*0x20116f55b147878295aeff36dce7fc50
+A/testbenchmemoriaprincipal=21|./../src/TestbenchMemoriaPrincipal.vhd|33|1*19945
+BinI32/testbenchmemoriaprincipal=3*9154
+I=0*30288
+I/testbenchmemoriaprincipal=I/TestbenchMemoriaPrincipal 0*30505
+M=11|0|vd0|1467414078606|./../src/TestbenchMemoriaPrincipal.vhd|0*363*0x9a58e2825f0222c65f2f394d020fa156783a3b7b|0*589*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchmemoriaprincipal=M/TestbenchMemoriaPrincipal 21|0|vd0|1467553252980|./../src/TestbenchMemoriaPrincipal.vhd|0*11300*0xeffcb0caf37ae92d302f58850cb17ca3bcf18241|0*13570*0x20116f55b147878295aeff36dce7fc50
 R=./../src/TestbenchMemoriaPrincipal.vhd|28
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|d2c7b0f88c48f53ff98a5a157f1abe5513b8cfa76bfb5c54c83f608df4313abcd3c5c1a31ada8946d0dec549ffcfcd9986e1812faa81fbb6e6da0a723bfc2d3e
-Version/testbenchmemoriaprincipal=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|d2c7b0f88c48f53ff98a5a157f1abe5513b8cfa76bfb5c54c83f608df4313abcd3c5c1a31ada8946d0dec549ffcfcd99bc42eac036dd79b983658f3c30529b05
+Version/testbenchmemoriaprincipal=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|d2c7b0f88c48f53ff98a5a157f1abe5513b8cfa76bfb5c54c83f608df4313abcd3c5c1a31ada8946d0dec549ffcfcd997ac9b2cbd22e35672ed03df93151a813
+
+[testbenchwritebuffer]
+A/testbenchwritebuffer=21|./../src/TestbenchWriteBuffer.vhd|33|1*23831
+BinI32/testbenchwritebuffer=3*10032
+I=0*30935
+I/testbenchwritebuffer=I/TestbenchWriteBuffer 0*31147
+M=11|0|vd0|1467558823341|./../src/TestbenchWriteBuffer.vhd|0*23170*0xe51acb0f329acc4b4ea42b8cd51333d4a829e6ad|0*23376*0x23b75c12e3e89f2ef000564498faa8c2
+M/testbenchwritebuffer=M/TestbenchWriteBuffer 21|0|vd0|1467560679519|./../src/TestbenchWriteBuffer.vhd|0*24234*0x5119ad17ffbaa4252e0f580ed78f3ce36ab6c362|0*25718*0x20116f55b147878295aeff36dce7fc50
+R=./../src/TestbenchWriteBuffer.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|276c4fd8689d03cc1a71ae664cce8f4cd483e5a3da4bccc4beb12231e82cbf2d2f0416f052739809114d3d810e971968
+Version/testbenchwritebuffer=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|276c4fd8689d03cc1a71ae664cce8f4cd483e5a3da4bccc4beb12231e82cbf2d42977002ca7e91089dc2b82e54d4d513
+
+[writebuffercache]
+A/writebuffercache=21|./../src/WriteBufferCache.vhd|43|1*26212
+BinI32/writebuffercache=3*10780
+I=0*31673
+I/writebuffercache=I/WriteBufferCache 0*31881
+M=11|0|vd0|1467508404145|./../src/WriteBufferCache.vhd|0*10765*0x5b1bb870c008a39a36329c9c340c8432063ea961|0*11201*0x23b75c12e3e89f2ef000564498faa8c2
+M/writebuffercache=M/WriteBufferCache 21|0|vd0|1467560375032|./../src/WriteBufferCache.vhd|0*23483*0xf1cf6e83cd2e7e945318a02ab08871bc218ee8c6|0*24115*0x20116f55b147878295aeff36dce7fc50
+NSymbols/writebuffercache=NSymbols/WriteBufferCache 40|0|2*14536
+R=./../src/WriteBufferCache.vhd|28
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|85db96af2dc5d2a358dfe014834408df121c7df6cb9a0697952b7b7714ba35d22822eeb3f89740089b2d3bd58cfce839
+Version/writebuffercache=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|85db96af2dc5d2a358dfe014834408df121c7df6cb9a0697952b7b7714ba35d25787caa02d90fe97ad9773fa9732150f
 
 [~MFT]
-0=2|0Hierarquia_de_Memoria.mgf|206179|191752
-1=2|1Hierarquia_de_Memoria.mgf|356002|340487
-3=2|3Hierarquia_de_Memoria.mgf|45091|41609
+0=8|0Hierarquia_de_Memoria.mgf|61631|20542
+1=2|1Hierarquia_de_Memoria.mgf|65707|21676
+2=0|2Hierarquia_de_Memoria.mgf|14536|0
+3=2|3Hierarquia_de_Memoria.mgf|11421|0
 
 [~U]
-\Cache de Instrucoes\=11|0*0|
-\Testbench Cache de Instrucoes\=11|0*276|
-cacheinstrucoes=CacheInstrucoes 11|0*163454|
-memoriaprincipal=MemoriaPrincipal 11|0*155867|
-testbenchcacheinstrucoes=TestbenchCacheInstrucoes 11|0*3950|
-testbenchmemoriaprincipal=TestbenchMemoriaPrincipal 11|0*126107|
+\Cache de Instrucoes\=11|0*25849|
+\Testbench Cache de Instrucoes\=11|0*26125|
+cachedados=CacheDados 11|0*26293||0x3
+cacheinstrucoes=CacheInstrucoes 11|0*27087||0x3
+hierarquiadememoria=HierarquiaDeMemoria 11|0*32106|
+memoriaprincipal=MemoriaPrincipal 11|0*27859||0x3
+testbenchcachedados=TestbenchCacheDados 11|0*28778|
+testbenchcacheinstrucoes=TestbenchCacheInstrucoes 11|0*29398|
+testbenchhierarquiadememoria=TestbenchHierarquiaDeMemoria 11|0*41575|
+testbenchmemoriaprincipal=TestbenchMemoriaPrincipal 11|0*30132|
+testbenchwritebuffer=TestbenchWriteBuffer 11|0*30789|
+writebuffercache=WriteBufferCache 11|0*31421||0x3

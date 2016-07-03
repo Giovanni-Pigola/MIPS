@@ -2,3 +2,9 @@ i<>.\src\Cache de Instrucoes.vhd
 i<>.\src\Testbench Cache de Instrucoes.vhd
 i<>.\src\MemoriaPrincipal.vhd
 i<>.\src\TestbenchMemoriaPrincipal.vhd
+i<>.\src\CacheDados.vhd
+i<>.\src\TestbenchCacheDados.vhd
+i<>.\src\WriteBufferCache.vhd
+i<>.\src\TestbenchWriteBuffer.vhd
+i<>.\src\HierarquiaDeMemoria.bde
+i<>.\src\TestbenchHierarquiaDeMemoria.vhd

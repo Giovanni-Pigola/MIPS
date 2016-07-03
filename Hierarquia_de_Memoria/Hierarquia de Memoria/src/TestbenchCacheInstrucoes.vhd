@@ -41,6 +41,7 @@ architecture TestbenchCacheInstrucoes of TestbenchCacheInstrucoes is
 			EndIn : in STD_LOGIC_VECTOR(31 downto 0);
 			DadoIn : in STD_LOGIC_VECTOR(127 downto 0);
 			Hit : out STD_LOGIC;
+			Miss : out STD_LOGIC;
 			MemRead : out STD_LOGIC;
 			DadoOut : out STD_LOGIC_VECTOR(31 downto 0);
 			EndOut : out STD_LOGIC_VECTOR(31 downto 0)
@@ -56,6 +57,7 @@ architecture TestbenchCacheInstrucoes of TestbenchCacheInstrucoes is
 	
 	-- Saidas
 	signal Hit : STD_LOGIC := '0';
+	signal Miss : STD_LOGIC := '0';
 	signal MemRead : STD_LOGIC := '0';
 	signal DadoOut : STD_LOGIC_VECTOR(31 downto 0);
 	signal EndOut : STD_LOGIC_VECTOR(31 downto 0);
@@ -72,6 +74,7 @@ begin
 		EndIn => EndIn,
 		DadoIn => DadoIn,
 		Hit => Hit,
+		Miss => Miss,
 		MemRead => MemRead,
 		DadoOut => DadoOut,
 		EndOut => EndOut
@@ -123,6 +126,8 @@ begin
 		MemPronta <= '1';
 		wait for 20ns;
 		EndIn <= x"11111118";
+		wait for 20ns;
+		EndIn <= x"21111118";
 		wait for 1000ns;
 	end process;
 	

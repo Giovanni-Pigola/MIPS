@@ -42,8 +42,7 @@ entity MemoriaPrincipal is
 		DadoInst : out STD_LOGIC_VECTOR(127 downto 0);
 		DadoPronto : out STD_LOGIC;
 		DadoDadoOut : out STD_LOGIC_VECTOR(127 downto 0);
-		DadoSalvo : out STD_LOGIC;
-		teste : out STD_LOGIC_VECTOR(31 downto 0)
+		DadoSalvo : out STD_LOGIC
 	);
 end MemoriaPrincipal;
 
@@ -53,11 +52,11 @@ architecture MemoriaPrincipal of MemoriaPrincipal is
 
 	type memoria is array (2**14 downto 0) of std_logic_vector(31 downto 0); 	-- 2^14 palavras de 32 bits
 	signal mem : memoria;
-	file entrada: text open read_mode is "Programa.txt";
 		
 begin
 
 	process (clockmp)
+		file entrada: text;
 		variable l : line;
 		variable posicao, conteudo : std_logic_vector(31 downto 0);
 		variable separador : character;
@@ -69,7 +68,11 @@ begin
 			DadoPronto <= '0';
 			DadoDadoOut <= (others => '0');
 			DadoSalvo <= '0';
-			if reset = '1' then
+			if reset = '1' then	
+				file_open(entrada, "Programa.txt", read_mode);
+				for i in mem'range loop
+					mem(i) <= (others => '0');
+				end loop;
 				while not endfile(entrada) loop
 					readline(entrada, l);
 					read(l, posicao);
@@ -77,19 +80,16 @@ begin
 					read(l, conteudo);
 					mem(to_integer(unsigned(posicao(15 downto 2)))) <= conteudo;
 				end loop;
+				file_close(entrada);
 			elsif WriteDado = '1' then
 				mem(to_integer(unsigned(EndDado(15 downto 2)))) <= DadoDadoIn after 100 ns;
-				DadoSalvo <= '1' after 100 ns;
-				InstPronta <= '0';
-				DadoInst <= (others => '0');
-				DadoPronto <= '0';
-				DadoDadoOut <= (others => '0');
+				DadoSalvo <= '0', '1' after 100 ns;
 			elsif ReadDado = '1' then
-				DadoDadoOut <= mem(to_integer(unsigned(EndDado(15 downto 2))) + 3) & mem(to_integer(unsigned(EndDado(15 downto 2))) + 2) & mem(to_integer(unsigned(EndDado(15 downto 2))) + 1) & mem(to_integer(unsigned(EndDado(15 downto 2)))) after 100 ns;
-				DadoPronto <= '1' after 100 ns;
+				DadoDadoOut <= (others => '0'), mem(to_integer(unsigned(EndDado(15 downto 2))) + 3) & mem(to_integer(unsigned(EndDado(15 downto 2))) + 2) & mem(to_integer(unsigned(EndDado(15 downto 2))) + 1) & mem(to_integer(unsigned(EndDado(15 downto 2)))) after 100 ns;
+				DadoPronto <= '0', '1' after 100 ns;
 			elsif ReadInst = '1' then
-				DadoInst <= mem(to_integer(unsigned(EndInst(15 downto 2))) + 3) & mem(to_integer(unsigned(EndInst(15 downto 2))) + 2) & mem(to_integer(unsigned(EndInst(15 downto 2))) + 1) & mem(to_integer(unsigned(EndInst(15 downto 2)))) after 100 ns;
-				InstPronta <= '1' after 100 ns;
+				DadoInst <= (others => '0'), mem(to_integer(unsigned(EndInst(15 downto 2))) + 3) & mem(to_integer(unsigned(EndInst(15 downto 2))) + 2) & mem(to_integer(unsigned(EndInst(15 downto 2))) + 1) & mem(to_integer(unsigned(EndInst(15 downto 2)))) after 100 ns;
+				InstPronta <= '0', '1' after 100 ns;
 			end if;
 		end if; 
 		
