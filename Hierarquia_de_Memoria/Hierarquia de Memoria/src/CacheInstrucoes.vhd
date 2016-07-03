@@ -63,10 +63,10 @@ begin
 		
 		if rising_edge(clock) then
 			Hit <= '0';
-			DadoOut <= (others => '0');
 			if reset = '1' then
 				MemRead <= '0';					   	-- Coloca as saídas em 0
 				EndOut <= (others => '0');
+				DadoOut <= (others => '0');
 				for i in 0 to 255 loop
 					for j in 0 to 16 loop
 						cache(i,j) <= (others => '0');	-- Limpa o cache
@@ -84,12 +84,13 @@ begin
 				if cache(to_integer(unsigned(bloco)), 16) = EndInterno then
 					Miss <= '0';
 					Hit <= '0', '1' after 5 ns;
-					DadoOut <= (others => '0'), cache(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
+					DadoOut <= cache(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
 				else
 					Miss <= '0', '1' after 5 ns;
+					DadoOut <= (others => '0');
 					x := "00";
 					cache(to_integer(unsigned(bloco)), 16) <= EndInterno;
-					EndOut <= (others => '0'), EndIn(31 downto 6) & x & "0000" after 5 ns;
+					EndOut <= EndIn(31 downto 6) & x & "0000" after 5 ns;
 					MemRead <= '0', '1' after 5 ns;
 					esperaMemoria := '1';
 				end if;

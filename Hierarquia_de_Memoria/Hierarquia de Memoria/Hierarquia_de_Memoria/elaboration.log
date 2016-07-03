@@ -1,4 +1,4 @@
-Active-HDL 10.3.3559.6081  2016-07-03 13:50:21
+Active-HDL 10.3.3559.6081  2016-07-03 15:47:53
 
 Elaboration top modules:
 Architecture                  TestbenchHierarquiaDeMemoria(TestbenchHierarquiaDeMemoria)
@@ -9,10 +9,10 @@ Entity                       | Architecture                 | Library           
 ---------------------------------------------------------------------------------------------------------------------------------------------
 TestbenchHierarquiaDeMemoria | TestbenchHierarquiaDeMemoria | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
 HierarquiaDeMemoria          | HierarquiaDeMemoria          | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
-CacheInstrucoes              | cacheinst                    | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
-CacheDados                   | cachedados                   | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
-MemoriaPrincipal             | memoriaprincipal             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
-WriteBufferCache             | writebuffercache             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+CacheInstrucoes              | CacheInst                    | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+CacheDados                   | CacheDados                   | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+MemoriaPrincipal             | MemoriaPrincipal             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
+WriteBufferCache             | WriteBufferCache             | hierarquia_de_memoria |      | 10.3.3559.6081  (Windows) | -O3
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------------------------------------

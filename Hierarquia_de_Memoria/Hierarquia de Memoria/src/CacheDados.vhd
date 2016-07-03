@@ -106,7 +106,7 @@ begin
 					Hit <= '0', '1' after 5 ns;
 					
 					if CacheRead = '1' then	
-						DadoOutProc <= (others => '0'), cacheA(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
+						DadoOutProc <= cacheA(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
 						
 					elsif CacheWrite = '1' then
 						cacheA(to_integer(unsigned(bloco)), 16)(30) <= '1';
@@ -120,7 +120,7 @@ begin
 					Hit <= '0', '1' after 5 ns;
 					
 					if CacheRead = '1' then	
-						DadoOutProc <= (others => '0'), cacheB(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
+						DadoOutProc <= cacheB(to_integer(unsigned(bloco)), to_integer(unsigned(EndIn(5 downto 2)))) after 5 ns;
 						
 					elsif CacheWrite = '1' then	
 						cacheB(to_integer(unsigned(bloco)), 16)(30) <= '1';
@@ -139,15 +139,15 @@ begin
 						if sujo = '0' then -- Bloco não está sujo, cache pode pegar o bloco novo da MP e substituir
 							cacheA(to_integer(unsigned(bloco)), 16) <= "10" & EndInterno;
 							cacheB(to_integer(unsigned(bloco)), 16)(31) <= '0';
-							EndOut <= (others => '0'), EndIn(31 downto 6) & x & "0000" after 5 ns;
+							EndOut <= EndIn(31 downto 6) & x & "0000" after 5 ns;
 							MemRead <= '0', '1' after 5 ns;
 							esperaMemoria := '1'; 						
 																
 						else -- Bloco está sujo, precisa salvar o bloco atual na MP antes de pegar um novo
 							cacheA(to_integer(unsigned(bloco)), 16)(30) <= '0';
 							z := "0000";
-							EndOut <= (others => '0'), cacheA(to_integer(unsigned(bloco)), 16)(18 downto 0) & bloco & z & "00" after 5 ns;
-							DadoOutMP <= (others => '0'), cacheA(to_integer(unsigned(bloco)), to_integer(unsigned(z))) after 5 ns;
+							EndOut <= cacheA(to_integer(unsigned(bloco)), 16)(18 downto 0) & bloco & z & "00" after 5 ns;
+							DadoOutMP <= cacheA(to_integer(unsigned(bloco)), to_integer(unsigned(z))) after 5 ns;
 							MemWrite <= '0', '1' after 5 ns;
 							esperaMemoria := '1';
 						end if;
@@ -160,15 +160,15 @@ begin
 						if sujo = '0' then -- Bloco não está sujo, cache pode pegar o bloco novo da MP e substituir
 							cacheB(to_integer(unsigned(bloco)), 16) <= "10" & EndInterno;
 							cacheA(to_integer(unsigned(bloco)), 16)(31) <= '0';
-							EndOut <= (others => '0'), EndIn(31 downto 6) & x & "0000" after 5 ns;
+							EndOut <= EndIn(31 downto 6) & x & "0000" after 5 ns;
 							MemRead <= '0', '1' after 5 ns;
 							esperaMemoria := '1';
 							
 						else -- Bloco está sujo, precisa salvar o bloco atual na MP antes de pegar um novo
 							cacheB(to_integer(unsigned(bloco)), 16)(30) <= '0';
 							z := "0000";
-							EndOut <= (others => '0'), cacheB(to_integer(unsigned(bloco)), 16)(18 downto 0) & bloco & z & "00" after 5 ns;
-							DadoOutMP <= (others => '0'), cacheB(to_integer(unsigned(bloco)), to_integer(unsigned(z))) after 5 ns;
+							EndOut <= cacheB(to_integer(unsigned(bloco)), 16)(18 downto 0) & bloco & z & "00" after 5 ns;
+							DadoOutMP <= cacheB(to_integer(unsigned(bloco)), to_integer(unsigned(z))) after 5 ns;
 							MemWrite <= '0', '1' after 5 ns;
 							esperaMemoria := '1';							
 						end if;
@@ -186,7 +186,7 @@ begin
 						DadoOutMP <= (others => '0') after 5 ns;
 						esperaMemoria := '1';
 						MemRead <= '0', '1' after 5 ns;
-						EndOut <= (others => '0'), EndIn(31 downto 6) & x & "0000" after 5 ns;
+						EndOut <= EndIn(31 downto 6) & x & "0000" after 5 ns;
 						if salvaA = '1' then
 							cacheA(to_integer(unsigned(bloco)), 16) <= "10" & EndInterno;
 							cacheB(to_integer(unsigned(bloco)), 16)(31) <= '0';

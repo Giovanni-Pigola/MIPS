@@ -69,6 +69,8 @@ Selected=
 /TesteWriteBuffer.awc=-1
 /HierarquiaDeMemoria.bde=-1
 /TestbenchHierarquiaDeMemoria.vhd=-1
+/TesteHierarquiaDeMemoria.asdb=-1
+/TesteHierarquiaDeMemoria.awc=-1
 
 [Files.Data]
 .\src\CacheInstrucoes.vhd=VHDL Source Code
@@ -89,6 +91,8 @@ Selected=
 .\src\TesteWriteBuffer.awc=Accelerated Waveform Configuration
 .\src\HierarquiaDeMemoria.bde=Block Diagram
 .\src\TestbenchHierarquiaDeMemoria.vhd=VHDL Source Code
+.\src\TesteHierarquiaDeMemoria.asdb=Accelerated Waveform File
+.\src\TesteHierarquiaDeMemoria.awc=Accelerated Waveform Configuration
 
 [file_out:/HierarquiaDeMemoria.bde]
 /..\compile\HierarquiaDeMemoria.vhd=-1

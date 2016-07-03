@@ -112,7 +112,7 @@ begin
 		wait for 10 ns;
 		reset <= '0';
 		wait for 10 ns;
-		EndIn <= x"11111104";
+		EndIn <= x"00001104";
 		CacheRead <= '1';
 		wait for 20ns;
 		DadoInMP <= x"33333333222222221111111100000000";
@@ -128,7 +128,7 @@ begin
 		DadoInMP <= x"FFFFFFFFEEEEEEEEDDDDDDDDCCCCCCCC";
 		MemPronta <= '1';
 		wait for 40ns;
-		EndIn <= x"1111110C";
+		EndIn <= x"0000110C";
 		wait for 20ns;		
 		CacheRead <= '0';		
 		CacheWrite <= '1';
@@ -137,9 +137,9 @@ begin
 		CacheRead <= '1';		
 		CacheWrite <= '0';
 		wait for 20ns;
-		EndIn <= x"21111104";
+		EndIn <= x"00003104";
 		wait for 120ns;
-		EndIn <= x"31111104";
+		EndIn <= x"00005104";
 		wait for 20ns;
 		DadoSalvo <= '1';
 		wait for 10ns;

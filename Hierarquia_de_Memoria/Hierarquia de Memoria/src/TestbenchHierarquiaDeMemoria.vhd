@@ -116,7 +116,25 @@ begin
 		EndDado <= (others => '0');
 		wait for 120 ns;
 		reset <= '0';
+		EndDado <= x"00001104";
+		WriteDado <= '1';
+		DadoIn <= x"01234567";
 		EndInst <= x"0000002C";
+		wait until HitDado = '1';
+		wait for 10 ns;
+		WriteDado <= '0';
+		ReadDado <= '1';
+		wait for 20ns; 
+		ReadDado <= '0';
+		EndDado <= x"00001108";
+		DadoIn <= x"AAAAAAAA";
+		WriteDado <= '1';
+		wait for 20ns;
+		WriteDado <= '0';
+		ReadDado <= '1';
+		DadoIn <= (others => '0');
+		wait for 20ns;
+		EndDado <= x"00003104";
 		wait until HitInst = '1';
 		wait for 10 ns;
 		EndInst <= x"00000030";
@@ -127,16 +145,7 @@ begin
 		wait for 20 ns;
 		EndInst <= x"0000003C";
 		wait for 20 ns;
-		EndInst <= x"00000040";
-		wait for 20 ns;
-		EndInst <= x"00000044";
-		wait for 20 ns;
-		EndInst <= x"00000048";
-		wait for 20 ns;
-		EndInst <= x"0000004C";
-		wait for 20 ns;
-		EndInst <= x"00000050";
-		wait for 20 ns;
+		
 		wait for 1000ns;
 	end process;
 

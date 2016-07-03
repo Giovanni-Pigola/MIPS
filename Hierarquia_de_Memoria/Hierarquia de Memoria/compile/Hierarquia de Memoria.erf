@@ -2,4 +2,4 @@ WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line break
 MESSAGE "File: d:\Documents\Semestre 7\Atquitetura de Computadores\ActiveHDL\Hierarquia_de_Memoria\Hierarquia de Memoria\src\TestbenchHierarquiaDeMemoria.vhd" 
 MESSAGE "Compile Entity "TestbenchHierarquiaDeMemoria"" 
 MESSAGE "Compile Architecture "TestbenchHierarquiaDeMemoria" of Entity "TestbenchHierarquiaDeMemoria"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
