@@ -1,0 +1,145 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=uc_pipeline
+
+[Library]
+uc_pipeline=.\uc_pipeline\uc_pipeline.lib
+biblioteca_de_componentes=.\..\..\..\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentes\biblioteca_de_componentes.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\My_Designs\uc_pipeline\uc_pipeline\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+uc_pipeline=.
+Active_lib=
+biblioteca_de_componentes=.
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=mux5bits|bev|0
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+Synchronize=1
+
+
+
+
+
+
+
+[Files]
+/deslocador2.vhd=-1
+/mux32bits.vhd=-1
+/ula.vhd=-1
+/concatena.vhd=-1
+/deslocador_combinatorio.vhd=-1
+/estagio1.bde=-1
+/somapc4.vhd=-1
+/regpc.vhd=-1
+/des_comb.vhd=-1
+/regestagio1.vhd=-1
+/pipelineTotal.bde=-1
+/estagio2.bde=-1
+/regestagio2.vhd=-1
+/mux1bit2x1.vhd=-1
+/som32bits.vhd=-1
+/mux2x1zero.vhd=-1
+/gpr.vhd=-1
+/estagio4.bde=-1
+/regestagio4.vhd=-1
+/contadorInstrucoes.vhd=-1
+/contadorBolhas.vhd=-1
+/estagio5.bde=-1
+/mux5bits.vhd=-1
+/UnidadeControle.vhd=-1
+/estagio3.bde=-1
+/mux2x1 5bits.vhd=-1
+/mux3x1.vhd=-1
+/mux5bits(3-1).vhd=-1
+/regestagio3.vhd=-1
+/desloc_shamt.vhd=-1
+/mux5bits3op.vhd=-1
+/reg32bitsEPC.vhd=-1
+
+[Files.Data]
+.\src\deslocador2.vhd=VHDL Source Code
+.\src\mux32bits.vhd=VHDL Source Code
+.\src\ula.vhd=VHDL Source Code
+.\src\concatena.vhd=VHDL Source Code
+.\src\deslocador_combinatorio.vhd=VHDL Source Code
+.\src\estagio1.bde=Block Diagram
+.\src\somapc4.vhd=VHDL Source Code
+.\src\regpc.vhd=VHDL Source Code
+.\src\des_comb.vhd=VHDL Source Code
+.\src\regestagio1.vhd=VHDL Source Code
+.\src\pipelineTotal.bde=Block Diagram
+.\src\estagio2.bde=Block Diagram
+.\src\regestagio2.vhd=VHDL Source Code
+.\src\mux1bit2x1.vhd=VHDL Source Code
+.\src\som32bits.vhd=VHDL Source Code
+.\src\mux2x1zero.vhd=VHDL Source Code
+.\src\gpr.vhd=VHDL Source Code
+.\src\estagio4.bde=Block Diagram
+.\src\regestagio4.vhd=VHDL Source Code
+.\src\contadorInstrucoes.vhd=VHDL Source Code
+.\src\contadorBolhas.vhd=VHDL Source Code
+.\src\estagio5.bde=Block Diagram
+.\src\mux5bits.vhd=VHDL Source Code
+.\src\UnidadeControle.vhd=VHDL Source Code
+.\src\estagio3.bde=Block Diagram
+.\src\mux2x1 5bits.vhd=VHDL Source Code
+.\src\mux3x1.vhd=VHDL Source Code
+.\src\mux5bits(3-1).vhd=VHDL Source Code
+.\src\regestagio3.vhd=VHDL Source Code
+.\src\desloc_shamt.vhd=VHDL Source Code
+.\src\mux5bits3op.vhd=VHDL Source Code
+.\src\reg32bitsEPC.vhd=VHDL Source Code
+.\compile\estagio2.vhd=VHDL Source Code
+.\compile\estagio3.vhd=VHDL Source Code
+.\compile\estagio5.vhd=VHDL Source Code
+.\compile\estagio1.vhd=VHDL Source Code
+.\compile\pipelineTotal.vhd=VHDL Source Code
+.\compile\estagio4.vhd=VHDL Source Code
+
+[file_out:/estagio1.bde]
+/..\compile\testes.vhd=-1
+/..\compile\estagio1.vhd=-1
+[file_out:/pipelineTotal.bde]
+/..\compile\pipelineTotal.vhd=-1
+[file_out:/estagio2.bde]
+/..\compile\estagio2.vhd=-1
+[file_out:/estagio4.bde]
+/..\compile\estagio4.vhd=-1
+[file_out:/estagio5.bde]
+/..\compile\estagio5.vhd=-1
+[file_out:/estagio3.bde]
+/..\compile\estagio3.vhd=-1

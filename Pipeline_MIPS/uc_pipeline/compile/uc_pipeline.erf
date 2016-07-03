@@ -1,0 +1,140 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador2.vhd" 
+MESSAGE "Compile Entity "deslocador2"" 
+MESSAGE "Compile Architecture "behavior" of Entity "deslocador2"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd" 
+MESSAGE "Compile Entity "mux32bits"" 
+MESSAGE "Compile Architecture "bev" of Entity "mux32bits"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\ula.vhd" 
+MESSAGE "Compile Entity "ula"" 
+MESSAGE "Compile Architecture "behavior" of Entity "ula"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\concatena.vhd" 
+MESSAGE "Compile Entity "concatena"" 
+MESSAGE "Compile Architecture "behavior" of Entity "concatena"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador_combinatorio.vhd" 
+MESSAGE "Compile Entity "deslocador_combinatorio"" 
+MESSAGE "Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"" 
+MESSAGE "File: .\..\compile\estagio1.vhd" 
+MESSAGE "Compile Entity "testes"" 
+MESSAGE "Compile Architecture "testes" of Entity "testes"" 
+WARNING ELAB1_0026: "There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity)." ".\..\compile\estagio1.vhd" 103 0
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd" 
+MESSAGE "Compile Entity "somapc4"" 
+MESSAGE "Compile Architecture "somapc4" of Entity "somapc4"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\regpc.vhd" 
+MESSAGE "Compile Entity "regpc"" 
+MESSAGE "Compile Architecture "reg" of Entity "regpc"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\des_comb.vhd" 
+MESSAGE "Compile Entity "desc_comb"" 
+MESSAGE "Compile Architecture "deslocador_combinatorio" of Entity "desc_comb"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd" 
+MESSAGE "Compile Entity "regestagio1"" 
+MESSAGE "Compile Architecture "reg" of Entity "regestagio1"" 
+MESSAGE "File: .\..\compile\pipelineTotal.vhd" 
+MESSAGE "Compile Entity "pipelineTotal"" 
+MESSAGE "Compile Architecture "pipelineTotal" of Entity "pipelineTotal"" 
+MESSAGE "File: .\..\compile\estagio2.vhd" 
+BEGINPROGRESS .\..\compile\estagio2.vhd
+UPDATEPROGRESS 2
+MESSAGE "Compile Entity "estagio2"" 
+UPDATEPROGRESS 10
+MESSAGE "Compile Architecture "estagio2" of Entity "estagio2"" 
+UPDATEPROGRESS 13
+UPDATEPROGRESS 15
+UPDATEPROGRESS 20
+UPDATEPROGRESS 22
+UPDATEPROGRESS 31
+UPDATEPROGRESS 33
+UPDATEPROGRESS 34
+UPDATEPROGRESS 35
+UPDATEPROGRESS 36
+UPDATEPROGRESS 37
+UPDATEPROGRESS 38
+UPDATEPROGRESS 39
+UPDATEPROGRESS 40
+UPDATEPROGRESS 41
+UPDATEPROGRESS 42
+UPDATEPROGRESS 43
+UPDATEPROGRESS 44
+UPDATEPROGRESS 45
+UPDATEPROGRESS 46
+UPDATEPROGRESS 47
+UPDATEPROGRESS 48
+UPDATEPROGRESS 49
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 52
+UPDATEPROGRESS 53
+UPDATEPROGRESS 54
+UPDATEPROGRESS 57
+UPDATEPROGRESS 63
+UPDATEPROGRESS 89
+UPDATEPROGRESS 91
+UPDATEPROGRESS 93
+UPDATEPROGRESS 96
+UPDATEPROGRESS 97
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS .\..\compile\estagio2.vhd
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd" 
+MESSAGE "Compile Entity "regestagio2"" 
+MESSAGE "Compile Architecture "reg2" of Entity "regestagio2"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux1bit2x1.vhd" 
+MESSAGE "Compile Entity "mux1bit2x1"" 
+MESSAGE "Compile Architecture "mux1bit" of Entity "mux1bit2x1"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\som32bits.vhd" 
+MESSAGE "Compile Entity "soma32bits"" 
+MESSAGE "Compile Architecture "soma32bits" of Entity "soma32bits"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1zero.vhd" 
+MESSAGE "Compile Entity "mux2x1zero"" 
+MESSAGE "Compile Architecture "mux2x1zero" of Entity "mux2x1zero"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\gpr.vhd" 
+MESSAGE "Compile Entity "gpr"" 
+MESSAGE "Compile Architecture "gpr" of Entity "gpr"" 
+MESSAGE "File: .\..\compile\estagio4.vhd" 
+MESSAGE "Compile Entity "estagio3"" 
+MESSAGE "Compile Architecture "estagio3" of Entity "estagio3"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd" 
+MESSAGE "Compile Entity "regestagio4"" 
+MESSAGE "Compile Architecture "reg4" of Entity "regestagio4"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\contadorInstrucoes.vhd" 
+MESSAGE "Compile Entity "contadorInstrucoes"" 
+MESSAGE "Compile Architecture "contadorInstrucoes" of Entity "contadorInstrucoes"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\contadorBolhas.vhd" 
+MESSAGE "Compile Entity "contadorBolhas"" 
+MESSAGE "Compile Architecture "contadorBolhas" of Entity "contadorBolhas"" 
+MESSAGE "File: .\..\compile\estagio5.vhd" 
+MESSAGE "Compile Entity "estagio5"" 
+MESSAGE "Compile Architecture "estagio5" of Entity "estagio5"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits.vhd" 
+MESSAGE "Compile Entity "mux5bits"" 
+MESSAGE "Compile Architecture "bev" of Entity "mux5bits"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd" 
+WARNING COMP96_0003: "Source file "c:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd" is empty."
+MESSAGE "File: .\..\compile\estagio3.vhd" 
+MESSAGE "Compile Entity "estagio3"" 
+WARNING COMP96_0994: "Multiple entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd"."
+MESSAGE "Compile Architecture "estagio3" of Entity "estagio3"" 
+WARNING COMP96_0994: "Multiple architecture "estagio3" of entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd"."
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1 5bits.vhd" 
+MESSAGE "Compile Entity "mux2x1_5bits"" 
+MESSAGE "Compile Architecture "mux2x1_5bits" of Entity "mux2x1_5bits"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux3x1.vhd" 
+MESSAGE "Compile Entity "mux3x1"" 
+MESSAGE "Compile Architecture "bev" of Entity "mux3x1"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits(3-1).vhd" 
+MESSAGE "Compile Entity "mux5bits3x1"" 
+MESSAGE "Compile Architecture "mux3" of Entity "mux5bits3x1"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio3.vhd" 
+MESSAGE "Compile Entity "regestagio3"" 
+MESSAGE "Compile Architecture "reg" of Entity "regestagio3"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\desloc_shamt.vhd" 
+MESSAGE "Compile Entity "desloc_shamt"" 
+MESSAGE "Compile Architecture "desloc_shamt" of Entity "desloc_shamt"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits3op.vhd" 
+MESSAGE "Compile Entity "mux5bits3op"" 
+MESSAGE "Compile Architecture "mux3" of Entity "mux5bits3op"" 
+MESSAGE "File: c:\My_Designs\uc_pipeline\uc_pipeline\src\reg32bitsEPC.vhd" 
+MESSAGE "Compile Entity "reg32bitsEPC"" 
+MESSAGE "Compile Architecture "bev" of Entity "reg32bitsEPC"" 
+SUCCESS "Compile success 0 Errors 4 Warnings  Analysis time :  1.0 [s]" 
