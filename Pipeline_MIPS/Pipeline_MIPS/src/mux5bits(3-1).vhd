@@ -12,11 +12,11 @@ architecture mux3 of mux5bits is
 begin	
 	escolhe: process(op)
 	begin
-		if(op='00') then
+		if(op= '00')then
 			 saida <= p1;
-		if(op='01') then
+		if(op='01')then
 			 saida <= p2;
-		if(op='10') then
+		if(op='10')then
 			 saida <= p3;
 		end if;	 
 	end process;
