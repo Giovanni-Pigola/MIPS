@@ -5,13 +5,14 @@ entity regestagio4 is
   port(
   		wb : in std_logic;
 		clock: in std_logic;
-		
+		ctrlMux5: in std_logic;
 		entradacache : in std_logic_vector(4 downto 0);	  
 		entradaResULA : in std_logic_vector(4 downto 0); 
 	    entrada3 : in std_logic_vector(4 downto 0); 
        	saidacache : out std_logic_vector(4 downto 0);
 		saidaResULA : out std_logic_vector(4 downto 0);
 		saida3 : out std_logic_vector(4 downto 0);
+		sctrlMux5: out std_logic;
 		wbsaida: out std_logic
   );
 end regestagio4;	
@@ -24,7 +25,8 @@ begin
 			wbsaida<=wb;
 			saidacache<=entradacache;
 			saidaResULA<=entradaResULA;
-			saida3 <= entrada3;
+			saida3 <= entrada3;	 
+			sctrlMux5<=ctrlMux5;
 		end if;
 	end process;
 end reg4;
