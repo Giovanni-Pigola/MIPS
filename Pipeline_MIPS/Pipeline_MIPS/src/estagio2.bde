@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 1306
+ FREEID 1361
  VARIABLES
  {
   #ARCHITECTURE="estagio2"
@@ -1898,12 +1898,13 @@ PAGE ""
     #SYMBOL="Input"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
-   COORD (1500,960)
+   COORD (1520,860)
+   VERTEXES ( (2,1341) )
   }
   TEXT  543, 0, 0
   {
    TEXT "$#REFERENCE"
-   RECT (1380,943,1449,978)
+   RECT (1400,843,1469,878)
    ALIGN 6
    MARGINS (1,1)
    PARENT 538
@@ -2227,7 +2228,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a768d94b-9394-4bd5-8017-8821054b8b26"
    }
    COORD (1520,380)
-   VERTEXES ( (24,1131), (28,1135), (32,1139), (10,1141), (6,1145), (2,1147), (18,1167), (26,1179), (30,1195), (22,1205), (34,1211), (36,1226), (38,1232), (40,1238), (42,1244), (44,1250), (46,1256), (20,1262), (4,1268), (8,1274), (12,1280), (16,1286) )
+   VERTEXES ( (24,1131), (28,1135), (32,1139), (10,1141), (6,1145), (2,1147), (18,1167), (26,1179), (30,1195), (22,1205), (34,1211), (36,1226), (38,1232), (40,1238), (42,1244), (44,1250), (46,1256), (20,1262), (4,1268), (8,1274), (12,1280), (16,1286), (14,1342) )
   }
   TEXT  1055, 0, 0
   {
@@ -2810,9 +2811,11 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
     #LIBRARY="#terminals"
     #REFERENCE="saidaPC(31:0)"
     #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1880,700)
    VERTEXES ( (2,1261) )
@@ -2850,9 +2853,11 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
     #LIBRARY="#terminals"
     #REFERENCE="saidaGPR2521(4:0)"
     #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1880,760)
    VERTEXES ( (2,1267) )
@@ -2890,9 +2895,11 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
     #LIBRARY="#terminals"
     #REFERENCE="saidaGPR2016(4:0)"
     #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1880,800)
    VERTEXES ( (2,1273) )
@@ -2930,9 +2937,11 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
     #LIBRARY="#terminals"
     #REFERENCE="saida2521(4:0)"
     #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1880,840)
    VERTEXES ( (2,1279) )
@@ -2970,9 +2979,11 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
     #LIBRARY="#terminals"
     #REFERENCE="saida2016(4:0)"
     #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1880,880)
    VERTEXES ( (2,1285) )
@@ -3005,6 +3016,20 @@ PAGE ""
    MARGINS (1,1)
    PARENT 1283
   }
+  NET WIRE  1340, 0, 0
+  VTX  1341, 0, 0
+  {
+   COORD (1520,860)
+  }
+  VTX  1342, 0, 0
+  {
+   COORD (1520,860)
+  }
+  WIRE  1343, 0, 0
+  {
+   NET 1340
+   VTX 1341, 1342
+  }
  }
  
 }
@@ -3030,7 +3055,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1289, 0, 0
+  TEXT  1344, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3041,7 +3066,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1290, 0, 0
+  TEXT  1345, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -3052,7 +3077,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1291, 0, 0
+  TEXT  1346, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -3062,7 +3087,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1292, 0, 0
+  TEXT  1347, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3074,7 +3099,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1293, 0, 0
+  TEXT  1348, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -3087,7 +3112,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  1294, 0, 0
+  TEXT  1349, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -3097,7 +3122,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1295, 0, 0
+  TEXT  1350, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -3109,7 +3134,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1296, 0, 0
+  TEXT  1351, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -3119,7 +3144,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1297, 0, 0
+  TEXT  1352, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -3130,7 +3155,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  1298, 0, 0
+  GROUP  1353, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -3142,7 +3167,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1299, 0, 0
+  GROUP  1354, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -3154,7 +3179,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1300, 0, 0
+  GROUP  1355, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -3166,7 +3191,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1301, 0, 0
+  GROUP  1356, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -3178,7 +3203,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1302, 0, 0
+  GROUP  1357, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -3190,7 +3215,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1303, 0, 0
+  GROUP  1358, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -3201,7 +3226,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  1304, 0, 0
+  GROUP  1359, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -3212,7 +3237,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  1305, 0, 0
+  BMPPICT  1360, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

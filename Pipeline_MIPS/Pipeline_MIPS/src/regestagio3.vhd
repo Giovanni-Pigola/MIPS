@@ -10,12 +10,14 @@ entity regestagio3 is
        	Q1 : out std_logic;
 		D2 : in std_logic;
        	Q2 : out std_logic;
-		D3 : in std_logic_vector(31 downto 0);
-		Q3 : out std_logic_vector(31 downto 0);
-		D4 : in std_logic_vector(31 downto 0);
-		Q4 : out std_logic_vector(31 downto 0);
+		D3 : in std_logic_vector(4 downto 0);
+		Q3 : out std_logic_vector(4 downto 0);
+		D4 : in std_logic_vector(4 downto 0);
+		Q4 : out std_logic_vector(4 downto 0);
 		D5 : in std_logic_vector(4 downto 0);
-		Q5 : out std_logic_vector(4 downto 0)
+		Q5 : out std_logic_vector(4 downto 0);
+		D6 : in std_logic_vector(31 downto 0);
+		Q6 : out std_logic_vector(31 downto 0)
   );
 end regestagio3;
 
