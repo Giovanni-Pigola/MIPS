@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
--- Generated   : Sun Jul  3 17:14:42 2016
+-- Generated   : Sun Jul  3 18:56:53 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -48,6 +48,7 @@ entity estagio3 is
        i2521 : in STD_LOGIC_VECTOR(4 downto 0);
        muxEstagio5 : in STD_LOGIC_VECTOR(31 downto 0);
        muxctrl4 : in STD_LOGIC_VECTOR(1 downto 0);
+       OVF : out STD_LOGIC;
        m_out : out STD_LOGIC;
        sctrlMux5 : out STD_LOGIC;
        wb_out : out STD_LOGIC;
@@ -122,6 +123,7 @@ component ula
        e_2016 : in STD_LOGIC_VECTOR(31 downto 0);
        e_2521 : in STD_LOGIC_VECTOR(31 downto 0);
        s_op0 : in STD_LOGIC;
+       OVF : out STD_LOGIC;
        saida : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
@@ -179,14 +181,6 @@ U14 : mux5bits3op
        saida => BUS3024
   );
 
-U16 : ula
-  port map(
-       e_2016 => BUS3024,
-       e_2521 => BUS2989,
-       s_op0 => ula_ctrl,
-       saida => BUS2449
-  );
-
 U21 : desloc_shamt
   port map(
        shamt(0) => entrada(6),
@@ -196,6 +190,15 @@ U21 : desloc_shamt
        shamt(4) => entrada(10),
        entrada => entrada,
        saida => BUS2954
+  );
+
+U3 : ula
+  port map(
+       OVF => OVF,
+       e_2016 => BUS3024,
+       e_2521 => BUS2989,
+       s_op0 => ula_ctrl,
+       saida => BUS2449
   );
 
 U4 : mux32bits

@@ -1,2 +1,33 @@
-".\..\compile\estagio3.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador2.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\ula.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\concatena.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador_combinatorio.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\estagio1.vhd" VHDL uc_pipeline 2 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\regpc.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\des_comb.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\pipelineTotal.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\estagio2.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux1bit2x1.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\som32bits.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1zero.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\gpr.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\estagio4.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorInstrucoes.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorBolhas.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\estagio5.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd" VHDL uc_pipeline 1 0 0 -02
+".\..\compile\estagio3.vhd" VHDL uc_pipeline 2 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1 5bits.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux3x1.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits(3-1).vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio3.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\desloc_shamt.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits3op.vhd" VHDL uc_pipeline 1 0 0 -02
+"C:\My_Designs\uc_pipeline\uc_pipeline\src\reg32bitsEPC.vhd" VHDL uc_pipeline 1 0 0 -02
 . . 0 0 0

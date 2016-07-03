@@ -1,4 +1,4 @@
-455
+478
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -18,9 +18,9 @@
 ~E 1 "./../src/gpr.vhd" 25 DualRegFile
 ~A 1 "./../src/gpr.vhd" 41 dualregfile
 ~E 1 "./../compile/estagio2.vhd" 28 estagio2
-~A 1 "./../compile/estagio2.vhd" 59 estagio2
+~A 1 "./../compile/estagio2.vhd" 60 estagio2
 ~E 1 "./../compile/estagio3.vhd" 28 estagio3
-~A 1 "./../compile/estagio3.vhd" 61 estagio3
+~A 1 "./../compile/estagio3.vhd" 62 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
 ~E 1 "./../src/gpr.vhd" 25 gpr
@@ -72,4 +72,6 @@
 ~E 1 "./../compile/testes.vhd" 28 testes
 ~A 1 "./../compile/estagio1.vhd" 43 testes
 ~E 1 "./../src/ula.vhd" 5 ula
-~A 1 "./../src/ula.vhd" 13 behavior
+~A 1 "./../src/ula.vhd" 14 behavior
+~E 1 "./../src/UnidadeControle.vhd" 4 unidadecontrole
+~A 1 "./../src/UnidadeControle.vhd" 22 behavior
