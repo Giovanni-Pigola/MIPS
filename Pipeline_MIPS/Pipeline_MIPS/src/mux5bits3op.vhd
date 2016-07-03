@@ -1,14 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
-entity mux5bits3x1 is
+entity mux5bits3op is
 	port(op: in std_logic_vector(1 downto 0);
-	p1, p2, p3: in std_logic_vector(4 downto 0);
-	saida: out std_logic_vector(4 downto 0)
+	p1, p2, p3: in std_logic_vector(31 downto 0);
+	saida: out std_logic_vector(31 downto 0)
 	);
-end mux5bits3x1;			 
+end mux5bits3op;			 
 
-architecture mux3 of mux5bits3x1 is
+architecture mux3 of mux5bits3op is
 begin	
 	escolhe: process(op)
 	begin

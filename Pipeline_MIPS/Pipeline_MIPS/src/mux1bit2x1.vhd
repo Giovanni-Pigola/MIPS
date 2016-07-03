@@ -22,16 +22,16 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 
-entity mux1bit is
+entity mux1bit2x1 is
   port(
        S : in std_logic;
        I0 : in std_logic;
        I1 : in std_logic;
        O : out std_logic
   );
-end mux1bit;
+end mux1bit2x1;
 
-architecture mux1bit of mux1bit is
+architecture mux1bit of mux1bit2x1 is
 
 begin
 	sel: process(S)

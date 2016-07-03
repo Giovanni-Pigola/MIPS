@@ -22,7 +22,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity desloc is
+entity desc_comb is
   generic(
        Tprop: time := 1 ns
   );
@@ -32,9 +32,9 @@ entity desloc is
        I : in std_logic_vector(31 downto 0);
        O : out std_logic_vector(31 downto 0)
   );
-end desloc;
+end desc_comb;
 
-architecture deslocador_combinatorio of desloc is
+architecture deslocador_combinatorio of desc_comb is
 
 ---- Architecture declarations -----
 constant  Zer : std_logic_vector (31 downto 0) := (others => '0');

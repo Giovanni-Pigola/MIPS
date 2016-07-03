@@ -22,15 +22,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 
-entity mux1bitx is
+entity mux2x1zero is
   port(
        S : in std_logic;
-       In1, In2 : in std_logic;
+       In1 : in std_logic;
        O : out std_logic
   );
-end mux1bitx;
+end mux2x1zero;
 
-architecture mux1bitx of mux1bitx is
+architecture mux2x1zero of mux2x1zero is
 
 begin
 	sel: process(S)
@@ -38,10 +38,10 @@ begin
 		if(S='0') then
 			O<=In1;
 		else
-			O<=In2;
+			O<='0';
 		end if;
 		
 	end process;
 	
 
-end mux1bitx;
+end mux2x1zero;
