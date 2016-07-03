@@ -8,7 +8,7 @@ entity mux32bits is
 	);
 end mux32bits;			 
 
-architecture bev of mux5bits is
+architecture bev of mux32bits is
 begin	
 	escolhe: process(op)
 	begin
