@@ -6,6 +6,9 @@ entity regestagio2 is
   		wb : in std_logic;
   		m : in std_logic;
 		ex : in std_logic;
+		ctrlMux3 : in std_logic;
+		ctrlMux5 : in std_logic;
+		ctrlULA : in std_logic;
 		clock: in std_logic;
        	entradaPC : in std_logic_vector(31 downto 0); 
 		entradaSignExtend : in std_logic_vector(31 downto 0);  
@@ -17,6 +20,9 @@ entity regestagio2 is
        	saida2521 : out std_logic_vector(4 downto 0);
 		saida2016 : out std_logic_vector(4 downto 0);
 		saidaPC: out std_logic_vector(31 downto 0);
+		sctrlMux3 : out std_logic;
+		sctrlMux5 : out std_logic;
+		sctrlULA : out std_logic;
 		wbsaida: out std_logic;
 		msaida:	out std_logic;
 		exsaida: out std_logic
@@ -35,7 +41,10 @@ begin
 			saidaGPR2016<=entradaGPR2016;
 			saida2521<=entrada32bits(25 downto 21);
 			saida2016<=entrada32bits(20 downto 16);
-			saidaPC<=entradaPC;
+			saidaPC<=entradaPC;	
+			sctrlMux3<=ctrlMux3;
+			sctrlMux5<=ctrlMux5;
+			sctrlULA<=ctrlULA;
 		end if;
 	end process;
 end reg2;
