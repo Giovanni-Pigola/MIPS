@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : c:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
--- Generated   : Sun Jul  3 15:04:12 2016
--- From        : c:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
+-- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
+-- Generated   : Sun Jul  3 17:03:24 2016
+-- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------

@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : c:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
--- Generated   : Sun Jul  3 15:04:49 2016
--- From        : c:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
+-- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
+-- Generated   : Sun Jul  3 17:14:42 2016
+-- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -30,6 +30,7 @@ entity estagio3 is
        UCctrl : in STD_LOGIC;
        clock : in STD_LOGIC;
        ctrlMux3 : in STD_LOGIC;
+       ctrlMux5 : in STD_LOGIC;
        hazardctrl : in STD_LOGIC;
        m_ctrl : in STD_LOGIC;
        m_in : in STD_LOGIC;
@@ -39,14 +40,16 @@ entity estagio3 is
        Ulaestagio4 : in STD_LOGIC_VECTOR(31 downto 0);
        entrada : in STD_LOGIC_VECTOR(31 downto 0);
        entradaepc : in STD_LOGIC_VECTOR(31 downto 0);
+       forwardingCtrl1 : in STD_LOGIC_VECTOR(1 downto 0);
+       forwardingCtrl2 : in STD_LOGIC_VECTOR(1 downto 0);
        gpr2016 : in STD_LOGIC_VECTOR(31 downto 0);
        gpr2521 : in STD_LOGIC_VECTOR(31 downto 0);
-       hazardCtrl1 : in STD_LOGIC_VECTOR(1 downto 0);
-       hazardCtrl2 : in STD_LOGIC_VECTOR(1 downto 0);
        i2016 : in STD_LOGIC_VECTOR(4 downto 0);
        i2521 : in STD_LOGIC_VECTOR(4 downto 0);
        muxEstagio5 : in STD_LOGIC_VECTOR(31 downto 0);
+       muxctrl4 : in STD_LOGIC_VECTOR(1 downto 0);
        m_out : out STD_LOGIC;
+       sctrlMux5 : out STD_LOGIC;
        wb_out : out STD_LOGIC;
        saidaImediato : out STD_LOGIC_VECTOR(4 downto 0);
        saidaMux : out STD_LOGIC_VECTOR(31 downto 0);
@@ -104,12 +107,14 @@ component regestagio3
        D5 : in STD_LOGIC_VECTOR(4 downto 0);
        UCctrl : in STD_LOGIC;
        clock : in STD_LOGIC;
+       ctrlMux5 : in STD_LOGIC;
        hazardctrl : in STD_LOGIC;
        Q1 : out STD_LOGIC;
        Q2 : out STD_LOGIC;
        Q3 : out STD_LOGIC_VECTOR(31 downto 0);
        Q4 : out STD_LOGIC_VECTOR(31 downto 0);
-       Q5 : out STD_LOGIC_VECTOR(4 downto 0)
+       Q5 : out STD_LOGIC_VECTOR(4 downto 0);
+       sctrlMux5 : out STD_LOGIC
   );
 end component;
 component ula
@@ -130,9 +135,6 @@ component mux5bits3op
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
 signal NET2501 : STD_LOGIC;
@@ -143,16 +145,12 @@ signal BUS2843 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS2954 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS2989 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS3024 : STD_LOGIC_VECTOR(31 downto 0);
-signal op : STD_LOGIC_VECTOR(1 downto 0);
 signal p1 : STD_LOGIC_VECTOR(31 downto 0);
 signal p2 : STD_LOGIC_VECTOR(31 downto 0);
 signal p3 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q3 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q4 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q5 : STD_LOGIC_VECTOR(4 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
 
 begin
 
@@ -174,8 +172,8 @@ U11 : mux2x1zero
 
 U14 : mux5bits3op
   port map(
-       op => op,
-       p1 => p1,
+       op => forwardingCtrl2,
+       p1 => gpr2016,
        p2 => p2,
        p3 => p3,
        saida => BUS3024
@@ -202,10 +200,9 @@ U21 : desloc_shamt
 
 U4 : mux32bits
   port map(
-       op(0) => Dangling_Input_Signal,
-       op(1) => Dangling_Input_Signal,
        e1 => BUS2449,
        e2 => BUS2954,
+       op => muxctrl4,
        saida => BUS2843
   );
 
@@ -223,7 +220,9 @@ U5 : regestagio3
        Q5 => Q5,
        UCctrl => UCctrl,
        clock => clock,
-       hazardctrl => hazardctrl
+       ctrlMux5 => ctrlMux5,
+       hazardctrl => hazardctrl,
+       sctrlMux5 => sctrlMux5
   );
 
 U6 : mux2x1_5bits
@@ -242,7 +241,7 @@ U7 : reg32bitsEPC
 
 U9 : mux5bits3op
   port map(
-       op => op,
+       op => forwardingCtrl1,
        p1 => p1,
        p2 => p2,
        p3 => p3,
@@ -254,10 +253,7 @@ U9 : mux5bits3op
 
     -- Inputs terminals
 	p2 <= Ulaestagio4;
-	p1 <= gpr2016;
 	p1 <= gpr2521;
-	op <= hazardCtrl1;
-	op <= hazardCtrl2;
 	p3 <= muxEstagio5;
 
     -- Output\buffer terminals
@@ -265,9 +261,5 @@ U9 : mux5bits3op
 	saidaMux <= Q4;
 	saidaULA <= Q3;
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end estagio3;

@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : c:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineTotal.vhd
--- Generated   : Sun Jul  3 12:45:54 2016
--- From        : c:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineTotal.bde
+-- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineTotal.vhd
+-- Generated   : Sun Jul  3 17:03:23 2016
+-- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineTotal.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------

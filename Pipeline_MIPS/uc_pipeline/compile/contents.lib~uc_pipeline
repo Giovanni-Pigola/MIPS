@@ -1,4 +1,4 @@
-423
+455
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -20,7 +20,7 @@
 ~E 1 "./../compile/estagio2.vhd" 28 estagio2
 ~A 1 "./../compile/estagio2.vhd" 59 estagio2
 ~E 1 "./../compile/estagio3.vhd" 28 estagio3
-~A 1 "./../compile/estagio3.vhd" 58 estagio3
+~A 1 "./../compile/estagio3.vhd" 61 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
 ~E 1 "./../src/gpr.vhd" 25 gpr
@@ -59,7 +59,7 @@
 ~E 1 "./../src/regestagio2.vhd" 4 regestagio2
 ~A 1 "./../src/regestagio2.vhd" 35 reg2
 ~E 1 "./../src/regestagio3.vhd" 4 regestagio3
-~A 1 "./../src/regestagio3.vhd" 22 reg
+~A 1 "./../src/regestagio3.vhd" 24 reg
 ~E 1 "./../src/regestagio4.vhd" 4 regestagio4
 ~A 1 "./../src/regestagio4.vhd" 20 reg4
 ~E 1 "./../src/regpc.vhd" 4 regpc

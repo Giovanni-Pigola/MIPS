@@ -322,6 +322,123 @@ PAGE ""
 </symbol>
 
 
+V 000044 40 1592 1467559787364 desloc_shamt
+<?xml version="1.0"?>
+<symbol name="desloc_shamt">
+<shape guid="e8325612-f1c1-429b-a659-cf96973dc9af" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467559787"
+  #NAME="desloc_shamt"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="e8325612-f1c1-429b-a659-cf96973dc9af"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,280,120)
+  FREEID 8
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,260,120)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,140,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (158,30,255,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,117,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="entrada(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (280,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="saida(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="shamt(4:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
+
+]]>
+</shape>
+</symbol>
+
+
 V 000043 40 1256 1467492803212 deslocador2
 <?xml version="1.0"?>
 <symbol name="deslocador2">
@@ -2174,10 +2291,156 @@ PAGE ""
 </symbol>
 
 
-I 000040 40 1483 1467493150511 mux1bitx
+V 000040 40 1916 1467568255915 mux1bitx
 <?xml version="1.0"?>
 <symbol name="mux1bitx">
 <shape guid="f3945bfe-6419-471a-a28d-f3ee839e6042" default="1">
+<![CDATA[SYMB0100
+
+HEADER
+{
+ FREEID 1
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467568255"
+  #NAME="mux1bitx"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="f3945bfe-6419-471a-a28d-f3ee839e6042"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,160,140)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,-8,140,124)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,20)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="S"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,10,40,34)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="O"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (118,30,135,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="In1"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,50,54,74)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,100)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="In2"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,90,54,114)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+ }
+ 
+}
+
+
+]]>
+</shape>
+</symbol>
+
+
+V 000044 40 1880 1467569074231 mux2x1_5bits
+<?xml version="1.0"?>
+<symbol name="mux2x1_5bits">
+<shape guid="8d9ac7cb-1864-4ef5-8b13-013b7bc15ec5" default="1">
 <![CDATA[SYMB0100
 HEADER
 {
@@ -2188,9 +2451,149 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
   #LANGUAGE="VHDL"
-  #MODIFIED="1467493150"
-  #NAME="mux1bitx"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="f3945bfe-6419-471a-a28d-f3ee839e6042"
+  #MODIFIED="1467569074"
+  #NAME="mux2x1_5bits"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8d9ac7cb-1864-4ef5-8b13-013b7bc15ec5"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,160,160)
+  FREEID 10
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,140,160)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,40,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (79,30,135,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,93,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,93,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="S"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="O(4:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="In1(4:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="In2(4:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
+
+]]>
+</shape>
+</symbol>
+
+
+V 000042 40 1488 1467568674174 mux2x1zero
+<?xml version="1.0"?>
+<symbol name="mux2x1zero">
+<shape guid="9f8bca18-a1c2-4fa6-b3bb-79a6acfa2303" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467568674"
+  #NAME="mux2x1zero"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="9f8bca18-a1c2-4fa6-b3bb-79a6acfa2303"
  }
 }
 PAGE "" 
@@ -2230,7 +2633,7 @@ PAGE ""
   TEXT  7, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,70,44,94)
+   RECT (25,70,54,94)
    ALIGN 4
    MARGINS (1,1)
    PARENT 6
@@ -2272,7 +2675,7 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="I0"
+    #NAME="In1"
     #VHDL_TYPE="STD_LOGIC"
    }
    LINE  2, 0, 0
@@ -2414,6 +2817,171 @@ PAGE ""
     #DOWNTO="1"
     #LENGTH="20"
     #NAME="e2(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
+
+]]>
+</shape>
+</symbol>
+
+
+V 000038 40 2238 1467558657991 mux3x1
+<?xml version="1.0"?>
+<symbol name="mux3x1">
+<shape guid="8a9b3fa0-6cf8-45bd-96bc-5852bddb408c" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467558657"
+  #NAME="mux3x1"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8a9b3fa0-6cf8-45bd-96bc-5852bddb408c"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,240,200)
+  FREEID 12
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,220,200)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,88,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (118,30,215,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,99,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,99,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,150,99,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="op(1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (240,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="saida(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="e1(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="e2(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="e3(31:0)"
     #VHDL_TYPE="STD_LOGIC_VECTOR"
    }
    LINE  2, 0, 0
@@ -2572,6 +3140,176 @@ PAGE ""
 </symbol>
 
 
+V 000043 40 2280 1467565294581 mux5bits3op
+<?xml version="1.0"?>
+<symbol name="mux5bits3op">
+<shape guid="a31a39a3-9c2d-43f7-8434-69156a02d0a2" default="1">
+<![CDATA[SYMB0100
+
+HEADER
+{
+ FREEID 14
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467565294"
+  #NAME="mux5bits3op"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a31a39a3-9c2d-43f7-8434-69156a02d0a2"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,220,220)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,200,200)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="op(1:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,88,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (220,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="saida(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (98,30,195,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="p1(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,99,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="p2(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,99,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="p3(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,150,99,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+ }
+ 
+}
+
+
+]]>
+</shape>
+</symbol>
+
+
 V 000040 40 2024 1467557050124 mux5bitx
 <?xml version="1.0"?>
 <symbol name="mux5bitx">
@@ -2707,6 +3445,192 @@ PAGE ""
     OUTLINE 0,3, (128,0,0)
     POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
+   }
+  }
+ }
+}
+
+]]>
+</shape>
+</symbol>
+
+
+V 000044 40 1264 1467569086065 reg32bitsepc
+<?xml version="1.0"?>
+<symbol name="reg32bitsEPC">
+<shape guid="4da08580-8d7f-48bb-952e-eef33d844a3d" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467569086"
+  #NAME="reg32bitsEPC"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="4da08580-8d7f-48bb-952e-eef33d844a3d"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,360,80)
+  FREEID 6
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,340,80)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,172,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (206,30,335,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="entradaepc(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (360,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="saidaepc(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}
+
+]]>
+</shape>
+</symbol>
+
+
+V 000038 40 1252 1467562547527 regepc
+<?xml version="1.0"?>
+<symbol name="regEPC">
+<shape guid="a682c810-28d4-4d41-a464-e946bca6622f" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1467562547"
+  #NAME="regEPC"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a682c810-28d4-4d41-a464-e946bca6622f"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,360,80)
+  FREEID 6
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,340,80)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,172,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (206,30,335,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="entradaepc(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (360,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="saidaepc(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
    }
   }
  }
@@ -2937,7 +3861,7 @@ PAGE ""
 </symbol>
 
 
-I 000043 40 8436 1467531347799 regestagio2
+V 000043 40 9468 1467566256243 regestagio2
 <?xml version="1.0"?>
 <symbol name="regestagio2">
 <shape guid="a768d94b-9394-4bd5-8017-8821054b8b26" default="1">
@@ -2945,7 +3869,7 @@ I 000043 40 8436 1467531347799 regestagio2
 
 HEADER
 {
- FREEID 38
+ FREEID 50
  VARIABLES
  {
   #CUSTOM_NAME=""
@@ -2953,7 +3877,7 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
   #LANGUAGE="VHDL"
-  #MODIFIED="1467531347"
+  #MODIFIED="1467566256"
   #NAME="regestagio2"
   #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a768d94b-9394-4bd5-8017-8821054b8b26"
  }
@@ -2964,7 +3888,7 @@ PAGE ""
  PAGEHEADER
  {
   MARGINS (200,200,200,200)
-  RECT (0,-20,360,560)
+  RECT (0,-20,360,640)
  }
  
  BODY
@@ -2975,7 +3899,7 @@ PAGE ""
    {
     #OUTLINE_FILLING="1"
    }
-   AREA (20,0,340,540)
+   AREA (20,0,340,620)
   }
   PIN  2, 0, 0
   {
@@ -3008,7 +3932,7 @@ PAGE ""
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saidaGPR2521(4:0)"
+    #NAME="saidaGPR2521(31:0)"
    }
    LINE  2, 0, 0
    {
@@ -3020,7 +3944,7 @@ PAGE ""
   TEXT  5, 0, 0
   {
    TEXT "$#NAME"
-   RECT (163,370,335,394)
+   RECT (152,370,335,394)
    ALIGN 6
    MARGINS (1,1)
    PARENT 4
@@ -3056,7 +3980,7 @@ PAGE ""
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saidaGPR2016(4:0)"
+    #NAME="saidaGPR2016(31:0)"
    }
    LINE  2, 0, 0
    {
@@ -3068,7 +3992,7 @@ PAGE ""
   TEXT  9, 0, 0
   {
    TEXT "$#NAME"
-   RECT (163,410,335,434)
+   RECT (152,410,335,434)
    ALIGN 6
    MARGINS (1,1)
    PARENT 8
@@ -3123,7 +4047,7 @@ PAGE ""
   }
   PIN  14, 0, 0
   {
-   COORD (0,480)
+   COORD (0,560)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3140,7 +4064,7 @@ PAGE ""
   TEXT  15, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,470,71,494)
+   RECT (25,550,71,574)
    ALIGN 4
    MARGINS (1,1)
    PARENT 14
@@ -3171,7 +4095,7 @@ PAGE ""
   }
   PIN  18, 0, 0
   {
-   COORD (0,280)
+   COORD (0,340)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3188,7 +4112,7 @@ PAGE ""
   TEXT  19, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,270,167,294)
+   RECT (25,330,167,354)
    ALIGN 4
    MARGINS (1,1)
    PARENT 18
@@ -3219,7 +4143,7 @@ PAGE ""
   }
   PIN  22, 0, 0
   {
-   COORD (0,400)
+   COORD (0,480)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3236,7 +4160,7 @@ PAGE ""
   TEXT  23, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,390,237,414)
+   RECT (25,470,237,494)
    ALIGN 4
    MARGINS (1,1)
    PARENT 22
@@ -3267,7 +4191,7 @@ PAGE ""
   }
   PIN  26, 0, 0
   {
-   COORD (0,320)
+   COORD (0,400)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3284,7 +4208,7 @@ PAGE ""
   TEXT  27, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,310,215,334)
+   RECT (25,390,215,414)
    ALIGN 4
    MARGINS (1,1)
    PARENT 26
@@ -3315,7 +4239,7 @@ PAGE ""
   }
   PIN  30, 0, 0
   {
-   COORD (0,360)
+   COORD (0,440)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3332,7 +4256,7 @@ PAGE ""
   TEXT  31, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,350,215,374)
+   RECT (25,430,215,454)
    ALIGN 4
    MARGINS (1,1)
    PARENT 30
@@ -3363,7 +4287,7 @@ PAGE ""
   }
   PIN  34, 0, 0
   {
-   COORD (0,440)
+   COORD (0,520)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -3380,7 +4304,7 @@ PAGE ""
   TEXT  35, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,430,192,454)
+   RECT (25,510,192,534)
    ALIGN 4
    MARGINS (1,1)
    PARENT 34
@@ -3529,10 +4453,488 @@ PAGE ""
    MARGINS (1,1)
    PARENT 46
   }
+  PIN  48, 0, 0
+  {
+   COORD (0,260)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="ctrlMux32"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  49, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,250,108,274)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 48
+  }
+  PIN  50, 0, 0
+  {
+   COORD (360,540)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="saida32bits(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (-20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  51, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (186,530,335,554)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 50
+  }
+  PIN  52, 0, 0
+  {
+   COORD (360,260)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="sctrlMux32"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (-20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  53, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (242,250,335,274)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 52
+  }
  }
  
 }
 
+
+]]>
+</shape>
+</symbol>
+
+
+I 000043 40 6564 1467576670657 regestagio3
+<?xml version="1.0"?>
+<symbol name="regestagio3">
+<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+  FREEID 38
+  VARIABLES
+  {
+    #CUSTOM_NAME=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1467576670"
+    #NAME="regestagio3"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    MARGINS (200,200,200,200)
+    RECT (0,-20,200,460)
+    FREEID 32
+  }
+  BODY
+  {
+    RECT 1,-1,0
+    {
+      VARIABLES
+      {
+        #OUTLINE_FILLING="1"
+      }
+      AREA (20,0,180,440)
+    }
+    PIN 10,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="clock"
+      }
+      COORD (0,120)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 11,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,110,71,134)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 10
+    }
+    PIN 12,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="Q3(31:0)"
+      }
+      COORD (200,120)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((-20,0),(0,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 13,0,0
+    {
+      TEXT "$#NAME"
+      RECT (97,110,175,134)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 12
+    }
+    PIN 14,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="D1"
+      }
+      COORD (0,160)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 15,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,150,52,174)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 14
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="Q4(31:0)"
+      }
+      COORD (200,160)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((-20,0),(0,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (97,150,175,174)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 16
+    }
+    PIN 18,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="D2"
+      }
+      COORD (0,200)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 19,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,190,52,214)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 18
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="hazardctrl"
+      }
+      COORD (0,40)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="Q5(4:0)"
+      }
+      COORD (200,200)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((-20,0),(0,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (108,190,175,214)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 20
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="D3(31:0)"
+      }
+      COORD (0,240)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,230,102,254)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 22
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="D4(31:0)"
+      }
+      COORD (0,280)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,270,102,294)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 24
+    }
+    PIN 26,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="D5(4:0)"
+      }
+      COORD (0,320)
+      LINE 2,0,0
+      {
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,310,91,334)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 26
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="ctrlMux5"
+      }
+      COORD (0,360)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 28
+      ALIGN 4
+      RECT (25,346,105,378)
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,30,108,54)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 2
+    }
+    PIN 30,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="sctrlMux5"
+      }
+      COORD (0,400)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 31,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 30
+      ALIGN 4
+      RECT (25,386,105,418)
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="Q1"
+      }
+      COORD (200,40)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((-20,0),(0,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (147,30,175,54)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="UCctrl"
+      }
+      COORD (0,80)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((0,0),(20,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (25,70,79,94)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 6
+    }
+    PIN 8,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="Q2"
+      }
+      COORD (200,80)
+      LINE 2,0,0
+      {
+        OUTLINE 0,1,(0,0,255)
+        POINTS ((-20,0),(0,0))
+        FILL (1,(0,0,0),0)
+      }
+    }
+    TEXT 9,0,0
+    {
+      TEXT "$#NAME"
+      RECT (147,70,175,94)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 8
+    }
+  }
+}
 
 ]]>
 </shape>
@@ -4528,3228 +5930,6 @@ PAGE ""
 </symbol>
 
 
-I 000035 40 2027 1467557050225 ula
-<?xml version="1.0"?>
-<symbol name="ula">
-<shape guid="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467521325"
-  #NAME="ula"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,220,160)
-  FREEID 10
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,200,160)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,81,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (98,30,195,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,110,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,110,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 8
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="s_op0"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (220,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="saida(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="op1(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  PIN  8, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="op2(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 4758 1467557235256 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467557235"
-  #NAME="regestagio3"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,200,360)
-  FREEID 28
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,180,360)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,108,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,30,175,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,79,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,70,175,94)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 8
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,71,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  TEXT  13, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (97,110,175,134)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 12
-  }
-  TEXT  15, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,150,52,174)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 14
-  }
-  TEXT  17, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (97,150,175,174)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 16
-  }
-  TEXT  19, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,190,52,214)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 18
-  }
-  TEXT  21, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (108,190,175,214)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 20
-  }
-  TEXT  23, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,230,102,254)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 22
-  }
-  TEXT  25, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,270,102,294)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 24
-  }
-  TEXT  27, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,310,91,334)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 26
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="hazardctrl"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (200,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q1"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="UCctrl"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  8, 0, 0
-  {
-   COORD (200,80)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q2"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="clock"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  12, 0, 0
-  {
-   COORD (200,120)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="Q3(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  14, 0, 0
-  {
-   COORD (0,160)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D1"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  16, 0, 0
-  {
-   COORD (200,160)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="Q4(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  18, 0, 0
-  {
-   COORD (0,200)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D2"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  20, 0, 0
-  {
-   COORD (200,200)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="Q5(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  22, 0, 0
-  {
-   COORD (0,240)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="D3(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  24, 0, 0
-  {
-   COORD (0,280)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="D4(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  26, 0, 0
-  {
-   COORD (0,320)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="D5(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000038 40 2238 1467558657991 mux3x1
-<?xml version="1.0"?>
-<symbol name="mux3x1">
-<shape guid="8a9b3fa0-6cf8-45bd-96bc-5852bddb408c" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467558657"
-  #NAME="mux3x1"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8a9b3fa0-6cf8-45bd-96bc-5852bddb408c"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,240,200)
-  FREEID 12
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,220,200)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,88,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (118,30,215,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,99,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,99,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 8
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,150,99,174)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="op(1:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (240,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="saida(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="e1(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  8, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="e2(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,160)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="e3(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 2244 1467559093037 mux5bits3op
-<?xml version="1.0"?>
-<symbol name="mux5bits3op">
-<shape guid="a31a39a3-9c2d-43f7-8434-69156a02d0a2" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467559093"
-  #NAME="mux5bits3op"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a31a39a3-9c2d-43f7-8434-69156a02d0a2"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,220,200)
-  FREEID 12
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,200,200)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,88,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (109,30,195,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,88,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,88,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 8
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,150,88,174)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="op(1:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (220,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="saida(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="p1(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  8, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="p2(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,160)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="p3(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000035 40 2172 1467559173689 ula
-<?xml version="1.0"?>
-<symbol name="ula">
-<shape guid="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 1
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467559173"
-    #NAME="ula"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,220,260)
-    FREEID 14
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,200,240)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="e_2521(4:0)"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 10
-      ALIGN 4
-      RECT (25,146,115,178)
-    }
-    PIN 12,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="e_2016(4:0)"
-      }
-      COORD (0,200)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 13,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 12
-      ALIGN 4
-      RECT (25,186,115,218)
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="s_op0"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,81,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="saida(4:0)"
-      }
-      COORD (220,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (98,30,195,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000035 40 1943 1467559183864 ula
-<?xml version="1.0"?>
-<symbol name="ula">
-<shape guid="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a" default="1">
-<![CDATA[SYMB0100
-
-HEADER
-{
- FREEID 1
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467559183"
-  #NAME="ula"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="420fd9b7-af9d-48e3-b01f-cd2f605c6b8a"
- }
-}
-
-PAGE ""
-{
- PAGEHEADER
- {
-  MARGINS (200,200,200,200)
-  RECT (0,-20,220,180)
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,-6,200,165)
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="s_op0"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,81,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  PIN  4, 0, 0
-  {
-   COORD (220,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="saida(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (109,30,195,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,100)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="e_2521(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,90,132,114)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  12, 0, 0
-  {
-   COORD (0,140)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="e_2016(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  13, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,130,132,154)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 12
-  }
- }
- 
-}
-
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 5868 1467559637025 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 1
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467559636"
-    #NAME="regestagio3"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,200,380)
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,180,360)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="clock"
-      }
-      COORD (0,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,110,71,134)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 10
-    }
-    PIN 12,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q3(4:0)"
-      }
-      COORD (200,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 13,0,0
-    {
-      TEXT "$#NAME"
-      RECT (97,110,175,134)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 12
-    }
-    PIN 14,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D1"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 15,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,150,52,174)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 14
-    }
-    PIN 16,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q4(4:0)"
-      }
-      COORD (200,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 17,0,0
-    {
-      TEXT "$#NAME"
-      RECT (97,150,175,174)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 16
-    }
-    PIN 18,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D2"
-      }
-      COORD (0,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 19,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,190,52,214)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 18
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="hazardctrl"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    PIN 20,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q5(4:0)"
-      }
-      COORD (200,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 21,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,190,175,214)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 20
-    }
-    PIN 22,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D3(4:0)"
-      }
-      COORD (0,240)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 23,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,230,102,254)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 22
-    }
-    PIN 24,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D4(4:0)"
-      }
-      COORD (0,280)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 25,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,270,102,294)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 24
-    }
-    PIN 26,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D5(4:0)"
-      }
-      COORD (0,320)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 27,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,310,91,334)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 26
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,108,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q1"
-      }
-      COORD (200,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,30,175,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-    PIN 6,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="UCctrl"
-      }
-      COORD (0,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 7,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,70,79,94)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 6
-    }
-    PIN 8,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q2"
-      }
-      COORD (200,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 9,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,70,175,94)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 8
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000044 40 1592 1467559787364 desloc_shamt
-<?xml version="1.0"?>
-<symbol name="desloc_shamt">
-<shape guid="e8325612-f1c1-429b-a659-cf96973dc9af" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467559787"
-  #NAME="desloc_shamt"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="e8325612-f1c1-429b-a659-cf96973dc9af"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,280,120)
-  FREEID 8
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,260,120)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,140,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (158,30,255,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,117,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="entrada(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (280,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="saida(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="shamt(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 6603 1467559894383 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 30
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467559894"
-    #NAME="regestagio3"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,200,420)
-    FREEID 32
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,180,400)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="clock"
-      }
-      COORD (0,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,110,71,134)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 10
-    }
-    PIN 12,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q3(4:0)"
-      }
-      COORD (200,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 13,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,110,175,134)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 12
-    }
-    PIN 14,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D1"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 15,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,150,52,174)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 14
-    }
-    PIN 16,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q4(4:0)"
-      }
-      COORD (200,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 17,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,150,175,174)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 16
-    }
-    PIN 18,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D2"
-      }
-      COORD (0,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 19,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,190,52,214)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 18
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="hazardctrl"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    PIN 20,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q5(4:0)"
-      }
-      COORD (200,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 21,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,190,175,214)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 20
-    }
-    PIN 22,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D3(4:0)"
-      }
-      COORD (0,240)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 23,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,230,91,254)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 22
-    }
-    PIN 24,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D4(4:0)"
-      }
-      COORD (0,280)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 25,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,270,91,294)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 24
-    }
-    PIN 26,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D5(4:0)"
-      }
-      COORD (0,320)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 27,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,310,91,334)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 26
-    }
-    PIN 28,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D6(31:0)"
-      }
-      COORD (0,360)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 29,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 28
-      ALIGN 4
-      RECT (25,346,105,378)
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,108,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 30,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q6(31:0)"
-      }
-      COORD (200,240)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(-20,0))
-      }
-    }
-    TEXT 31,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 30
-      ALIGN 6
-      RECT (95,226,175,258)
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q1"
-      }
-      COORD (200,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,30,175,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-    PIN 6,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="UCctrl"
-      }
-      COORD (0,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 7,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,70,79,94)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 6
-    }
-    PIN 8,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q2"
-      }
-      COORD (200,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 9,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,70,175,94)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 8
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 5624 1467559898454 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-
-HEADER
-{
- FREEID 30
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467559898"
-  #NAME="regestagio3"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
- }
-}
-
-PAGE ""
-{
- PAGEHEADER
- {
-  MARGINS (200,200,200,200)
-  RECT (0,-20,200,420)
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,180,400)
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="hazardctrl"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,108,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  PIN  4, 0, 0
-  {
-   COORD (200,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q1"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,30,175,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="UCctrl"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,79,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  PIN  8, 0, 0
-  {
-   COORD (200,80)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q2"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,70,175,94)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 8
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="clock"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,71,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  12, 0, 0
-  {
-   COORD (200,120)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q3(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  13, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (108,110,175,134)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 12
-  }
-  PIN  14, 0, 0
-  {
-   COORD (0,160)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D1"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  15, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,150,52,174)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 14
-  }
-  PIN  16, 0, 0
-  {
-   COORD (200,160)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q4(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  17, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (108,150,175,174)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 16
-  }
-  PIN  18, 0, 0
-  {
-   COORD (0,200)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D2"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  19, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,190,52,214)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 18
-  }
-  PIN  20, 0, 0
-  {
-   COORD (200,200)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q5(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  21, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (108,190,175,214)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 20
-  }
-  PIN  22, 0, 0
-  {
-   COORD (0,240)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D3(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  23, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,230,91,254)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 22
-  }
-  PIN  24, 0, 0
-  {
-   COORD (0,280)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D4(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  25, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,270,91,294)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 24
-  }
-  PIN  26, 0, 0
-  {
-   COORD (0,320)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D5(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  27, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,310,91,334)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 26
-  }
-  PIN  28, 0, 0
-  {
-   COORD (0,360)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D6(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  29, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,350,102,374)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 28
-  }
-  PIN  30, 0, 0
-  {
-   COORD (200,240)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q6(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (-20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  31, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (97,230,175,254)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 30
-  }
- }
- 
-}
-
-
-]]>
-</shape>
-</symbol>
-
-
-V 000038 40 1252 1467562547527 regepc
-<?xml version="1.0"?>
-<symbol name="regEPC">
-<shape guid="a682c810-28d4-4d41-a464-e946bca6622f" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467562547"
-  #NAME="regEPC"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a682c810-28d4-4d41-a464-e946bca6622f"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,360,80)
-  FREEID 6
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,340,80)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,172,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (206,30,335,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="entradaepc(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (360,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="saidaepc(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-I 000043 40 5873 1467565131117 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 34
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467565131"
-    #NAME="regestagio3"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,200,420)
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,180,400)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="clock"
-      }
-      COORD (0,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,110,71,134)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 10
-    }
-    PIN 12,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q3(31:0)"
-      }
-      COORD (200,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 13,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,110,175,134)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 12
-    }
-    PIN 14,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D1"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 15,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,150,52,174)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 14
-    }
-    PIN 16,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q4(31:0)"
-      }
-      COORD (200,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 17,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,150,175,174)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 16
-    }
-    PIN 18,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="D2"
-      }
-      COORD (0,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 19,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,190,52,214)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 18
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="hazardctrl"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    PIN 20,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="Q5(4:0)"
-      }
-      COORD (200,200)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 21,0,0
-    {
-      TEXT "$#NAME"
-      RECT (108,190,175,214)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 20
-    }
-    PIN 22,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D3(31:0)"
-      }
-      COORD (0,240)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 23,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,230,91,254)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 22
-    }
-    PIN 24,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D4(31:0)"
-      }
-      COORD (0,280)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 25,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,270,91,294)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 24
-    }
-    PIN 26,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="D5(4:0)"
-      }
-      COORD (0,320)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 27,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,310,91,334)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 26
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,108,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q1"
-      }
-      COORD (200,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,30,175,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-    PIN 6,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="UCctrl"
-      }
-      COORD (0,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 7,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,70,79,94)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 6
-    }
-    PIN 8,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="Q2"
-      }
-      COORD (200,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 9,0,0
-    {
-      TEXT "$#NAME"
-      RECT (147,70,175,94)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 8
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000043 40 4952 1467565133559 regestagio3
-<?xml version="1.0"?>
-<symbol name="regestagio3">
-<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
-<![CDATA[SYMB0100
-
-HEADER
-{
- FREEID 36
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467565133"
-  #NAME="regestagio3"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
- }
-}
-
-PAGE ""
-{
- PAGEHEADER
- {
-  MARGINS (200,200,200,200)
-  RECT (0,-20,200,420)
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,180,400)
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="hazardctrl"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,108,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  PIN  4, 0, 0
-  {
-   COORD (200,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q1"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,30,175,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="UCctrl"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,79,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  PIN  8, 0, 0
-  {
-   COORD (200,80)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q2"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (147,70,175,94)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 8
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="clock"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,71,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  12, 0, 0
-  {
-   COORD (200,120)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q3(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  13, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (97,110,175,134)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 12
-  }
-  PIN  14, 0, 0
-  {
-   COORD (0,160)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D1"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  15, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,150,52,174)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 14
-  }
-  PIN  16, 0, 0
-  {
-   COORD (200,160)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q4(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  17, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (97,150,175,174)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 16
-  }
-  PIN  18, 0, 0
-  {
-   COORD (0,200)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D2"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  19, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,190,52,214)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 18
-  }
-  PIN  20, 0, 0
-  {
-   COORD (200,200)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="Q5(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  21, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (108,190,175,214)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 20
-  }
-  PIN  22, 0, 0
-  {
-   COORD (0,240)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D3(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  23, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,230,102,254)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 22
-  }
-  PIN  24, 0, 0
-  {
-   COORD (0,280)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D4(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  25, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,270,102,294)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 24
-  }
-  PIN  26, 0, 0
-  {
-   COORD (0,320)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="D5(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  27, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,310,91,334)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 26
-  }
- }
- 
-}
-
-
-]]>
-</shape>
-</symbol>
-
-
 V 000035 40 2277 1467565226059 ula
 <?xml version="1.0"?>
 <symbol name="ula">
@@ -7892,183 +6072,15 @@ PAGE ""
 </symbol>
 
 
-I 000043 40 2709 1467565292311 mux5bits3op
+I 000043 40 5624 1467576742337 regestagio3
 <?xml version="1.0"?>
-<symbol name="mux5bits3op">
-<shape guid="a31a39a3-9c2d-43f7-8434-69156a02d0a2" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 1
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467565292"
-    #NAME="mux5bits3op"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a31a39a3-9c2d-43f7-8434-69156a02d0a2"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,220,220)
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,200,200)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="p3(31:0)"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,150,88,174)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 10
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="op(1:0)"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,88,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="saida(31:0)"
-      }
-      COORD (220,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (109,30,195,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-    PIN 6,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="p1(31:0)"
-      }
-      COORD (0,80)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 7,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,70,88,94)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 6
-    }
-    PIN 8,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="p2(31:0)"
-      }
-      COORD (0,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 9,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,110,88,134)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 8
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000043 40 2280 1467565294581 mux5bits3op
-<?xml version="1.0"?>
-<symbol name="mux5bits3op">
-<shape guid="a31a39a3-9c2d-43f7-8434-69156a02d0a2" default="1">
+<symbol name="regestagio3">
+<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
 <![CDATA[SYMB0100
 
 HEADER
 {
- FREEID 14
+ FREEID 38
  VARIABLES
  {
   #CUSTOM_NAME=""
@@ -8076,9 +6088,9 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
   #LANGUAGE="VHDL"
-  #MODIFIED="1467565294"
-  #NAME="mux5bits3op"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a31a39a3-9c2d-43f7-8434-69156a02d0a2"
+  #MODIFIED="1467576742"
+  #NAME="regestagio3"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
  }
 }
 
@@ -8087,7 +6099,7 @@ PAGE ""
  PAGEHEADER
  {
   MARGINS (200,200,200,200)
-  RECT (0,-20,220,220)
+  RECT (0,-20,200,460)
  }
  
  BODY
@@ -8098,7 +6110,7 @@ PAGE ""
    {
     #OUTLINE_FILLING="1"
    }
-   AREA (20,0,200,200)
+   AREA (20,0,180,440)
   }
   PIN  2, 0, 0
   {
@@ -8107,11 +6119,11 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="op(1:0)"
+    #NAME="hazardctrl"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
    }
@@ -8119,23 +6131,23 @@ PAGE ""
   TEXT  3, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,30,88,54)
+   RECT (25,30,108,54)
    ALIGN 4
    MARGINS (1,1)
    PARENT 2
   }
   PIN  4, 0, 0
   {
-   COORD (220,40)
+   COORD (200,40)
    VARIABLES
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saida(31:0)"
+    #NAME="Q1"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (-20,0), (0,0) )
     FILL (1,(0,0,0),0)
    }
@@ -8143,7 +6155,7 @@ PAGE ""
   TEXT  5, 0, 0
   {
    TEXT "$#NAME"
-   RECT (98,30,195,54)
+   RECT (147,30,175,54)
    ALIGN 6
    MARGINS (1,1)
    PARENT 4
@@ -8155,11 +6167,11 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="p1(31:0)"
+    #NAME="UCctrl"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
    }
@@ -8167,47 +6179,47 @@ PAGE ""
   TEXT  7, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,70,99,94)
+   RECT (25,70,79,94)
    ALIGN 4
    MARGINS (1,1)
    PARENT 6
   }
   PIN  8, 0, 0
   {
-   COORD (0,120)
+   COORD (200,80)
    VARIABLES
    {
-    #DIRECTION="IN"
+    #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="p2(31:0)"
+    #NAME="Q2"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (-20,0), (0,0) )
     FILL (1,(0,0,0),0)
    }
   }
   TEXT  9, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,110,99,134)
-   ALIGN 4
+   RECT (147,70,175,94)
+   ALIGN 6
    MARGINS (1,1)
    PARENT 8
   }
   PIN  10, 0, 0
   {
-   COORD (0,160)
+   COORD (0,120)
    VARIABLES
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="p3(31:0)"
+    #NAME="clock"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
    }
@@ -8215,10 +6227,250 @@ PAGE ""
   TEXT  11, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,150,99,174)
+   RECT (25,110,71,134)
    ALIGN 4
    MARGINS (1,1)
    PARENT 10
+  }
+  PIN  12, 0, 0
+  {
+   COORD (200,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Q3(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (97,110,175,134)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  PIN  14, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D1"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,150,52,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 14
+  }
+  PIN  16, 0, 0
+  {
+   COORD (200,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Q4(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (97,150,175,174)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 16
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D2"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,190,52,214)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  PIN  20, 0, 0
+  {
+   COORD (200,200)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Q5(4:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (108,190,175,214)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 20
+  }
+  PIN  22, 0, 0
+  {
+   COORD (0,320)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D3(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,310,102,334)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 22
+  }
+  PIN  24, 0, 0
+  {
+   COORD (0,360)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D4(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,350,102,374)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 24
+  }
+  PIN  26, 0, 0
+  {
+   COORD (0,400)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D5(4:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,390,91,414)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 26
+  }
+  PIN  28, 0, 0
+  {
+   COORD (0,240)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="ctrlMux5"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,230,97,254)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+  }
+  PIN  30, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="sctrlMux5"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,270,107,294)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 30
   }
  }
  
@@ -8230,22 +6482,22 @@ PAGE ""
 </symbol>
 
 
-I 000044 40 11099 1467566195077 regestagio2
+I 000043 40 6664 1467576744652 regestagio3
 <?xml version="1.0"?>
-<symbol name="regestagio2">
-<shape guid="a768d94b-9394-4bd5-8017-8821054b8b26" default="1">
+<symbol name="regestagio3">
+<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
 <![CDATA[SYMB0100
 HEADER
 {
-  FREEID 50
+  FREEID 38
   VARIABLES
   {
     #CUSTOM_NAME=""
     #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1467566195"
-    #NAME="regestagio2"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a768d94b-9394-4bd5-8017-8821054b8b26"
+    #MODIFIED="1467576744"
+    #NAME="regestagio3"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
   }
 }
 PAGE ""
@@ -8253,8 +6505,7 @@ PAGE ""
   PAGEHEADER 
   {
     MARGINS (200,200,200,200)
-    RECT (0,-20,360,640)
-    FREEID 54
+    RECT (0,-20,200,460)
   }
   BODY
   {
@@ -8264,7 +6515,7 @@ PAGE ""
       {
         #OUTLINE_FILLING="1"
       }
-      AREA (20,0,340,620)
+      AREA (20,0,180,440)
     }
     PIN 10,0,0
     {
@@ -8272,7 +6523,7 @@ PAGE ""
       {
         #DIRECTION="IN"
         #LENGTH="20"
-        #NAME="ex"
+        #NAME="clock"
       }
       COORD (0,120)
       LINE 2,0,0
@@ -8285,7 +6536,7 @@ PAGE ""
     TEXT 11,0,0
     {
       TEXT "$#NAME"
-      RECT (25,110,47,134)
+      RECT (25,110,71,134)
       ALIGN 4
       MARGINS (1,1)
       PARENT 10
@@ -8297,9 +6548,9 @@ PAGE ""
         #DIRECTION="OUT"
         #DOWNTO="1"
         #LENGTH="20"
-        #NAME="saida2521(4:0)"
+        #NAME="Q3(31:0)"
       }
-      COORD (360,460)
+      COORD (200,120)
       LINE 2,0,0
       {
         OUTLINE 0,3,(128,0,0)
@@ -8310,7 +6561,7 @@ PAGE ""
     TEXT 13,0,0
     {
       TEXT "$#NAME"
-      RECT (205,450,335,474)
+      RECT (97,110,175,134)
       ALIGN 6
       MARGINS (1,1)
       PARENT 12
@@ -8321,9 +6572,9 @@ PAGE ""
       {
         #DIRECTION="IN"
         #LENGTH="20"
-        #NAME="clock"
+        #NAME="D1"
       }
-      COORD (0,480)
+      COORD (0,160)
       LINE 2,0,0
       {
         OUTLINE 0,1,(0,0,255)
@@ -8334,7 +6585,7 @@ PAGE ""
     TEXT 15,0,0
     {
       TEXT "$#NAME"
-      RECT (25,470,71,494)
+      RECT (25,150,52,174)
       ALIGN 4
       MARGINS (1,1)
       PARENT 14
@@ -8346,9 +6597,9 @@ PAGE ""
         #DIRECTION="OUT"
         #DOWNTO="1"
         #LENGTH="20"
-        #NAME="saida2016(4:0)"
+        #NAME="Q4(31:0)"
       }
-      COORD (360,500)
+      COORD (200,160)
       LINE 2,0,0
       {
         OUTLINE 0,3,(128,0,0)
@@ -8359,7 +6610,7 @@ PAGE ""
     TEXT 17,0,0
     {
       TEXT "$#NAME"
-      RECT (205,490,335,514)
+      RECT (97,150,175,174)
       ALIGN 6
       MARGINS (1,1)
       PARENT 16
@@ -8369,14 +6620,13 @@ PAGE ""
       VARIABLES
       {
         #DIRECTION="IN"
-        #DOWNTO="1"
         #LENGTH="20"
-        #NAME="entradaPC(31:0)"
+        #NAME="D2"
       }
-      COORD (0,280)
+      COORD (0,200)
       LINE 2,0,0
       {
-        OUTLINE 0,3,(128,0,0)
+        OUTLINE 0,1,(0,0,255)
         POINTS ((0,0),(20,0))
         FILL (1,(0,0,0),0)
       }
@@ -8384,7 +6634,7 @@ PAGE ""
     TEXT 19,0,0
     {
       TEXT "$#NAME"
-      RECT (25,270,167,294)
+      RECT (25,190,52,214)
       ALIGN 4
       MARGINS (1,1)
       PARENT 18
@@ -8395,7 +6645,7 @@ PAGE ""
       {
         #DIRECTION="IN"
         #LENGTH="20"
-        #NAME="wb"
+        #NAME="hazardctrl"
       }
       COORD (0,40)
       LINE 2,0,0
@@ -8412,9 +6662,9 @@ PAGE ""
         #DIRECTION="OUT"
         #DOWNTO="1"
         #LENGTH="20"
-        #NAME="saidaPC(31:0)"
+        #NAME="Q5(4:0)"
       }
-      COORD (360,320)
+      COORD (200,200)
       LINE 2,0,0
       {
         OUTLINE 0,3,(128,0,0)
@@ -8425,7 +6675,7 @@ PAGE ""
     TEXT 21,0,0
     {
       TEXT "$#NAME"
-      RECT (211,310,335,334)
+      RECT (108,190,175,214)
       ALIGN 6
       MARGINS (1,1)
       PARENT 20
@@ -8437,9 +6687,9 @@ PAGE ""
         #DIRECTION="IN"
         #DOWNTO="1"
         #LENGTH="20"
-        #NAME="entradaSignExtend(31:0)"
+        #NAME="D3(31:0)"
       }
-      COORD (0,400)
+      COORD (0,320)
       LINE 2,0,0
       {
         OUTLINE 0,3,(128,0,0)
@@ -8450,7 +6700,7 @@ PAGE ""
     TEXT 23,0,0
     {
       TEXT "$#NAME"
-      RECT (25,390,237,414)
+      RECT (25,310,102,334)
       ALIGN 4
       MARGINS (1,1)
       PARENT 22
@@ -8459,23 +6709,24 @@ PAGE ""
     {
       VARIABLES
       {
-        #DIRECTION="OUT"
+        #DIRECTION="IN"
+        #DOWNTO="1"
         #LENGTH="20"
-        #NAME="wbsaida"
+        #NAME="D4(31:0)"
       }
-      COORD (360,40)
+      COORD (0,360)
       LINE 2,0,0
       {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
+        OUTLINE 0,3,(128,0,0)
+        POINTS ((0,0),(20,0))
         FILL (1,(0,0,0),0)
       }
     }
     TEXT 25,0,0
     {
       TEXT "$#NAME"
-      RECT (264,30,335,54)
-      ALIGN 6
+      RECT (25,350,102,374)
+      ALIGN 4
       MARGINS (1,1)
       PARENT 24
     }
@@ -8486,9 +6737,9 @@ PAGE ""
         #DIRECTION="IN"
         #DOWNTO="1"
         #LENGTH="20"
-        #NAME="entradaGPR2521(4:0)"
+        #NAME="D5(4:0)"
       }
-      COORD (0,320)
+      COORD (0,400)
       LINE 2,0,0
       {
         OUTLINE 0,3,(128,0,0)
@@ -8499,7 +6750,7 @@ PAGE ""
     TEXT 27,0,0
     {
       TEXT "$#NAME"
-      RECT (25,310,215,334)
+      RECT (25,390,91,414)
       ALIGN 4
       MARGINS (1,1)
       PARENT 26
@@ -8508,30 +6759,30 @@ PAGE ""
     {
       VARIABLES
       {
-        #DIRECTION="OUT"
+        #DIRECTION="IN"
         #LENGTH="20"
-        #NAME="msaida"
+        #NAME="ctrlMux5"
       }
-      COORD (360,80)
+      COORD (0,240)
       LINE 2,0,0
       {
         OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
+        POINTS ((0,0),(20,0))
         FILL (1,(0,0,0),0)
       }
     }
     TEXT 29,0,0
     {
       TEXT "$#NAME"
-      RECT (272,70,335,94)
-      ALIGN 6
+      RECT (25,230,97,254)
+      ALIGN 4
       MARGINS (1,1)
       PARENT 28
     }
     TEXT 3,0,0
     {
       TEXT "$#NAME"
-      RECT (25,30,51,54)
+      RECT (25,30,108,54)
       ALIGN 4
       MARGINS (1,1)
       PARENT 2
@@ -8540,15 +6791,14 @@ PAGE ""
     {
       VARIABLES
       {
-        #DIRECTION="IN"
-        #DOWNTO="1"
+        #DIRECTION="OUT"
         #LENGTH="20"
-        #NAME="entradaGPR2016(4:0)"
+        #NAME="sctrlMux5"
       }
-      COORD (0,360)
+      COORD (0,280)
       LINE 2,0,0
       {
-        OUTLINE 0,3,(128,0,0)
+        OUTLINE 0,1,(0,0,255)
         POINTS ((0,0),(20,0))
         FILL (1,(0,0,0),0)
       }
@@ -8556,295 +6806,34 @@ PAGE ""
     TEXT 31,0,0
     {
       TEXT "$#NAME"
-      RECT (25,350,215,374)
+      RECT (25,270,107,294)
       ALIGN 4
       MARGINS (1,1)
       PARENT 30
-    }
-    PIN 32,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="exsaida"
-      }
-      COORD (360,120)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 33,0,0
-    {
-      TEXT "$#NAME"
-      RECT (268,110,335,134)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 32
-    }
-    PIN 34,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="entrada32bits(31:0)"
-      }
-      COORD (0,440)
-      LINE 2,0,0
-      {
-        OUTLINE 0,3,(128,0,0)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 35,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,430,192,454)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 34
-    }
-    PIN 36,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="ctrlMux3"
-      }
-      COORD (0,140)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 37,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,130,97,154)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 36
-    }
-    PIN 38,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="ctrlMux5"
-      }
-      COORD (0,180)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 39,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,170,97,194)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 38
     }
     PIN 4,0,0
     {
       VARIABLES
       {
         #DIRECTION="OUT"
-        #DOWNTO="1"
         #LENGTH="20"
-        #NAME="saidaGPR2521(31:0)"
+        #NAME="Q1"
       }
-      COORD (360,380)
+      COORD (200,40)
       LINE 2,0,0
       {
-        OUTLINE 0,3,(128,0,0)
+        OUTLINE 0,1,(0,0,255)
         POINTS ((-20,0),(0,0))
         FILL (1,(0,0,0),0)
       }
     }
-    PIN 40,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="ctrlULA"
-      }
-      COORD (0,220)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 41,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,210,89,234)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 40
-    }
-    PIN 42,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="sctrlMux3"
-      }
-      COORD (360,140)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(-20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 43,0,0
-    {
-      TEXT "$#NAME"
-      RECT (253,130,335,154)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 42
-    }
-    PIN 44,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="sctrlMux5"
-      }
-      COORD (360,180)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(-20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 45,0,0
-    {
-      TEXT "$#NAME"
-      RECT (253,170,335,194)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 44
-    }
-    PIN 46,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="sctrlULA"
-      }
-      COORD (360,220)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(-20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 47,0,0
-    {
-      TEXT "$#NAME"
-      RECT (261,210,335,234)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 46
-    }
-    PIN 48,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="ctrlMux32"
-      }
-      COORD (0,520)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 49,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 48
-      ALIGN 4
-      RECT (25,506,185,538)
-    }
     TEXT 5,0,0
     {
       TEXT "$#NAME"
-      RECT (163,370,335,394)
+      RECT (147,30,175,54)
       ALIGN 6
       MARGINS (1,1)
       PARENT 4
-    }
-    PIN 50,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #DOWNTO="1"
-        #LENGTH="20"
-        #NAME="saida32bits(31:0)"
-      }
-      COORD (360,540)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(-20,0))
-      }
-    }
-    TEXT 51,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 50
-      ALIGN 6
-      RECT (175,526,335,558)
-    }
-    PIN 52,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="sctrlMux32"
-      }
-      COORD (360,580)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(-20,0))
-      }
-    }
-    TEXT 53,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 52
-      ALIGN 6
-      RECT (175,566,335,598)
     }
     PIN 6,0,0
     {
@@ -8852,7 +6841,7 @@ PAGE ""
       {
         #DIRECTION="IN"
         #LENGTH="20"
-        #NAME="m"
+        #NAME="UCctrl"
       }
       COORD (0,80)
       LINE 2,0,0
@@ -8865,7 +6854,7 @@ PAGE ""
     TEXT 7,0,0
     {
       TEXT "$#NAME"
-      RECT (25,70,43,94)
+      RECT (25,70,79,94)
       ALIGN 4
       MARGINS (1,1)
       PARENT 6
@@ -8875,14 +6864,13 @@ PAGE ""
       VARIABLES
       {
         #DIRECTION="OUT"
-        #DOWNTO="1"
         #LENGTH="20"
-        #NAME="saidaGPR2016(31:0)"
+        #NAME="Q2"
       }
-      COORD (360,420)
+      COORD (200,80)
       LINE 2,0,0
       {
-        OUTLINE 0,3,(128,0,0)
+        OUTLINE 0,1,(0,0,255)
         POINTS ((-20,0),(0,0))
         FILL (1,(0,0,0),0)
       }
@@ -8890,7 +6878,7 @@ PAGE ""
     TEXT 9,0,0
     {
       TEXT "$#NAME"
-      RECT (163,410,335,434)
+      RECT (147,70,175,94)
       ALIGN 6
       MARGINS (1,1)
       PARENT 8
@@ -8903,15 +6891,15 @@ PAGE ""
 </symbol>
 
 
-V 000043 40 9468 1467566256243 regestagio2
+V 000043 40 5645 1467576803422 regestagio3
 <?xml version="1.0"?>
-<symbol name="regestagio2">
-<shape guid="a768d94b-9394-4bd5-8017-8821054b8b26" default="1">
+<symbol name="regestagio3">
+<shape guid="d6233ec2-305f-49ee-9ab6-48d18be25078" default="1">
 <![CDATA[SYMB0100
 
 HEADER
 {
- FREEID 50
+ FREEID 40
  VARIABLES
  {
   #CUSTOM_NAME=""
@@ -8919,9 +6907,9 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
   #LANGUAGE="VHDL"
-  #MODIFIED="1467566256"
-  #NAME="regestagio2"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="a768d94b-9394-4bd5-8017-8821054b8b26"
+  #MODIFIED="1467576803"
+  #NAME="regestagio3"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="d6233ec2-305f-49ee-9ab6-48d18be25078"
  }
 }
 
@@ -8930,7 +6918,7 @@ PAGE ""
  PAGEHEADER
  {
   MARGINS (200,200,200,200)
-  RECT (0,-20,360,640)
+  RECT (0,-20,200,460)
  }
  
  BODY
@@ -8941,7 +6929,7 @@ PAGE ""
    {
     #OUTLINE_FILLING="1"
    }
-   AREA (20,0,340,620)
+   AREA (20,0,180,440)
   }
   PIN  2, 0, 0
   {
@@ -8950,7 +6938,7 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="wb"
+    #NAME="hazardctrl"
    }
    LINE  2, 0, 0
    {
@@ -8962,23 +6950,23 @@ PAGE ""
   TEXT  3, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,30,51,54)
+   RECT (25,30,108,54)
    ALIGN 4
    MARGINS (1,1)
    PARENT 2
   }
   PIN  4, 0, 0
   {
-   COORD (360,380)
+   COORD (200,40)
    VARIABLES
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saidaGPR2521(31:0)"
+    #NAME="Q1"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (-20,0), (0,0) )
     FILL (1,(0,0,0),0)
    }
@@ -8986,7 +6974,7 @@ PAGE ""
   TEXT  5, 0, 0
   {
    TEXT "$#NAME"
-   RECT (152,370,335,394)
+   RECT (147,30,175,54)
    ALIGN 6
    MARGINS (1,1)
    PARENT 4
@@ -8998,7 +6986,7 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="m"
+    #NAME="UCctrl"
    }
    LINE  2, 0, 0
    {
@@ -9010,23 +6998,23 @@ PAGE ""
   TEXT  7, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,70,43,94)
+   RECT (25,70,79,94)
    ALIGN 4
    MARGINS (1,1)
    PARENT 6
   }
   PIN  8, 0, 0
   {
-   COORD (360,420)
+   COORD (200,80)
    VARIABLES
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saidaGPR2016(31:0)"
+    #NAME="Q2"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (-20,0), (0,0) )
     FILL (1,(0,0,0),0)
    }
@@ -9034,7 +7022,7 @@ PAGE ""
   TEXT  9, 0, 0
   {
    TEXT "$#NAME"
-   RECT (152,410,335,434)
+   RECT (147,70,175,94)
    ALIGN 6
    MARGINS (1,1)
    PARENT 8
@@ -9042,54 +7030,6 @@ PAGE ""
   PIN  10, 0, 0
   {
    COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="ex"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,47,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
-  PIN  12, 0, 0
-  {
-   COORD (360,460)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="saida2521(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  13, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (205,450,335,474)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 12
-  }
-  PIN  14, 0, 0
-  {
-   COORD (0,560)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -9103,22 +7043,70 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,71,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  12, 0, 0
+  {
+   COORD (200,180)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Q3(31:0)"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (-20,0), (0,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (97,170,175,194)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  PIN  14, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="D1"
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,255)
+    POINTS ( (0,0), (20,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
   TEXT  15, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,550,71,574)
+   RECT (25,150,52,174)
    ALIGN 4
    MARGINS (1,1)
    PARENT 14
   }
   PIN  16, 0, 0
   {
-   COORD (360,500)
+   COORD (200,240)
    VARIABLES
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saida2016(4:0)"
+    #NAME="Q4(31:0)"
    }
    LINE  2, 0, 0
    {
@@ -9130,23 +7118,23 @@ PAGE ""
   TEXT  17, 0, 0
   {
    TEXT "$#NAME"
-   RECT (205,490,335,514)
+   RECT (97,230,175,254)
    ALIGN 6
    MARGINS (1,1)
    PARENT 16
   }
   PIN  18, 0, 0
   {
-   COORD (0,340)
+   COORD (0,200)
    VARIABLES
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="entradaPC(31:0)"
+    #NAME="D2"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,3, (128,0,0)
+    OUTLINE 0,1, (0,0,255)
     POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
    }
@@ -9154,19 +7142,19 @@ PAGE ""
   TEXT  19, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,330,167,354)
+   RECT (25,190,52,214)
    ALIGN 4
    MARGINS (1,1)
    PARENT 18
   }
   PIN  20, 0, 0
   {
-   COORD (360,320)
+   COORD (200,300)
    VARIABLES
    {
     #DIRECTION="OUT"
     #LENGTH="20"
-    #NAME="saidaPC(31:0)"
+    #NAME="Q5(4:0)"
    }
    LINE  2, 0, 0
    {
@@ -9178,19 +7166,19 @@ PAGE ""
   TEXT  21, 0, 0
   {
    TEXT "$#NAME"
-   RECT (211,310,335,334)
+   RECT (108,290,175,314)
    ALIGN 6
    MARGINS (1,1)
    PARENT 20
   }
   PIN  22, 0, 0
   {
-   COORD (0,480)
+   COORD (0,320)
    VARIABLES
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="entradaSignExtend(31:0)"
+    #NAME="D3(31:0)"
    }
    LINE  2, 0, 0
    {
@@ -9202,32 +7190,32 @@ PAGE ""
   TEXT  23, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,470,237,494)
+   RECT (25,310,102,334)
    ALIGN 4
    MARGINS (1,1)
    PARENT 22
   }
   PIN  24, 0, 0
   {
-   COORD (360,40)
+   COORD (0,360)
    VARIABLES
    {
-    #DIRECTION="OUT"
+    #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="wbsaida"
+    #NAME="D4(31:0)"
    }
    LINE  2, 0, 0
    {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
+    OUTLINE 0,3, (128,0,0)
+    POINTS ( (0,0), (20,0) )
     FILL (1,(0,0,0),0)
    }
   }
   TEXT  25, 0, 0
   {
    TEXT "$#NAME"
-   RECT (264,30,335,54)
-   ALIGN 6
+   RECT (25,350,102,374)
+   ALIGN 4
    MARGINS (1,1)
    PARENT 24
   }
@@ -9238,7 +7226,7 @@ PAGE ""
    {
     #DIRECTION="IN"
     #LENGTH="20"
-    #NAME="entradaGPR2521(4:0)"
+    #NAME="D5(4:0)"
    }
    LINE  2, 0, 0
    {
@@ -9250,134 +7238,14 @@ PAGE ""
   TEXT  27, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,390,215,414)
+   RECT (25,390,91,414)
    ALIGN 4
    MARGINS (1,1)
    PARENT 26
   }
   PIN  28, 0, 0
   {
-   COORD (360,80)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="msaida"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  29, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (272,70,335,94)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 28
-  }
-  PIN  30, 0, 0
-  {
-   COORD (0,440)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="entradaGPR2016(4:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  31, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,430,215,454)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 30
-  }
-  PIN  32, 0, 0
-  {
-   COORD (360,120)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="exsaida"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  33, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (268,110,335,134)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 32
-  }
-  PIN  34, 0, 0
-  {
-   COORD (0,520)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="entrada32bits(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  35, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,510,192,534)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 34
-  }
-  PIN  36, 0, 0
-  {
-   COORD (0,140)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="ctrlMux3"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  37, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,130,97,154)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 36
-  }
-  PIN  38, 0, 0
-  {
-   COORD (0,180)
+   COORD (0,240)
    VARIABLES
    {
     #DIRECTION="IN"
@@ -9391,65 +7259,17 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  TEXT  39, 0, 0
+  TEXT  29, 0, 0
   {
    TEXT "$#NAME"
-   RECT (25,170,97,194)
+   RECT (25,230,97,254)
    ALIGN 4
    MARGINS (1,1)
-   PARENT 38
+   PARENT 28
   }
-  PIN  40, 0, 0
+  PIN  30, 0, 0
   {
-   COORD (0,220)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="ctrlULA"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  41, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,210,89,234)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 40
-  }
-  PIN  42, 0, 0
-  {
-   COORD (360,140)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="sctrlMux3"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (-20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  43, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (253,130,335,154)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 42
-  }
-  PIN  44, 0, 0
-  {
-   COORD (360,180)
+   COORD (200,120)
    VARIABLES
    {
     #DIRECTION="OUT"
@@ -9463,743 +7283,19 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  TEXT  45, 0, 0
+  TEXT  31, 0, 0
   {
    TEXT "$#NAME"
-   RECT (253,170,335,194)
+   RECT (93,110,175,134)
    ALIGN 6
    MARGINS (1,1)
-   PARENT 44
-  }
-  PIN  46, 0, 0
-  {
-   COORD (360,220)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="sctrlULA"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (-20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  47, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (261,210,335,234)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 46
-  }
-  PIN  48, 0, 0
-  {
-   COORD (0,260)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="ctrlMux32"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  49, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,250,108,274)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 48
-  }
-  PIN  50, 0, 0
-  {
-   COORD (360,540)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="saida32bits(31:0)"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,3, (128,0,0)
-    POINTS ( (0,0), (-20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  51, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (186,530,335,554)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 50
-  }
-  PIN  52, 0, 0
-  {
-   COORD (360,260)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="sctrlMux32"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (-20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  53, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (242,250,335,274)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 52
+   PARENT 30
+   ORIENTATION 2
   }
  }
  
 }
 
-
-]]>
-</shape>
-</symbol>
-
-
-I 000040 40 2089 1467568027749 mux1bitx
-<?xml version="1.0"?>
-<symbol name="mux1bitx">
-<shape guid="f3945bfe-6419-471a-a28d-f3ee839e6042" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
-  FREEID 1
-  VARIABLES
-  {
-    #CUSTOM_NAME=""
-    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
-    #LANGUAGE="VHDL"
-    #MODIFIED="1467568027"
-    #NAME="mux1bitx"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="f3945bfe-6419-471a-a28d-f3ee839e6042"
-  }
-}
-PAGE ""
-{
-  PAGEHEADER 
-  {
-    MARGINS (200,200,200,200)
-    RECT (0,-20,160,220)
-    FREEID 12
-  }
-  BODY
-  {
-    RECT 1,-1,0
-    {
-      VARIABLES
-      {
-        #OUTLINE_FILLING="1"
-      }
-      AREA (20,0,140,200)
-    }
-    PIN 10,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="In2"
-      }
-      COORD (0,160)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 11,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 10
-      ALIGN 4
-      RECT (25,146,85,178)
-    }
-    PIN 2,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="S"
-      }
-      COORD (0,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((0,0),(20,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 3,0,0
-    {
-      TEXT "$#NAME"
-      RECT (25,30,40,54)
-      ALIGN 4
-      MARGINS (1,1)
-      PARENT 2
-    }
-    PIN 4,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="OUT"
-        #LENGTH="20"
-        #NAME="O"
-      }
-      COORD (160,40)
-      LINE 2,0,0
-      {
-        OUTLINE 0,1,(0,0,255)
-        POINTS ((-20,0),(0,0))
-        FILL (1,(0,0,0),0)
-      }
-    }
-    TEXT 5,0,0
-    {
-      TEXT "$#NAME"
-      RECT (118,30,135,54)
-      ALIGN 6
-      MARGINS (1,1)
-      PARENT 4
-    }
-    PIN 8,0,0
-    {
-      VARIABLES
-      {
-        #DIRECTION="IN"
-        #LENGTH="20"
-        #NAME="In1"
-      }
-      COORD (0,120)
-      LINE 2,0,0
-      {
-        POINTS ((0,0),(20,0))
-      }
-    }
-    TEXT 9,0,0
-    {
-      TEXT "$#NAME"
-      MARGINS (1,1)
-      PARENT 8
-      ALIGN 4
-      RECT (25,106,85,138)
-    }
-  }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000040 40 1916 1467568255915 mux1bitx
-<?xml version="1.0"?>
-<symbol name="mux1bitx">
-<shape guid="f3945bfe-6419-471a-a28d-f3ee839e6042" default="1">
-<![CDATA[SYMB0100
-
-HEADER
-{
- FREEID 1
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467568255"
-  #NAME="mux1bitx"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="f3945bfe-6419-471a-a28d-f3ee839e6042"
- }
-}
-
-PAGE ""
-{
- PAGEHEADER
- {
-  MARGINS (200,200,200,200)
-  RECT (0,-20,160,140)
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,-8,140,124)
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,20)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="S"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,10,40,34)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  PIN  4, 0, 0
-  {
-   COORD (160,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="O"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (-20,0), (0,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (118,30,135,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  8, 0, 0
-  {
-   COORD (0,60)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="In1"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,50,54,74)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 8
-  }
-  PIN  10, 0, 0
-  {
-   COORD (0,100)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="In2"
-   }
-   LINE  2, 0, 0
-   {
-    OUTLINE 0,1, (0,0,255)
-    POINTS ( (0,0), (20,0) )
-    FILL (1,(0,0,0),0)
-   }
-  }
-  TEXT  11, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,90,54,114)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 10
-  }
- }
- 
-}
-
-
-]]>
-</shape>
-</symbol>
-
-
-V 000042 40 1488 1467568674174 mux2x1zero
-<?xml version="1.0"?>
-<symbol name="mux2x1zero">
-<shape guid="9f8bca18-a1c2-4fa6-b3bb-79a6acfa2303" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467568674"
-  #NAME="mux2x1zero"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="9f8bca18-a1c2-4fa6-b3bb-79a6acfa2303"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,160,120)
-  FREEID 8
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,140,120)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,40,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (118,30,135,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,54,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="S"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (160,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #LENGTH="20"
-    #NAME="O"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="In1"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000044 40 1880 1467569074231 mux2x1_5bits
-<?xml version="1.0"?>
-<symbol name="mux2x1_5bits">
-<shape guid="8d9ac7cb-1864-4ef5-8b13-013b7bc15ec5" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467569074"
-  #NAME="mux2x1_5bits"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8d9ac7cb-1864-4ef5-8b13-013b7bc15ec5"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,160,160)
-  FREEID 10
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,140,160)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,40,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (79,30,135,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  TEXT  7, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,70,93,94)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 6
-  }
-  TEXT  9, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,110,93,134)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 8
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #LENGTH="20"
-    #NAME="S"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (160,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="O(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
-  PIN  6, 0, 0
-  {
-   COORD (0,80)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="In1(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  8, 0, 0
-  {
-   COORD (0,120)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="In2(4:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
- }
-}
-
-]]>
-</shape>
-</symbol>
-
-
-V 000044 40 1264 1467569086065 reg32bitsepc
-<?xml version="1.0"?>
-<symbol name="reg32bitsEPC">
-<shape guid="4da08580-8d7f-48bb-952e-eef33d844a3d" default="1">
-<![CDATA[SYMB0100
-HEADER
-{
- VARIABLES
- {
-  #CUSTOM_NAME=""
-  #HDL_ENTRIES=
-"library IEEE;\n"+
-"use ieee.std_logic_1164.all;"
-  #LANGUAGE="VHDL"
-  #MODIFIED="1467569086"
-  #NAME="reg32bitsEPC"
-  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="4da08580-8d7f-48bb-952e-eef33d844a3d"
- }
-}
-PAGE "" 
-{
- PAGEHEADER
- {
-  RECT (0,0,360,80)
-  FREEID 6
- }
- 
- BODY
- {
-  RECT  1, -1, 0
-  {
-   VARIABLES
-   {
-    #OUTLINE_FILLING="1"
-   }
-   AREA (20,0,340,80)
-  }
-  TEXT  3, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (25,30,172,54)
-   ALIGN 4
-   MARGINS (1,1)
-   PARENT 2
-  }
-  TEXT  5, 0, 0
-  {
-   TEXT "$#NAME"
-   RECT (206,30,335,54)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 4
-  }
-  PIN  2, 0, 0
-  {
-   COORD (0,40)
-   VARIABLES
-   {
-    #DIRECTION="IN"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="entradaepc(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (0,0), (20,0) )
-   }
-  }
-  PIN  4, 0, 0
-  {
-   COORD (360,40)
-   VARIABLES
-   {
-    #DIRECTION="OUT"
-    #DOWNTO="1"
-    #LENGTH="20"
-    #NAME="saidaepc(31:0)"
-    #VHDL_TYPE="STD_LOGIC_VECTOR"
-   }
-   LINE  2, 0, 0
-   {
-    POINTS ( (-20,0), (0,0) )
-   }
-  }
- }
-}
 
 ]]>
 </shape>

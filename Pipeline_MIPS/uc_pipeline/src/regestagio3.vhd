@@ -6,6 +6,8 @@ entity regestagio3 is
   		hazardctrl : in std_logic;
   		UCctrl : in std_logic;	
 		clock: in std_logic;
+		ctrlMux5: in std_logic;
+		sctrlMux5: out std_logic;
        	D1 : in std_logic;
        	Q1 : out std_logic;
 		D2 : in std_logic;
