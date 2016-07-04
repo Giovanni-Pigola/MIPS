@@ -51,16 +51,16 @@ begin
 			instrucaoInvalida<='0';
 			MuxMEM<='0';
 		elsif(opcode="000000" and func="001000") then
-			wb_m_exCtrl<='1';  
+			wb_m_exCtrl<='0';  
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
-			Mux1UCEst3<='0';
-			Mux2UCEst3<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
 			MuxEst5Ctrl<='0';
-			MuxInicioCtrl<="11";
+			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 			MuxMEM<='1';
 		elsif(opcode="000000" and func="100001") then  
@@ -114,8 +114,7 @@ begin
 			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
-			MuxMEM<='1'; 
-			--parei aqui--
+			MuxMEM<='1';
 		elsif(opcode="001000") then
 			wb_m_exCtrl<='0';  
 			orCtrl<='0';
