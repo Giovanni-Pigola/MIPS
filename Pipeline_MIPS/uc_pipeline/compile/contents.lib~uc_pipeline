@@ -1,4 +1,4 @@
-721
+737
 ~E 1 "./../src/CacheDados.vhd" 29 CacheDados
 ~A 1 "./../src/CacheDados.vhd" 52 CacheDados
 ~E 1 "./../src/CacheInstrucoes.vhd" 29 CacheInstrucoes
@@ -22,11 +22,11 @@
 ~E 1 "./../src/gpr.vhd" 25 DualRegFile
 ~A 1 "./../src/gpr.vhd" 41 dualregfile
 ~E 1 "./../compile/est4.vhd" 28 est4
-~A 1 "./../compile/est4.vhd" 48 est4
+~A 1 "./../compile/est4.vhd" 50 est4
 ~E 1 "./../compile/estagio2.vhd" 28 estagio2
 ~A 1 "./../compile/estagio2.vhd" 65 estagio2
 ~E 1 "./../compile/estagio3.vhd" 28 estagio3
-~A 1 "./../compile/estagio3.vhd" 64 estagio3
+~A 1 "./../compile/estagio3.vhd" 65 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
 ~E 1 "./../src/gpr.vhd" 25 gpr
@@ -63,7 +63,7 @@
 ~E 1 "./../src/mux2x1 5bits.vhd" 5 mux5bitx
 ~A 1 "./../src/mux2x1 5bits.vhd" 13 mux1bitx
 ~E 1 "./../compile/pipelineCompleto.vhd" 28 pipelineCompleto
-~A 1 "./../compile/pipelineCompleto.vhd" 52 pipelineCompleto
+~A 1 "./../compile/pipelineCompleto.vhd" 53 pipelineCompleto
 ~E 1 "./../compile/pipelineTotal.vhd" 28 pipelineTotal
 ~E 1 "./../compile/processador.vhd" 28 processador
 ~A 1 "./../compile/processador.vhd" 31 processador
@@ -78,7 +78,7 @@
 ~E 1 "./../src/regestagio3.vhd" 4 regestagio3
 ~A 1 "./../src/regestagio3.vhd" 26 reg
 ~E 1 "./../src/regestagio4.vhd" 4 regestagio4
-~A 1 "./../src/regestagio4.vhd" 20 reg4
+~A 1 "./../src/regestagio4.vhd" 22 reg4
 ~E 1 "./../src/regpc.vhd" 4 regpc
 ~A 1 "./../src/regpc.vhd" 12 reg
 ~E 1 "./../src/som32bits.vhd" 6 soma32bits

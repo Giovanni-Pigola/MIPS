@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\est4.vhd
--- Generated   : Mon Jul  4 01:05:12 2016
+-- Generated   : Mon Jul  4 01:47:54 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\est4.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -31,6 +31,7 @@ entity est4 is
        ctrlMux5 : in STD_LOGIC;
        ctrlmuxMEM : in STD_LOGIC;
        wb : in STD_LOGIC;
+       I1511 : in STD_LOGIC_VECTOR(4 downto 0);
        entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
        entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
        entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
@@ -38,6 +39,7 @@ entity est4 is
        resULA : in STD_LOGIC_VECTOR(31 downto 0);
        sctrlMux5 : out STD_LOGIC;
        wbsaida : out STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
        saidaParaCache : out STD_LOGIC_VECTOR(31 downto 0);
        saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
@@ -59,12 +61,14 @@ component mux32bitsX2
 end component;
 component regestagio4
   port (
+       I1511 : in STD_LOGIC_VECTOR(4 downto 0);
        clock : in STD_LOGIC;
        ctrlMux5 : in STD_LOGIC;
        entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
        entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
        entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
        wb : in STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
        saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
        saidacache : out STD_LOGIC_VECTOR(31 downto 0);
@@ -79,6 +83,8 @@ begin
 
 U1 : regestagio4
   port map(
+       I1511 => I1511,
+       I1511out => I1511out,
        clock => clock,
        ctrlMux5 => ctrlMux5,
        entradaImed => entradaImed,

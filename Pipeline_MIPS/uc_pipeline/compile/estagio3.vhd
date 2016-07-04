@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
--- Generated   : Mon Jul  4 01:05:12 2016
+-- Generated   : Mon Jul  4 01:48:03 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -54,6 +54,7 @@ entity estagio3 is
        sctrlMux5 : out STD_LOGIC;
        sctrlMuxMEM : out STD_LOGIC;
        wb_out : out STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        saidaImediato : out STD_LOGIC_VECTOR(4 downto 0);
        saidaMux : out STD_LOGIC_VECTOR(31 downto 0);
        saidaULA : out STD_LOGIC_VECTOR(31 downto 0);
@@ -261,6 +262,9 @@ U9 : mux5bits3op
 	In2 <= i1511;
 	In1 <= i2016;
 	p3 <= muxEstagio5;
+
+    -- Output\buffer terminals
+	I1511out <= In2;
 
 
 end estagio3;

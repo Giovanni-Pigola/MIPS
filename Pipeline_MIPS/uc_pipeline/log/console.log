@@ -505,4 +505,63 @@ acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/deslocador2.vhd $dsn/src/mux32
 # Compile Architecture "WriteBufferCache" of Entity "WriteBufferCache"
 # File: .\..\compile\MIPSCompleto.vhd
 # Compile Entity "MIPSCompleto"
-# Comp
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# Compile success 0 Errors 1 Warnings  Analysis time :  1.0 [s]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio3.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: estagio3.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\estagio3.vhd
+# Compile Entity "estagio3"
+# Compile Architecture "estagio3" of Entity "estagio3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# pipelineCompleto: Updating instances of symbol 'estagio3' from library 'uc_pipeline' (U3)
+# pipelineCompleto: Updating instances of symbol 'estagio3' from library 'uc_pipeline' (U3)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/regestagio4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd
+# Compile Entity "regestagio4"
+# Compile Architecture "reg4" of Entity "regestagio4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/regestagio4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd
+# Compile Entity "regestagio4"
+# Compile Architecture "reg4" of Entity "regestagio4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# est4: Updating instances of symbol 'regestagio4' from library 'uc_pipeline' (U1)
+# est4: Updating instances of symbol 'regestagio4' from library 'uc_pipeline' (U1)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/est4.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\est4.bde'.
+# DRC: est4.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\est4.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\est4.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\est4.vhd
+# Compile Entity "est4"
+# Compile Architecture "est4" of Entity "est4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio3.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: estagio3.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\estagio3.vhd
+# Compile Entity "estagio3"
+# Compile Architecture "estagio3" of Entity "estagio3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# pipelineCompleto: Updating instances of symbol 'est4' from library 'uc_pipeline' (U4)
+# pipelineCompleto: Updating instances of symbol 'est4' from library 'uc_pipeline' (U4)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: pipelineCompleto.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process compl

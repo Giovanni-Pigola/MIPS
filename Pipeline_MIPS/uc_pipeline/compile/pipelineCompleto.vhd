@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd
--- Generated   : Mon Jul  4 01:34:21 2016
+-- Generated   : Mon Jul  4 01:49:01 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -40,6 +40,7 @@ entity pipelineCompleto is
        exsaida : out STD_LOGIC;
        instrucaoInvalida : out STD_LOGIC;
        m_out : out STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        contBolha : out STD_LOGIC_VECTOR(7 downto 0);
        contInst : out STD_LOGIC_VECTOR(7 downto 0);
        saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
@@ -53,25 +54,6 @@ architecture pipelineCompleto of pipelineCompleto is
 
 ---- Component declarations -----
 
-component est4
-  port (
-       clock : in STD_LOGIC;
-       ctrlMux5 : in STD_LOGIC;
-       ctrlmuxMEM : in STD_LOGIC;
-       entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
-       entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
-       entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
-       muxest2 : in STD_LOGIC_VECTOR(31 downto 0);
-       resULA : in STD_LOGIC_VECTOR(31 downto 0);
-       wb : in STD_LOGIC;
-       saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
-       saidaParaCache : out STD_LOGIC_VECTOR(31 downto 0);
-       saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
-       saidacache : out STD_LOGIC_VECTOR(31 downto 0);
-       sctrlMux5 : out STD_LOGIC;
-       wbsaida : out STD_LOGIC
-  );
-end component;
 component estagio3
   port (
        UCctrl : in STD_LOGIC;
@@ -96,6 +78,7 @@ component estagio3
        ula_ctrl : in STD_LOGIC;
        wb_ctrl : in STD_LOGIC;
        wb_in : in STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        OVF : out STD_LOGIC;
        m_out : out STD_LOGIC;
        saidaImediato : out STD_LOGIC_VECTOR(4 downto 0);
@@ -124,6 +107,27 @@ component unidadecontrole
        instrucaoInvalida : out STD_LOGIC;
        orCtrl : out STD_LOGIC;
        wb_m_exCtrl : out STD_LOGIC
+  );
+end component;
+component est4
+  port (
+       I1511 : in STD_LOGIC_VECTOR(4 downto 0);
+       clock : in STD_LOGIC;
+       ctrlMux5 : in STD_LOGIC;
+       ctrlmuxMEM : in STD_LOGIC;
+       entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
+       entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
+       entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
+       muxest2 : in STD_LOGIC_VECTOR(31 downto 0);
+       resULA : in STD_LOGIC_VECTOR(31 downto 0);
+       wb : in STD_LOGIC;
+       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
+       saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
+       saidaParaCache : out STD_LOGIC_VECTOR(31 downto 0);
+       saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
+       saidacache : out STD_LOGIC_VECTOR(31 downto 0);
+       sctrlMux5 : out STD_LOGIC;
+       wbsaida : out STD_LOGIC
   );
 end component;
 component estagio2
@@ -221,6 +225,7 @@ signal BUS1121 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS117 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS1316 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS1344 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS1521 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS189 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS212 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS220 : STD_LOGIC_VECTOR(31 downto 0);
@@ -294,6 +299,7 @@ U2 : estagio2
 
 U3 : estagio3
   port map(
+       I1511out => BUS1521,
        OVF => NET565,
        UCctrl => UCctrl,
        Ulaestagio4 => BUS485,
@@ -329,6 +335,8 @@ U3 : estagio3
 
 U4 : est4
   port map(
+       I1511 => BUS1521,
+       I1511out => I1511out,
        clock => clock,
        ctrlMux5 => NET390,
        ctrlmuxMEM => NET382,
