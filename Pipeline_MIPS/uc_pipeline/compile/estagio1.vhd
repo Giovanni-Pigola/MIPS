@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio1.vhd
--- Generated   : Sun Jul  3 20:27:50 2016
+-- Generated   : Sun Jul  3 21:39:24 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -33,6 +33,7 @@ entity testes is
        hazardctrlPC : in STD_LOGIC;
        entEstagio2 : in STD_LOGIC_VECTOR(31 downto 0);
        entradaCache : in STD_LOGIC_VECTOR(31 downto 0);
+       entradaJR : in STD_LOGIC_VECTOR(31 downto 0);
        op : in STD_LOGIC_VECTOR(1 downto 0);
        endereco : out STD_LOGIC_VECTOR(31 downto 0);
        instrucao : out STD_LOGIC_VECTOR(31 downto 0);
@@ -44,14 +45,6 @@ architecture testes of testes is
 
 ---- Component declarations -----
 
-component mux32bits
-  port (
-       e1 : in STD_LOGIC_VECTOR(31 downto 0);
-       e2 : in STD_LOGIC_VECTOR(31 downto 0);
-       op : in STD_LOGIC_VECTOR(1 downto 0);
-       saida : out STD_LOGIC_VECTOR(31 downto 0)
-  );
-end component;
 component regestagio1
   port (
        D1 : in STD_LOGIC_VECTOR(31 downto 0);
@@ -79,6 +72,15 @@ component somapc4
        C : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
+component mux32bits
+  port (
+       e1 : in STD_LOGIC_VECTOR(31 downto 0);
+       e2 : in STD_LOGIC_VECTOR(31 downto 0);
+       e3 : in STD_LOGIC_VECTOR(31 downto 0);
+       op : in STD_LOGIC_VECTOR(1 downto 0);
+       saida : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 
 ---- Signal declarations used on the diagram ----
 
@@ -87,6 +89,7 @@ signal BUS269 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS332 : STD_LOGIC_VECTOR(31 downto 0);
 signal D2 : STD_LOGIC_VECTOR(31 downto 0);
 signal e2 : STD_LOGIC_VECTOR(31 downto 0);
+signal e3 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q1 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q2 : STD_LOGIC_VECTOR(31 downto 0);
 
@@ -111,6 +114,7 @@ U3 : mux32bits
   port map(
        e1 => BUS332,
        e2 => e2,
+       e3 => e3,
        op => op,
        saida => BUS269
   );
@@ -132,6 +136,7 @@ U4 : regestagio1
     -- Inputs terminals
 	e2 <= entEstagio2;
 	D2 <= entradaCache;
+	e3 <= entradaJR;
 
     -- Output\buffer terminals
 	endereco <= Q1;

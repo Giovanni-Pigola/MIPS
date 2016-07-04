@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
--- Generated   : Sun Jul  3 21:13:48 2016
+-- Generated   : Sun Jul  3 21:39:25 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -48,8 +48,8 @@ entity estagio2 is
        sctrlMux5 : out STD_LOGIC;
        sctrlULA : out STD_LOGIC;
        wbsaida : out STD_LOGIC;
+       saida1511 : out STD_LOGIC_VECTOR(4 downto 0);
        saida2016 : out STD_LOGIC_VECTOR(4 downto 0);
-       saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
        saidaEstagio2 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
@@ -116,8 +116,8 @@ component regestagio2
        wb : in STD_LOGIC;
        exsaida : out STD_LOGIC;
        msaida : out STD_LOGIC;
+       saida1511 : out STD_LOGIC_VECTOR(4 downto 0);
        saida2016 : out STD_LOGIC_VECTOR(4 downto 0);
-       saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaPC : out STD_LOGIC_VECTOR(31 downto 0);
@@ -181,36 +181,6 @@ U3 : gpr
        we => we
   );
 
-U4 : regestagio2
-  port map(
-       clock => clock,
-       ctrlMux3 => ctrlMux3,
-       ctrlMux32 => ctrlMux32,
-       ctrlMux5 => ctrlMux5,
-       ctrlULA => ctrlULA,
-       entrada32bits => entrada,
-       entradaGPR2016 => BUS715,
-       entradaGPR2521 => BUS678,
-       entradaPC => B,
-       entradaSignExtend => BUS439,
-       ex => NET71,
-       exsaida => exsaida,
-       m => NET71,
-       msaida => msaida,
-       saida2016 => saida2016,
-       saida2521 => saida2521,
-       saidaGPR2016 => saidaGPR2016,
-       saidaGPR2521 => saidaGPR2521,
-       saidaPC => saidaPC,
-       saidaShamt => saidaShamt,
-       sctrlMux3 => sctrlMux3,
-       sctrlMux32 => sctrlMux32,
-       sctrlMux5 => sctrlMux5,
-       sctrlULA => sctrlULA,
-       wb => NET71,
-       wbsaida => wbsaida
-  );
-
 U5 : mux2x1zero
   port map(
        In1 => Input4,
@@ -229,6 +199,36 @@ U7 : deslocador2
   port map(
        entrada => BUS439,
        saida => BUS417
+  );
+
+U8 : regestagio2
+  port map(
+       clock => clock,
+       ctrlMux3 => ctrlMux3,
+       ctrlMux32 => ctrlMux32,
+       ctrlMux5 => ctrlMux5,
+       ctrlULA => ctrlULA,
+       entrada32bits => entrada,
+       entradaGPR2016 => BUS715,
+       entradaGPR2521 => BUS678,
+       entradaPC => B,
+       entradaSignExtend => BUS439,
+       ex => NET71,
+       exsaida => exsaida,
+       m => NET71,
+       msaida => msaida,
+       saida1511 => saida1511,
+       saida2016 => saida2016,
+       saidaGPR2016 => saidaGPR2016,
+       saidaGPR2521 => saidaGPR2521,
+       saidaPC => saidaPC,
+       saidaShamt => saidaShamt,
+       sctrlMux3 => sctrlMux3,
+       sctrlMux32 => sctrlMux32,
+       sctrlMux5 => sctrlMux5,
+       sctrlULA => sctrlULA,
+       wb => NET71,
+       wbsaida => wbsaida
   );
 
 

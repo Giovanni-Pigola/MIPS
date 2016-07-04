@@ -18,7 +18,7 @@ entity regestagio2 is
 		entrada32bits : in std_logic_vector(31 downto 0);
        	saidaGPR2521 : out std_logic_vector(31 downto 0);
 		saidaGPR2016 : out std_logic_vector(31 downto 0);
-       	saida2521 : out std_logic_vector(4 downto 0);
+       	saida1511 : out std_logic_vector(4 downto 0);
 		saida2016 : out std_logic_vector(4 downto 0);
 		saidaPC: out std_logic_vector(31 downto 0);
 		saidaShamt: out std_logic_vector(4 downto 0);
@@ -42,8 +42,8 @@ begin
 			exsaida<=ex;
 			saidaGPR2521<="000000000000000000000000000"&entradaGPR2521;
 			saidaGPR2016<="000000000000000000000000000"&entradaGPR2016;
-			saida2521<=entrada32bits(25 downto 21);
 			saida2016<=entrada32bits(20 downto 16);
+			saida1511<=entrada32bits(15 downto 11);
 			saidaPC<=entradaPC;	
 			sctrlMux3<=ctrlMux3;
 			sctrlMux5<=ctrlMux5;

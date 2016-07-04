@@ -17,7 +17,7 @@ MESSAGE "Compile Architecture "deslocador_combinatorio" of Entity "deslocador_co
 MESSAGE "File: .\..\compile\estagio1.vhd" 
 MESSAGE "Compile Entity "testes"" 
 MESSAGE "Compile Architecture "testes" of Entity "testes"" 
-WARNING ELAB1_0026: "There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity)." ".\..\compile\estagio1.vhd" 103 0
+WARNING ELAB1_0026: "There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity)." ".\..\compile\estagio1.vhd" 106 0
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd" 
 MESSAGE "Compile Entity "somapc4"" 
 MESSAGE "Compile Architecture "somapc4" of Entity "somapc4"" 

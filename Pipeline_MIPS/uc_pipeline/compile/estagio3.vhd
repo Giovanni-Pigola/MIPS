@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
--- Generated   : Sun Jul  3 21:13:52 2016
+-- Generated   : Sun Jul  3 21:39:27 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -43,8 +43,8 @@ entity estagio3 is
        forwardingCtrl2 : in STD_LOGIC_VECTOR(1 downto 0);
        gpr2016 : in STD_LOGIC_VECTOR(31 downto 0);
        gpr2521 : in STD_LOGIC_VECTOR(31 downto 0);
+       i1511 : in STD_LOGIC_VECTOR(4 downto 0);
        i2016 : in STD_LOGIC_VECTOR(4 downto 0);
-       i2521 : in STD_LOGIC_VECTOR(4 downto 0);
        muxEstagio5 : in STD_LOGIC_VECTOR(31 downto 0);
        muxctrl4 : in STD_LOGIC_VECTOR(1 downto 0);
        shamt : in STD_LOGIC_VECTOR(4 downto 0);
@@ -85,14 +85,6 @@ component mux2x1_5bits
        O : out STD_LOGIC_VECTOR(4 downto 0)
   );
 end component;
-component mux32bits
-  port (
-       e1 : in STD_LOGIC_VECTOR(31 downto 0);
-       e2 : in STD_LOGIC_VECTOR(31 downto 0);
-       op : in STD_LOGIC_VECTOR(1 downto 0);
-       saida : out STD_LOGIC_VECTOR(31 downto 0)
-  );
-end component;
 component reg32bitsEPC
   port (
        entradaepc : in STD_LOGIC_VECTOR(31 downto 0);
@@ -127,6 +119,15 @@ component ula
        saida : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
+component mux32bits
+  port (
+       e1 : in STD_LOGIC_VECTOR(31 downto 0);
+       e2 : in STD_LOGIC_VECTOR(31 downto 0);
+       e3 : in STD_LOGIC_VECTOR(31 downto 0);
+       op : in STD_LOGIC_VECTOR(1 downto 0);
+       saida : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component mux5bits3op
   port (
        op : in STD_LOGIC_VECTOR(1 downto 0);
@@ -136,6 +137,9 @@ component mux5bits3op
        saida : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
+
+----     Constants     -----
+constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
@@ -147,12 +151,17 @@ signal BUS2843 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS2954 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS2989 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS3024 : STD_LOGIC_VECTOR(31 downto 0);
+signal In1 : STD_LOGIC_VECTOR(4 downto 0);
+signal In2 : STD_LOGIC_VECTOR(4 downto 0);
 signal p1 : STD_LOGIC_VECTOR(31 downto 0);
 signal p2 : STD_LOGIC_VECTOR(31 downto 0);
 signal p3 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q3 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q4 : STD_LOGIC_VECTOR(31 downto 0);
 signal Q5 : STD_LOGIC_VECTOR(4 downto 0);
+
+---- Declaration for Dangling input ----
+signal Dangling_Input_Signal : STD_LOGIC;
 
 begin
 
@@ -199,6 +208,38 @@ U3 : ula
 
 U4 : mux32bits
   port map(
+       e3(0) => Dangling_Input_Signal,
+       e3(1) => Dangling_Input_Signal,
+       e3(2) => Dangling_Input_Signal,
+       e3(3) => Dangling_Input_Signal,
+       e3(4) => Dangling_Input_Signal,
+       e3(5) => Dangling_Input_Signal,
+       e3(6) => Dangling_Input_Signal,
+       e3(7) => Dangling_Input_Signal,
+       e3(8) => Dangling_Input_Signal,
+       e3(9) => Dangling_Input_Signal,
+       e3(10) => Dangling_Input_Signal,
+       e3(11) => Dangling_Input_Signal,
+       e3(12) => Dangling_Input_Signal,
+       e3(13) => Dangling_Input_Signal,
+       e3(14) => Dangling_Input_Signal,
+       e3(15) => Dangling_Input_Signal,
+       e3(16) => Dangling_Input_Signal,
+       e3(17) => Dangling_Input_Signal,
+       e3(18) => Dangling_Input_Signal,
+       e3(19) => Dangling_Input_Signal,
+       e3(20) => Dangling_Input_Signal,
+       e3(21) => Dangling_Input_Signal,
+       e3(22) => Dangling_Input_Signal,
+       e3(23) => Dangling_Input_Signal,
+       e3(24) => Dangling_Input_Signal,
+       e3(25) => Dangling_Input_Signal,
+       e3(26) => Dangling_Input_Signal,
+       e3(27) => Dangling_Input_Signal,
+       e3(28) => Dangling_Input_Signal,
+       e3(29) => Dangling_Input_Signal,
+       e3(30) => Dangling_Input_Signal,
+       e3(31) => Dangling_Input_Signal,
        e1 => BUS2449,
        e2 => BUS2954,
        op => muxctrl4,
@@ -226,8 +267,8 @@ U5 : regestagio3
 
 U6 : mux2x1_5bits
   port map(
-       In1 => i2521,
-       In2 => i2016,
+       In1 => In1,
+       In2 => In2,
        O => BUS2457,
        S => ctrlMux3
   );
@@ -253,6 +294,8 @@ U9 : mux5bits3op
     -- Inputs terminals
 	p2 <= Ulaestagio4;
 	p1 <= gpr2521;
+	In2 <= i1511;
+	In1 <= i2016;
 	p3 <= muxEstagio5;
 
     -- Output\buffer terminals
@@ -260,5 +303,9 @@ U9 : mux5bits3op
 	saidaMux <= Q4;
 	saidaULA <= Q3;
 
+
+---- Dangling input signal assignment ----
+
+Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end estagio3;

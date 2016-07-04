@@ -126,4 +126,254 @@ acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/deslocador2.vhd $dsn/src/mux32
 # Compile Entity "mux2x1_5bits"
 # Compile Architecture "mux2x1_5bits" of Entity "mux2x1_5bits"
 # File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux3x1.vhd
-# C
+# Compile Entity "mux3x1"
+# Compile Architecture "bev" of Entity "mux3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits(3-1).vhd
+# Compile Entity "mux5bits3x1"
+# Compile Architecture "mux3" of Entity "mux5bits3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio3.vhd
+# Compile Entity "regestagio3"
+# Compile Architecture "reg" of Entity "regestagio3"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\desloc_shamt.vhd
+# Compile Entity "desloc_shamt"
+# Compile Architecture "desloc_shamt" of Entity "desloc_shamt"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits3op.vhd
+# Compile Entity "mux5bits3op"
+# Compile Architecture "mux3" of Entity "mux5bits3op"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\reg32bitsEPC.vhd
+# Compile Entity "reg32bitsEPC"
+# Compile Architecture "bev" of Entity "reg32bitsEPC"
+# Compile success 0 Errors 3 Warnings  Analysis time :  1.0 [s]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/UnidadeControle.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd
+# Compile Entity "unidadecontrole"
+# Compile Architecture "behavior" of Entity "unidadecontrole"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/regestagio2.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd
+# Compile Entity "regestagio2"
+# Compile Architecture "reg2" of Entity "regestagio2"
+# Error: COMP96_0078: regestagio2.vhd : (46, 4): Unknown identifier "saida1511".
+# Error: COMP96_0133: regestagio2.vhd : (46, 4): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/regestagio2.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd
+# Compile Entity "regestagio2"
+# Compile Architecture "reg2" of Entity "regestagio2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/deslocador2.vhd $dsn/src/mux32bits.vhd $dsn/src/ula.vhd $dsn/src/concatena.vhd $dsn/src/deslocador_combinatorio.vhd $dsn/src/estagio1.bde $dsn/src/somapc4.vhd $dsn/src/regpc.vhd $dsn/src/des_comb.vhd $dsn/src/regestagio1.vhd $dsn/src/pipelineTotal.bde $dsn/src/estagio2.bde $dsn/src/regestagio2.vhd $dsn/src/mux1bit2x1.vhd $dsn/src/som32bits.vhd $dsn/src/mux2x1zero.vhd $dsn/src/gpr.vhd $dsn/src/estagio4.bde $dsn/src/regestagio4.vhd $dsn/src/contadorInstrucoes.vhd $dsn/src/contadorBolhas.vhd $dsn/src/estagio5.bde $dsn/src/mux5bits.vhd $dsn/src/UnidadeControle.vhd $dsn/src/estagio3.bde "$dsn/src/mux2x1 5bits.vhd" $dsn/src/mux3x1.vhd $dsn/src/mux5bits(3-1).vhd $dsn/src/regestagio3.vhd $dsn/src/desloc_shamt.vhd $dsn/src/mux5bits3op.vhd $dsn/src/reg32bitsEPC.vhd
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde'.
+# DRC: estagio2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: estagio3.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador2.vhd
+# Compile Entity "deslocador2"
+# Compile Architecture "behavior" of Entity "deslocador2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd
+# Compile Entity "mux32bits"
+# Compile Architecture "bev" of Entity "mux32bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\ula.vhd
+# Compile Entity "ula"
+# Compile Architecture "behavior" of Entity "ula"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\concatena.vhd
+# Compile Entity "concatena"
+# Compile Architecture "behavior" of Entity "concatena"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\..\compile\estagio1.vhd
+# Compile Entity "testes"
+# Compile Architecture "testes" of Entity "testes"
+# Warning: ELAB1_0026: estagio1.bde(estagio1.vhd) : (103, 0): There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity).
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd
+# Compile Entity "somapc4"
+# Compile Architecture "somapc4" of Entity "somapc4"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regpc.vhd
+# Compile Entity "regpc"
+# Compile Architecture "reg" of Entity "regpc"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\des_comb.vhd
+# Compile Entity "desc_comb"
+# Compile Architecture "deslocador_combinatorio" of Entity "desc_comb"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd
+# Compile Entity "regestagio1"
+# Compile Architecture "reg" of Entity "regestagio1"
+# File: .\..\compile\pipelineTotal.vhd
+# Compile Entity "pipelineTotal"
+# Compile Architecture "pipelineTotal" of Entity "pipelineTotal"
+# File: .\..\compile\estagio2.vhd
+# Compile Entity "estagio2"
+# Compile Architecture "estagio2" of Entity "estagio2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd
+# Compile Entity "regestagio2"
+# Compile Architecture "reg2" of Entity "regestagio2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux1bit2x1.vhd
+# Compile Entity "mux1bit2x1"
+# Compile Architecture "mux1bit" of Entity "mux1bit2x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\som32bits.vhd
+# Compile Entity "soma32bits"
+# Compile Architecture "soma32bits" of Entity "soma32bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1zero.vhd
+# Compile Entity "mux2x1zero"
+# Compile Architecture "mux2x1zero" of Entity "mux2x1zero"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\gpr.vhd
+# Compile Entity "gpr"
+# Compile Architecture "gpr" of Entity "gpr"
+# File: .\..\compile\estagio4.vhd
+# Compile Entity "estagio3"
+# Compile Architecture "estagio3" of Entity "estagio3"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd
+# Compile Entity "regestagio4"
+# Compile Architecture "reg4" of Entity "regestagio4"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorInstrucoes.vhd
+# Compile Entity "contadorInstrucoes"
+# Compile Architecture "contadorInstrucoes" of Entity "contadorInstrucoes"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorBolhas.vhd
+# Compile Entity "contadorBolhas"
+# Compile Architecture "contadorBolhas" of Entity "contadorBolhas"
+# File: .\..\compile\estagio5.vhd
+# Compile Entity "estagio5"
+# Compile Architecture "estagio5" of Entity "estagio5"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits.vhd
+# Compile Entity "mux5bits"
+# Compile Architecture "bev" of Entity "mux5bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd
+# Compile Entity "unidadecontrole"
+# Compile Architecture "behavior" of Entity "unidadecontrole"
+# File: .\..\compile\estagio3.vhd
+# Compile Entity "estagio3"
+# Warning: COMP96_0994: Multiple entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd".
+# Compile Architecture "estagio3" of Entity "estagio3"
+# Warning: COMP96_0994: Multiple architecture "estagio3" of entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd".
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1 5bits.vhd
+# Compile Entity "mux2x1_5bits"
+# Compile Architecture "mux2x1_5bits" of Entity "mux2x1_5bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux3x1.vhd
+# Compile Entity "mux3x1"
+# Compile Architecture "bev" of Entity "mux3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits(3-1).vhd
+# Compile Entity "mux5bits3x1"
+# Compile Architecture "mux3" of Entity "mux5bits3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio3.vhd
+# Compile Entity "regestagio3"
+# Compile Architecture "reg" of Entity "regestagio3"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\desloc_shamt.vhd
+# Compile Entity "desloc_shamt"
+# Compile Architecture "desloc_shamt" of Entity "desloc_shamt"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits3op.vhd
+# Compile Entity "mux5bits3op"
+# Compile Architecture "mux3" of Entity "mux5bits3op"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\reg32bitsEPC.vhd
+# Compile Entity "reg32bitsEPC"
+# Compile Architecture "bev" of Entity "reg32bitsEPC"
+# Compile success 0 Errors 3 Warnings  Analysis time :  1.0 [s]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio3.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: Error: estagio3.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio3.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: estagio3.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\estagio3.vhd
+# Compile Entity "estagio3"
+# Compile Architecture "estagio3" of Entity "estagio3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/mux32bits.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd
+# Compile Entity "mux32bits"
+# Compile Architecture "bev" of Entity "mux32bits"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# estagio3: Updating instances of symbol 'mux32bits' from library 'uc_pipeline' (U4)
+# estagio1: Updating instances of symbol 'mux32bits' from library 'uc_pipeline' (U3)
+# estagio3: Updating instances of symbol 'mux32bits' from library 'uc_pipeline' (U4)
+# estagio1: Updating instances of symbol 'mux32bits' from library 'uc_pipeline' (U3)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio1.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde'.
+# DRC: estagio1.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio1.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\estagio1.vhd
+# Compile Entity "testes"
+# Compile Architecture "testes" of Entity "testes"
+# Warning: ELAB1_0026: estagio1.bde(estagio1.vhd) : (106, 0): There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/deslocador2.vhd $dsn/src/mux32bits.vhd $dsn/src/ula.vhd $dsn/src/concatena.vhd $dsn/src/deslocador_combinatorio.vhd $dsn/src/estagio1.bde $dsn/src/somapc4.vhd $dsn/src/regpc.vhd $dsn/src/des_comb.vhd $dsn/src/regestagio1.vhd $dsn/src/pipelineTotal.bde $dsn/src/estagio2.bde $dsn/src/regestagio2.vhd $dsn/src/mux1bit2x1.vhd $dsn/src/som32bits.vhd $dsn/src/mux2x1zero.vhd $dsn/src/gpr.vhd $dsn/src/estagio4.bde $dsn/src/regestagio4.vhd $dsn/src/contadorInstrucoes.vhd $dsn/src/contadorBolhas.vhd $dsn/src/estagio5.bde $dsn/src/mux5bits.vhd $dsn/src/UnidadeControle.vhd $dsn/src/estagio3.bde "$dsn/src/mux2x1 5bits.vhd" $dsn/src/mux3x1.vhd $dsn/src/mux5bits(3-1).vhd $dsn/src/regestagio3.vhd $dsn/src/desloc_shamt.vhd $dsn/src/mux5bits3op.vhd $dsn/src/reg32bitsEPC.vhd
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde'.
+# DRC: estagio1.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio1.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde'.
+# DRC: estagio2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: Warning: estagio3.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador2.vhd
+# Compile Entity "deslocador2"
+# Compile Architecture "behavior" of Entity "deslocador2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd
+# Compile Entity "mux32bits"
+# Compile Architecture "bev" of Entity "mux32bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\ula.vhd
+# Compile Entity "ula"
+# Compile Architecture "behavior" of Entity "ula"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\concatena.vhd
+# Compile Entity "concatena"
+# Compile Architecture "behavior" of Entity "concatena"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\..\compile\estagio1.vhd
+# Compile Entity "testes"
+# Compile Architecture "testes" of Entity "testes"
+# Warning: ELAB1_0026: estagio1.bde(estagio1.vhd) : (106, 0): There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity).
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd
+# Compile Entity "somapc4"
+# Compile Architecture "somapc4" of Entity "somapc4"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regpc.vhd
+# Compile Entity "regpc"
+# Compile Architecture "reg" of Entity "regpc"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\des_comb.vhd
+# Compile Entity "desc_comb"
+# Compile Architecture "deslocador_combinatorio" of Entity "desc_comb"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd
+# Compile Entity "regestagio1"
+# Compile Architecture "reg" of Entity "regestagio1"
+# File: .\..\compile\pipelineTotal.vhd
+# Compile Entity "pipelineTotal"
+# Compile Architecture "pipelineTotal" of Entity "pipelineTotal"
+# File: .\..\compile\estagio2.vhd
+# Compile Entity "estagio2"
+# Compile Architecture "estagio2" of Entity "estagio2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd
+# Compile 

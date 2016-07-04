@@ -1,4 +1,4 @@
-507
+532
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -69,8 +69,8 @@
 ~E 1 "./../src/somapc4.vhd" 6 somapc4
 ~A 1 "./../src/somapc4.vhd" 13 somapc4
 ~E 1 "./../compile/teste2.vhd" 28 teste2
-~E 1 "./../compile/testes.vhd" 28 testes
-~A 1 "./../compile/estagio1.vhd" 43 testes
+~E 1 "./../compile/estagio1.vhd" 28 testes
+~A 1 "./../compile/estagio1.vhd" 44 testes
 ~E 1 "./../src/ula.vhd" 5 ula
 ~A 1 "./../src/ula.vhd" 14 behavior
 ~E 1 "./../src/UnidadeControle.vhd" 4 unidadecontrole
