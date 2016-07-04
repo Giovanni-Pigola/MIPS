@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\HierarquiaDeMemoria.vhd
--- Generated   : Mon Jul  4 01:34:21 2016
+-- Generated   : Mon Jul  4 02:38:30 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\HierarquiaDeMemoria.bde
 -- By          : Bde2Vhdl ver. 2.6
 --

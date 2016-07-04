@@ -43,3 +43,5 @@
 .\src\TestbenchWriteBuffer.vhd
 .\src\WriteBufferCache.vhd
 .\src\MIPSCompleto.bde
+.\src\Fowarding.vhd
+.\src\Hazard.vhd

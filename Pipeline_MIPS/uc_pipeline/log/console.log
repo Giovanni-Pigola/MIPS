@@ -564,4 +564,400 @@ acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/estagio3.bde
 acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
 # DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
 # DRC: pipelineCompleto.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process compl
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/MIPSCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde'.
+# DRC: Warning: MIPSCompleto.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\MIPSCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\MIPSCompleto.vhd
+# Compile Entity "MIPSCompleto"
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/Fowarding.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\Fowarding.vhd
+# Compile Entity "Forwarding"
+# Compile Architecture "method" of Entity "Forwarding"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/Hazard.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\Hazard.vhd
+# Compile Entity "Hazard"
+# Compile Architecture "method" of Entity "Hazard"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/MIPSCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde'.
+# DRC: MIPSCompleto.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\MIPSCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\MIPSCompleto.vhd
+# Compile Entity "MIPSCompleto"
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+# MIPSCompleto: Updating instances of symbol 'pipelineCompleto' from library 'uc_pipeline' (U1)
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/deslocador2.vhd $dsn/src/mux32bits.vhd $dsn/src/ula.vhd $dsn/src/concatena.vhd $dsn/src/deslocador_combinatorio.vhd $dsn/src/estagio1.bde $dsn/src/somapc4.vhd $dsn/src/regpc.vhd $dsn/src/des_comb.vhd $dsn/src/regestagio1.vhd $dsn/src/estagio2.bde $dsn/src/regestagio2.vhd $dsn/src/mux1bit2x1.vhd $dsn/src/som32bits.vhd $dsn/src/mux2x1zero.vhd $dsn/src/gpr.vhd $dsn/src/regestagio4.vhd $dsn/src/contadorInstrucoes.vhd $dsn/src/contadorBolhas.vhd $dsn/src/estagio5.bde $dsn/src/mux5bits.vhd $dsn/src/UnidadeControle.vhd $dsn/src/estagio3.bde "$dsn/src/mux2x1 5bits.vhd" $dsn/src/mux3x1.vhd $dsn/src/mux5bits(3-1).vhd $dsn/src/regestagio3.vhd $dsn/src/desloc_shamt.vhd $dsn/src/mux5bits3op.vhd $dsn/src/reg32bitsEPC.vhd $dsn/src/mux32bitsX2.vhd $dsn/src/pipelineCompleto.bde $dsn/src/est4.bde $dsn/src/processador.bde $dsn/src/CacheDados.vhd $dsn/src/CacheInstrucoes.vhd $dsn/src/HierarquiaDeMemoria.bde $dsn/src/MemoriaPrincipal.vhd $dsn/src/TestbenchCacheDados.vhd $dsn/src/TestbenchCacheInstrucoes.vhd $dsn/src/TestbenchHierarquiaDeMemoria.vhd $dsn/src/TestbenchMemoriaPrincipal.vhd $dsn/src/TestbenchWriteBuffer.vhd $dsn/src/WriteBufferCache.vhd $dsn/src/MIPSCompleto.bde $dsn/src/Fowarding.vhd $dsn/src/Hazard.vhd
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde'.
+# DRC: estagio2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde'.
+# DRC: estagio3.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\est4.bde'.
+# DRC: est4.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\est4.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\est4.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\HierarquiaDeMemoria.bde'.
+# DRC: HierarquiaDeMemoria.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\HierarquiaDeMemoria.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\HierarquiaDeMemoria.bde ...
+# Generation successful
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde'.
+# DRC: MIPSCompleto.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\MIPSCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador2.vhd
+# Compile Entity "deslocador2"
+# Compile Architecture "behavior" of Entity "deslocador2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bits.vhd
+# Compile Entity "mux32bits"
+# Compile Architecture "bev" of Entity "mux32bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\ula.vhd
+# Compile Entity "ula"
+# Compile Architecture "behavior" of Entity "ula"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\concatena.vhd
+# Compile Entity "concatena"
+# Compile Architecture "behavior" of Entity "concatena"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\..\compile\estagio1.vhd
+# Compile Entity "testes"
+# Compile Architecture "testes" of Entity "testes"
+# Warning: ELAB1_0026: estagio1.bde(estagio1.vhd) : (106, 0): There is no default binding for component "regpc". (Generic "NumeroBits" is not on the entity).
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\somapc4.vhd
+# Compile Entity "somapc4"
+# Compile Architecture "somapc4" of Entity "somapc4"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regpc.vhd
+# Compile Entity "regpc"
+# Compile Architecture "reg" of Entity "regpc"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\des_comb.vhd
+# Compile Entity "desc_comb"
+# Compile Architecture "deslocador_combinatorio" of Entity "desc_comb"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd
+# Compile Entity "regestagio1"
+# Compile Architecture "reg" of Entity "regestagio1"
+# File: .\..\compile\estagio2.vhd
+# Compile Entity "estagio2"
+# Compile Architecture "estagio2" of Entity "estagio2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio2.vhd
+# Compile Entity "regestagio2"
+# Compile Architecture "reg2" of Entity "regestagio2"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux1bit2x1.vhd
+# Compile Entity "mux1bit2x1"
+# Compile Architecture "mux1bit" of Entity "mux1bit2x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\som32bits.vhd
+# Compile Entity "soma32bits"
+# Compile Architecture "soma32bits" of Entity "soma32bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1zero.vhd
+# Compile Entity "mux2x1zero"
+# Compile Architecture "mux2x1zero" of Entity "mux2x1zero"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\gpr.vhd
+# Compile Entity "gpr"
+# Compile Architecture "gpr" of Entity "gpr"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd
+# Compile Entity "regestagio4"
+# Compile Architecture "reg4" of Entity "regestagio4"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorInstrucoes.vhd
+# Compile Entity "contadorInstrucoes"
+# Compile Architecture "contadorInstrucoes" of Entity "contadorInstrucoes"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\contadorBolhas.vhd
+# Compile Entity "contadorBolhas"
+# Compile Architecture "contadorBolhas" of Entity "contadorBolhas"
+# File: .\..\compile\estagio5.vhd
+# Compile Entity "estagio5"
+# Compile Architecture "estagio5" of Entity "estagio5"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits.vhd
+# Compile Entity "mux5bits"
+# Compile Architecture "bev" of Entity "mux5bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\UnidadeControle.vhd
+# Compile Entity "unidadecontrole"
+# Compile Architecture "behavior" of Entity "unidadecontrole"
+# File: .\..\compile\estagio3.vhd
+# Compile Entity "estagio3"
+# Compile Architecture "estagio3" of Entity "estagio3"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1 5bits.vhd
+# Compile Entity "mux2x1_5bits"
+# Compile Architecture "mux2x1_5bits" of Entity "mux2x1_5bits"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux3x1.vhd
+# Compile Entity "mux3x1"
+# Compile Architecture "bev" of Entity "mux3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits(3-1).vhd
+# Compile Entity "mux5bits3x1"
+# Compile Architecture "mux3" of Entity "mux5bits3x1"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio3.vhd
+# Compile Entity "regestagio3"
+# Compile Architecture "reg" of Entity "regestagio3"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\desloc_shamt.vhd
+# Compile Entity "desloc_shamt"
+# Compile Architecture "desloc_shamt" of Entity "desloc_shamt"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux5bits3op.vhd
+# Compile Entity "mux5bits3op"
+# Compile Architecture "mux3" of Entity "mux5bits3op"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\reg32bitsEPC.vhd
+# Compile Entity "reg32bitsEPC"
+# Compile Architecture "bev" of Entity "reg32bitsEPC"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bitsX2.vhd
+# Compile Entity "mux32bitsX2"
+# Compile Architecture "bev" of Entity "mux32bitsX2"
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# File: .\..\compile\est4.vhd
+# Compile Entity "est4"
+# Compile Architecture "est4" of Entity "est4"
+# File: .\..\compile\processador.vhd
+# Compile Entity "processador"
+# Compile Architecture "processador" of Entity "processador"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\CacheDados.vhd
+# Compile Entity "CacheDados"
+# Compile Architecture "CacheDados" of Entity "CacheDados"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\CacheInstrucoes.vhd
+# Compile Entity "CacheInstrucoes"
+# Compile Architecture "CacheInst" of Entity "CacheInstrucoes"
+# File: .\..\compile\HierarquiaDeMemoria.vhd
+# Compile Entity "HierarquiaDeMemoria"
+# Compile Architecture "HierarquiaDeMemoria" of Entity "HierarquiaDeMemoria"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchCacheDados.vhd
+# Compile Entity "TestbenchCacheDados"
+# Compile Architecture "TestbenchCacheDados" of Entity "TestbenchCacheDados"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchCacheInstrucoes.vhd
+# Compile Entity "TestbenchCacheInstrucoes"
+# Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchHierarquiaDeMemoria.vhd
+# Compile Entity "TestbenchHierarquiaDeMemoria"
+# Compile Architecture "TestbenchHierarquiaDeMemoria" of Entity "TestbenchHierarquiaDeMemoria"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchMemoriaPrincipal.vhd
+# Compile Entity "TestbenchMemoriaPrincipal"
+# Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchWriteBuffer.vhd
+# Compile Entity "TestbenchWriteBuffer"
+# Compile Architecture "TestbenchWriteBuffer" of Entity "TestbenchWriteBuffer"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\WriteBufferCache.vhd
+# Compile Entity "WriteBufferCache"
+# Compile Architecture "WriteBufferCache" of Entity "WriteBufferCache"
+# File: .\..\compile\MIPSCompleto.vhd
+# Compile Entity "MIPSCompleto"
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\Fowarding.vhd
+# Compile Entity "Forwarding"
+# Compile Architecture "method" of Entity "Forwarding"
+# File: C:\My_Designs\uc_pipeline\uc_pipeline\src\Hazard.vhd
+# Compile Entity "Hazard"
+# Compile Architecture "method" of Entity "Hazard"
+# Compile success 0 Errors 1 Warnings  Analysis time :  3.0 [s]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/MIPSCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde'.
+# DRC: MIPSCompleto.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\MIPSCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\MIPSCompleto.vhd
+# Compile Entity "MIPSCompleto"
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# Error: ELAB1_0011: MIPSCompleto.bde(MIPSCompleto.vhd) : (104, 0): Port "hazardCtrl" is on entity "pipelineCompleto" but not on the component declaration.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 3 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto2.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto2.bde'.
+# DRC: Warning: pipelineCompleto2.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto2.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto2.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto2.vhd
+# Compile Entity "pipelineCompleto2"
+# Compile Architecture "pipelineCompleto2" of Entity "pipelineCompleto2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/MIPSCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde'.
+# DRC: MIPSCompleto.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\MIPSCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\MIPSCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\MIPSCompleto.vhd
+# Compile Entity "MIPSCompleto"
+# Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work uc_pipeline -2002  $dsn/src/pipelineCompleto.bde
+# DRC: Checking file 'C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde'.
+# DRC: Warning: pipelineCompleto.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd from C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\pipelineCompleto.vhd
+# Compile Entity "pipelineCompleto"
+# Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]

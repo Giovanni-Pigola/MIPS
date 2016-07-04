@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\pipelineCompleto.vhd
--- Generated   : Mon Jul  4 01:49:01 2016
+-- Generated   : Mon Jul  4 02:50:38 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\pipelineCompleto.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,22 +30,17 @@ entity pipelineCompleto is
        UCctrl : in STD_LOGIC;
        clock : in STD_LOGIC;
        ctrlJal : in STD_LOGIC;
-       hazardCtrl : in STD_LOGIC;
-       hazardctrlPC : in STD_LOGIC;
        reset : in STD_LOGIC;
        entradaCache : in STD_LOGIC_VECTOR(31 downto 0);
        entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
-       forwardingCtrl1 : in STD_LOGIC_VECTOR(1 downto 0);
-       forwardingCtrl2 : in STD_LOGIC_VECTOR(1 downto 0);
        exsaida : out STD_LOGIC;
        instrucaoInvalida : out STD_LOGIC;
        m_out : out STD_LOGIC;
-       I1511out : out STD_LOGIC_VECTOR(4 downto 0);
        contBolha : out STD_LOGIC_VECTOR(7 downto 0);
        contInst : out STD_LOGIC_VECTOR(7 downto 0);
-       saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
        saidaCache : out STD_LOGIC_VECTOR(31 downto 0);
        saidaParaCache : out STD_LOGIC_VECTOR(31 downto 0);
+       saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
        saidaepc : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end pipelineCompleto;
@@ -88,6 +83,27 @@ component estagio3
        sctrlMux5 : out STD_LOGIC;
        sctrlMuxMEM : out STD_LOGIC;
        wb_out : out STD_LOGIC
+  );
+end component;
+component Forwarding
+  port (
+       EX_MEM_Rd : in STD_LOGIC_VECTOR(4 downto 0);
+       ID_EX_Rs : in STD_LOGIC_VECTOR(4 downto 0);
+       ID_EX_Rt : in STD_LOGIC_VECTOR(4 downto 0);
+       MEM_WB_Rd : in STD_LOGIC_VECTOR(4 downto 0);
+       wb_ctrl_e4 : in STD_LOGIC;
+       wb_ctrl_e5 : in STD_LOGIC;
+       ForwardA : out STD_LOGIC_VECTOR(1 downto 0);
+       ForwardB : out STD_LOGIC_VECTOR(1 downto 0)
+  );
+end component;
+component Hazard
+  port (
+       ID_EX_Rt : in STD_LOGIC_VECTOR(4 downto 0);
+       IF_ID : in STD_LOGIC_VECTOR(31 downto 0);
+       m_ctrl_e3 : in STD_LOGIC;
+       HazardA : out STD_LOGIC;
+       HazardB : out STD_LOGIC
   );
 end component;
 component unidadecontrole
@@ -200,9 +216,10 @@ signal NET1015 : STD_LOGIC;
 signal NET1037 : STD_LOGIC;
 signal NET1065 : STD_LOGIC;
 signal NET1075 : STD_LOGIC;
+signal NET1676 : STD_LOGIC;
+signal NET2151 : STD_LOGIC;
 signal NET382 : STD_LOGIC;
 signal NET390 : STD_LOGIC;
-signal NET398 : STD_LOGIC;
 signal NET431 : STD_LOGIC;
 signal NET565 : STD_LOGIC;
 signal NET575 : STD_LOGIC;
@@ -213,6 +230,7 @@ signal NET643 : STD_LOGIC;
 signal NET664 : STD_LOGIC;
 signal NET674 : STD_LOGIC;
 signal NET753 : STD_LOGIC;
+signal NET789 : STD_LOGIC;
 signal NET801 : STD_LOGIC;
 signal NET828 : STD_LOGIC;
 signal NET863 : STD_LOGIC;
@@ -225,17 +243,21 @@ signal BUS1121 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS117 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS1316 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS1344 : STD_LOGIC_VECTOR(31 downto 0);
-signal BUS1521 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS1780 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS189 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS2035 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS212 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS220 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS228 : STD_LOGIC_VECTOR(31 downto 0);
-signal BUS236 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS244 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS261 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS485 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS763 : STD_LOGIC_VECTOR(1 downto 0);
 signal BUS934 : STD_LOGIC_VECTOR(31 downto 0);
+signal forwardingCtrl1 : STD_LOGIC_VECTOR(1 downto 0);
+signal forwardingCtrl2 : STD_LOGIC_VECTOR(1 downto 0);
+signal I1511out : STD_LOGIC_VECTOR(4 downto 0);
+signal saida2521 : STD_LOGIC_VECTOR(4 downto 0);
 signal saidaImed : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
@@ -250,8 +272,8 @@ U1 : testes
        entEstagio2 => BUS189,
        entradaCache => entradaCache,
        entradaJR => BUS1316,
-       hazardctrl => hazardctrl,
-       hazardctrlPC => hazardctrlPC,
+       hazardctrl => NET2151,
+       hazardctrlPC => NET789,
        instrucao => BUS934,
        op => BUS763,
        saidaCache => saidaCache
@@ -277,11 +299,11 @@ U2 : estagio2
        entrada => BUS934,
        entradaPC => BUS1344,
        exsaida => exsaida,
-       hazardCtrl => hazardCtrl,
+       hazardCtrl => NET2151,
        msaida => NET863,
        reset => reset,
        saida1511 => BUS244,
-       saida2016 => BUS236,
+       saida2016 => BUS2035,
        saida2521 => saida2521,
        saidaEstagio2 => BUS189,
        saidaGPR2016 => BUS212,
@@ -299,7 +321,7 @@ U2 : estagio2
 
 U3 : estagio3
   port map(
-       I1511out => BUS1521,
+       I1511out => BUS1780,
        OVF => NET565,
        UCctrl => UCctrl,
        Ulaestagio4 => BUS485,
@@ -312,9 +334,9 @@ U3 : estagio3
        forwardingCtrl2 => forwardingCtrl2,
        gpr2016 => BUS212,
        gpr2521 => BUS220,
-       hazardctrl => hazardctrl,
+       hazardctrl => NET2151,
        i1511 => BUS244,
-       i2016 => BUS236,
+       i2016 => BUS2035,
        m_ctrl => NET1075,
        m_in => NET863,
        m_out => m_out,
@@ -330,12 +352,12 @@ U3 : estagio3
        ula_ctrl => NET607,
        wb_ctrl => NET1065,
        wb_in => NET828,
-       wb_out => NET398
+       wb_out => NET1676
   );
 
 U4 : est4
   port map(
-       I1511 => BUS1521,
+       I1511 => BUS1780,
        I1511out => I1511out,
        clock => clock,
        ctrlMux5 => NET390,
@@ -350,7 +372,7 @@ U4 : est4
        saidaResULA => BUS485,
        saidacache => BUS1316,
        sctrlMux5 => NET431,
-       wb => NET398,
+       wb => NET1676,
        wbsaida => NET908
   );
 
@@ -393,6 +415,27 @@ U6 : unidadecontrole
        orCtrl => NET664,
        overflowULA => NET565,
        wb_m_exCtrl => NET674
+  );
+
+U7 : Forwarding
+  port map(
+       EX_MEM_Rd => BUS1780,
+       ForwardA => forwardingCtrl1,
+       ForwardB => forwardingCtrl2,
+       ID_EX_Rs => saida2521,
+       ID_EX_Rt => BUS2035,
+       MEM_WB_Rd => I1511out,
+       wb_ctrl_e4 => NET1676,
+       wb_ctrl_e5 => NET908
+  );
+
+U8 : Hazard
+  port map(
+       HazardA => NET2151,
+       HazardB => NET789,
+       ID_EX_Rt => BUS2035,
+       IF_ID => BUS1344,
+       m_ctrl_e3 => NET1075
   );
 
 

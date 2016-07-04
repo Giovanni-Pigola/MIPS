@@ -1,4 +1,4 @@
-737
+806
 ~E 1 "./../src/CacheDados.vhd" 29 CacheDados
 ~A 1 "./../src/CacheDados.vhd" 52 CacheDados
 ~E 1 "./../src/CacheInstrucoes.vhd" 29 CacheInstrucoes
@@ -29,14 +29,18 @@
 ~A 1 "./../compile/estagio3.vhd" 65 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
+~E 1 "./../src/Fowarding.vhd" 5 Forwarding
+~A 1 "./../src/Fowarding.vhd" 19 method
 ~E 1 "./../src/gpr.vhd" 25 gpr
 ~A 1 "./../src/gpr.vhd" 44 gpr
+~E 1 "./../src/Hazard.vhd" 5 Hazard
+~A 1 "./../src/Hazard.vhd" 16 method
 ~E 1 "./../compile/HierarquiaDeMemoria.vhd" 28 HierarquiaDeMemoria
 ~A 1 "./../compile/HierarquiaDeMemoria.vhd" 47 HierarquiaDeMemoria
 ~E 1 "./../src/MemoriaPrincipal.vhd" 31 MemoriaPrincipal
 ~A 1 "./../src/MemoriaPrincipal.vhd" 51 MemoriaPrincipal
 ~E 1 "./../compile/MIPSCompleto.vhd" 28 MIPSCompleto
-~A 1 "./../compile/MIPSCompleto.vhd" 31 MIPSCompleto
+~A 1 "./../compile/MIPSCompleto.vhd" 50 MIPSCompleto
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit
 ~A 1 "./../src/mux1bit2x1.vhd" 34 mux1bit
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit2x1
@@ -63,7 +67,8 @@
 ~E 1 "./../src/mux2x1 5bits.vhd" 5 mux5bitx
 ~A 1 "./../src/mux2x1 5bits.vhd" 13 mux1bitx
 ~E 1 "./../compile/pipelineCompleto.vhd" 28 pipelineCompleto
-~A 1 "./../compile/pipelineCompleto.vhd" 53 pipelineCompleto
+~A 1 "./../compile/pipelineCompleto.vhd" 48 pipelineCompleto
+~E 1 "./../compile/pipelineCompleto2.vhd" 28 pipelineCompleto2
 ~E 1 "./../compile/pipelineTotal.vhd" 28 pipelineTotal
 ~E 1 "./../compile/processador.vhd" 28 processador
 ~A 1 "./../compile/processador.vhd" 31 processador
