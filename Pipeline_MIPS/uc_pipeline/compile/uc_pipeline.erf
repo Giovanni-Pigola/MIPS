@@ -30,9 +30,6 @@ MESSAGE "Compile Architecture "deslocador_combinatorio" of Entity "desc_comb""
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio1.vhd" 
 MESSAGE "Compile Entity "regestagio1"" 
 MESSAGE "Compile Architecture "reg" of Entity "regestagio1"" 
-MESSAGE "File: .\..\compile\pipelineTotal.vhd" 
-MESSAGE "Compile Entity "pipelineTotal"" 
-MESSAGE "Compile Architecture "pipelineTotal" of Entity "pipelineTotal"" 
 MESSAGE "File: .\..\compile\estagio2.vhd" 
 MESSAGE "Compile Entity "estagio2"" 
 MESSAGE "Compile Architecture "estagio2" of Entity "estagio2"" 
@@ -51,9 +48,6 @@ MESSAGE "Compile Architecture "mux2x1zero" of Entity "mux2x1zero""
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\gpr.vhd" 
 MESSAGE "Compile Entity "gpr"" 
 MESSAGE "Compile Architecture "gpr" of Entity "gpr"" 
-MESSAGE "File: .\..\compile\estagio4.vhd" 
-MESSAGE "Compile Entity "estagio3"" 
-MESSAGE "Compile Architecture "estagio3" of Entity "estagio3"" 
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\regestagio4.vhd" 
 MESSAGE "Compile Entity "regestagio4"" 
 MESSAGE "Compile Architecture "reg4" of Entity "regestagio4"" 
@@ -74,9 +68,7 @@ MESSAGE "Compile Entity "unidadecontrole""
 MESSAGE "Compile Architecture "behavior" of Entity "unidadecontrole"" 
 MESSAGE "File: .\..\compile\estagio3.vhd" 
 MESSAGE "Compile Entity "estagio3"" 
-WARNING COMP96_0994: "Multiple entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd"."
 MESSAGE "Compile Architecture "estagio3" of Entity "estagio3"" 
-WARNING COMP96_0994: "Multiple architecture "estagio3" of entity "estagio3" found in ".\..\compile\estagio3.vhd", ".\..\compile\estagio4.vhd"."
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux2x1 5bits.vhd" 
 MESSAGE "Compile Entity "mux2x1_5bits"" 
 MESSAGE "Compile Architecture "mux2x1_5bits" of Entity "mux2x1_5bits"" 
@@ -101,4 +93,75 @@ MESSAGE "Compile Architecture "bev" of Entity "reg32bitsEPC""
 MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\mux32bitsX2.vhd" 
 MESSAGE "Compile Entity "mux32bitsX2"" 
 MESSAGE "Compile Architecture "bev" of Entity "mux32bitsX2"" 
-SUCCESS "Compile success 0 Errors 3 Warnings  Analysis time :  1.0 [s]" 
+MESSAGE "File: .\..\compile\pipelineCompleto.vhd" 
+BEGINPROGRESS .\..\compile\pipelineCompleto.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "pipelineCompleto"" 
+UPDATEPROGRESS 7
+UPDATEPROGRESS 8
+MESSAGE "Compile Architecture "pipelineCompleto" of Entity "pipelineCompleto"" 
+UPDATEPROGRESS 14
+UPDATEPROGRESS 23
+UPDATEPROGRESS 29
+UPDATEPROGRESS 38
+UPDATEPROGRESS 42
+UPDATEPROGRESS 46
+UPDATEPROGRESS 47
+UPDATEPROGRESS 48
+UPDATEPROGRESS 49
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 52
+UPDATEPROGRESS 53
+UPDATEPROGRESS 54
+UPDATEPROGRESS 55
+UPDATEPROGRESS 56
+UPDATEPROGRESS 57
+UPDATEPROGRESS 63
+UPDATEPROGRESS 73
+UPDATEPROGRESS 83
+UPDATEPROGRESS 88
+UPDATEPROGRESS 91
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS .\..\compile\pipelineCompleto.vhd
+MESSAGE "File: .\..\compile\est4.vhd" 
+MESSAGE "Compile Entity "est4"" 
+MESSAGE "Compile Architecture "est4" of Entity "est4"" 
+MESSAGE "File: .\..\compile\processador.vhd" 
+MESSAGE "Compile Entity "processador"" 
+MESSAGE "Compile Architecture "processador" of Entity "processador"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\CacheDados.vhd" 
+MESSAGE "Compile Entity "CacheDados"" 
+MESSAGE "Compile Architecture "CacheDados" of Entity "CacheDados"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\CacheInstrucoes.vhd" 
+MESSAGE "Compile Entity "CacheInstrucoes"" 
+MESSAGE "Compile Architecture "CacheInst" of Entity "CacheInstrucoes"" 
+MESSAGE "File: .\..\compile\HierarquiaDeMemoria.vhd" 
+MESSAGE "Compile Entity "HierarquiaDeMemoria"" 
+MESSAGE "Compile Architecture "HierarquiaDeMemoria" of Entity "HierarquiaDeMemoria"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\MemoriaPrincipal.vhd" 
+MESSAGE "Compile Entity "MemoriaPrincipal"" 
+MESSAGE "Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchCacheDados.vhd" 
+MESSAGE "Compile Entity "TestbenchCacheDados"" 
+MESSAGE "Compile Architecture "TestbenchCacheDados" of Entity "TestbenchCacheDados"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchCacheInstrucoes.vhd" 
+MESSAGE "Compile Entity "TestbenchCacheInstrucoes"" 
+MESSAGE "Compile Architecture "TestbenchCacheInstrucoes" of Entity "TestbenchCacheInstrucoes"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchHierarquiaDeMemoria.vhd" 
+MESSAGE "Compile Entity "TestbenchHierarquiaDeMemoria"" 
+MESSAGE "Compile Architecture "TestbenchHierarquiaDeMemoria" of Entity "TestbenchHierarquiaDeMemoria"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchMemoriaPrincipal.vhd" 
+MESSAGE "Compile Entity "TestbenchMemoriaPrincipal"" 
+MESSAGE "Compile Architecture "TestbenchMemoriaPrincipal" of Entity "TestbenchMemoriaPrincipal"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\TestbenchWriteBuffer.vhd" 
+MESSAGE "Compile Entity "TestbenchWriteBuffer"" 
+MESSAGE "Compile Architecture "TestbenchWriteBuffer" of Entity "TestbenchWriteBuffer"" 
+MESSAGE "File: C:\My_Designs\uc_pipeline\uc_pipeline\src\WriteBufferCache.vhd" 
+MESSAGE "Compile Entity "WriteBufferCache"" 
+MESSAGE "Compile Architecture "WriteBufferCache" of Entity "WriteBufferCache"" 
+MESSAGE "File: .\..\compile\MIPSCompleto.vhd" 
+MESSAGE "Compile Entity "MIPSCompleto"" 
+MESSAGE "Compile Architecture "MIPSCompleto" of Entity "MIPSCompleto"" 
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  1.0 [s]" 

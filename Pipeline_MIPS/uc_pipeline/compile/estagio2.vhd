@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
--- Generated   : Sun Jul  3 22:44:24 2016
+-- Generated   : Mon Jul  4 01:34:19 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -53,6 +53,7 @@ entity estagio2 is
        wbsaida : out STD_LOGIC;
        saida1511 : out STD_LOGIC_VECTOR(4 downto 0);
        saida2016 : out STD_LOGIC_VECTOR(4 downto 0);
+       saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
        saidaEstagio2 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
@@ -104,6 +105,13 @@ component mux2x1zero
        O : out STD_LOGIC
   );
 end component;
+component soma32bits
+  port (
+       A : in STD_LOGIC_VECTOR(31 downto 0);
+       B : in STD_LOGIC_VECTOR(31 downto 0);
+       C : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component regestagio2
   port (
        clock : in STD_LOGIC;
@@ -124,6 +132,7 @@ component regestagio2
        msaida : out STD_LOGIC;
        saida1511 : out STD_LOGIC_VECTOR(4 downto 0);
        saida2016 : out STD_LOGIC_VECTOR(4 downto 0);
+       saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaPC : out STD_LOGIC_VECTOR(31 downto 0);
@@ -134,13 +143,6 @@ component regestagio2
        sctrlMuxMEM : out STD_LOGIC;
        sctrlULA : out STD_LOGIC;
        wbsaida : out STD_LOGIC
-  );
-end component;
-component soma32bits
-  port (
-       A : in STD_LOGIC_VECTOR(31 downto 0);
-       B : in STD_LOGIC_VECTOR(31 downto 0);
-       C : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
 
@@ -187,6 +189,7 @@ U4 : regestagio2
        msaida => msaida,
        saida1511 => saida1511,
        saida2016 => saida2016,
+       saida2521 => saida2521,
        saidaGPR2016 => saidaGPR2016,
        saidaGPR2521 => saidaGPR2521,
        saidaPC => saidaPC,

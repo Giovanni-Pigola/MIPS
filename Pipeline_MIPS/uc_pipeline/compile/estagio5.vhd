@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio5.vhd
--- Generated   : Sun Jul  3 20:27:54 2016
+-- Generated   : Mon Jul  4 01:05:10 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio5.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,11 +30,11 @@ entity estagio5 is
        ctrlMux5 : in STD_LOGIC;
        inst : in STD_LOGIC;
        reset : in STD_LOGIC;
-       entradaCache : in STD_LOGIC_VECTOR(4 downto 0);
-       entradaULA : in STD_LOGIC_VECTOR(4 downto 0);
-       contBolha : out INTEGER;
-       contInst : out INTEGER;
-       saidaEstagio2e3 : out STD_LOGIC_VECTOR(4 downto 0)
+       eCache : in STD_LOGIC_VECTOR(31 downto 0);
+       eULA : in STD_LOGIC_VECTOR(31 downto 0);
+       contBolha : out STD_LOGIC_VECTOR(7 downto 0);
+       contInst : out STD_LOGIC_VECTOR(7 downto 0);
+       saidaMux : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end estagio5;
 
@@ -42,41 +42,36 @@ architecture estagio5 of estagio5 is
 
 ---- Component declarations -----
 
+component mux32bitsX2
+  port (
+       e1 : in STD_LOGIC_VECTOR(31 downto 0);
+       e2 : in STD_LOGIC_VECTOR(31 downto 0);
+       op : in STD_LOGIC;
+       saida : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component contadorBolhas
   port (
        inst : in STD_LOGIC;
        reset : in STD_LOGIC;
-       cont : out INTEGER
+       cont : out STD_LOGIC_VECTOR(7 downto 0)
   );
 end component;
 component contadorInstrucoes
   port (
        inst : in STD_LOGIC;
        reset : in STD_LOGIC;
-       cont : out INTEGER
+       cont : out STD_LOGIC_VECTOR(7 downto 0)
   );
 end component;
-component mux2x1_5bits
-  port (
-       In1 : in STD_LOGIC_VECTOR(4 downto 0);
-       In2 : in STD_LOGIC_VECTOR(4 downto 0);
-       S : in STD_LOGIC;
-       O : out STD_LOGIC_VECTOR(4 downto 0)
-  );
-end component;
-
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
 signal NET77 : STD_LOGIC;
-signal e1 : STD_LOGIC_VECTOR(4 downto 0);
-signal e2 : STD_LOGIC_VECTOR(4 downto 0);
-signal O : STD_LOGIC_VECTOR(4 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
+signal cont : STD_LOGIC_VECTOR(7 downto 0);
+signal e1 : STD_LOGIC_VECTOR(31 downto 0);
+signal e2 : STD_LOGIC_VECTOR(31 downto 0);
+signal saida : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -84,24 +79,24 @@ begin
 
 NET77 <= not(inst);
 
-U2 : mux2x1_5bits
+U2 : mux32bitsX2
   port map(
-       In1 => e1,
-       In2 => e2,
-       O => O,
-       S => ctrlMux5
+       e1 => e1,
+       e2 => e2,
+       op => ctrlMux5,
+       saida => saida
   );
 
 U4 : contadorBolhas
   port map(
-       cont => contBolha,
-       inst => Dangling_Input_Signal,
+       cont => cont,
+       inst => NET77,
        reset => reset
   );
 
 U5 : contadorInstrucoes
   port map(
-       cont => contInst,
+       cont => cont,
        inst => inst,
        reset => reset
   );
@@ -110,15 +105,13 @@ U5 : contadorInstrucoes
 ---- Terminal assignment ----
 
     -- Inputs terminals
-	e1 <= entradaCache;
-	e2 <= entradaULA;
+	e1 <= eCache;
+	e2 <= eULA;
 
     -- Output\buffer terminals
-	saidaEstagio2e3 <= O;
+	contBolha <= cont;
+	contInst <= cont;
+	saidaMux <= saida;
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end estagio5;

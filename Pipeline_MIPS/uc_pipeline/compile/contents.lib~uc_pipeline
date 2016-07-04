@@ -1,4 +1,8 @@
-584
+721
+~E 1 "./../src/CacheDados.vhd" 29 CacheDados
+~A 1 "./../src/CacheDados.vhd" 52 CacheDados
+~E 1 "./../src/CacheInstrucoes.vhd" 29 CacheInstrucoes
+~A 1 "./../src/CacheInstrucoes.vhd" 46 CacheInst
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -17,14 +21,22 @@
 ~A 1 "./../src/deslocador_combinatorio.vhd" 37 deslocador_combinatorio
 ~E 1 "./../src/gpr.vhd" 25 DualRegFile
 ~A 1 "./../src/gpr.vhd" 41 dualregfile
+~E 1 "./../compile/est4.vhd" 28 est4
+~A 1 "./../compile/est4.vhd" 48 est4
 ~E 1 "./../compile/estagio2.vhd" 28 estagio2
-~A 1 "./../compile/estagio2.vhd" 64 estagio2
+~A 1 "./../compile/estagio2.vhd" 65 estagio2
 ~E 1 "./../compile/estagio3.vhd" 28 estagio3
 ~A 1 "./../compile/estagio3.vhd" 64 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
 ~E 1 "./../src/gpr.vhd" 25 gpr
 ~A 1 "./../src/gpr.vhd" 44 gpr
+~E 1 "./../compile/HierarquiaDeMemoria.vhd" 28 HierarquiaDeMemoria
+~A 1 "./../compile/HierarquiaDeMemoria.vhd" 47 HierarquiaDeMemoria
+~E 1 "./../src/MemoriaPrincipal.vhd" 31 MemoriaPrincipal
+~A 1 "./../src/MemoriaPrincipal.vhd" 51 MemoriaPrincipal
+~E 1 "./../compile/MIPSCompleto.vhd" 28 MIPSCompleto
+~A 1 "./../compile/MIPSCompleto.vhd" 31 MIPSCompleto
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit
 ~A 1 "./../src/mux1bit2x1.vhd" 34 mux1bit
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit2x1
@@ -50,8 +62,11 @@
 ~A 1 "./../src/mux5bits(3-1).vhd" 11 mux3
 ~E 1 "./../src/mux2x1 5bits.vhd" 5 mux5bitx
 ~A 1 "./../src/mux2x1 5bits.vhd" 13 mux1bitx
+~E 1 "./../compile/pipelineCompleto.vhd" 28 pipelineCompleto
+~A 1 "./../compile/pipelineCompleto.vhd" 52 pipelineCompleto
 ~E 1 "./../compile/pipelineTotal.vhd" 28 pipelineTotal
-~A 1 "./../compile/pipelineTotal.vhd" 31 pipelineTotal
+~E 1 "./../compile/processador.vhd" 28 processador
+~A 1 "./../compile/processador.vhd" 31 processador
 ~E 1 "./../src/reg32bitsEPC.vhd" 4 reg32bitsEPC
 ~A 1 "./../src/reg32bitsEPC.vhd" 11 bev
 ~E 1 "./../src/reg32bits.vhd" 4 regEPC
@@ -59,7 +74,7 @@
 ~E 1 "./../src/regestagio1.vhd" 4 regestagio1
 ~A 1 "./../src/regestagio1.vhd" 16 reg
 ~E 1 "./../src/regestagio2.vhd" 4 regestagio2
-~A 1 "./../src/regestagio2.vhd" 37 reg2
+~A 1 "./../src/regestagio2.vhd" 38 reg2
 ~E 1 "./../src/regestagio3.vhd" 4 regestagio3
 ~A 1 "./../src/regestagio3.vhd" 26 reg
 ~E 1 "./../src/regestagio4.vhd" 4 regestagio4
@@ -70,6 +85,16 @@
 ~A 1 "./../src/som32bits.vhd" 14 soma32bits
 ~E 1 "./../src/somapc4.vhd" 6 somapc4
 ~A 1 "./../src/somapc4.vhd" 13 somapc4
+~E 1 "./../src/TestbenchCacheDados.vhd" 28 TestbenchCacheDados
+~A 1 "./../src/TestbenchCacheDados.vhd" 33 TestbenchCacheDados
+~E 1 "./../src/TestbenchCacheInstrucoes.vhd" 29 TestbenchCacheInstrucoes
+~A 1 "./../src/TestbenchCacheInstrucoes.vhd" 34 TestbenchCacheInstrucoes
+~E 1 "./../src/TestbenchHierarquiaDeMemoria.vhd" 28 TestbenchHierarquiaDeMemoria
+~A 1 "./../src/TestbenchHierarquiaDeMemoria.vhd" 33 TestbenchHierarquiaDeMemoria
+~E 1 "./../src/TestbenchMemoriaPrincipal.vhd" 28 TestbenchMemoriaPrincipal
+~A 1 "./../src/TestbenchMemoriaPrincipal.vhd" 33 TestbenchMemoriaPrincipal
+~E 1 "./../src/TestbenchWriteBuffer.vhd" 28 TestbenchWriteBuffer
+~A 1 "./../src/TestbenchWriteBuffer.vhd" 33 TestbenchWriteBuffer
 ~E 1 "./../compile/teste2.vhd" 28 teste2
 ~E 1 "./../compile/estagio1.vhd" 28 testes
 ~A 1 "./../compile/estagio1.vhd" 44 testes
@@ -77,3 +102,5 @@
 ~A 1 "./../src/ula.vhd" 14 behavior
 ~E 1 "./../src/UnidadeControle.vhd" 4 unidadecontrole
 ~A 1 "./../src/UnidadeControle.vhd" 23 behavior
+~E 1 "./../src/WriteBufferCache.vhd" 28 WriteBufferCache
+~A 1 "./../src/WriteBufferCache.vhd" 43 WriteBufferCache
