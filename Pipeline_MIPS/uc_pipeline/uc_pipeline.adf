@@ -43,18 +43,12 @@ biblioteca_de_componentes=.
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=mux5bits|bev|0
+HierarchyInformation=mux5bits|bev|0 
 ShowHide=ShowTopLevel
 Selected=
 
 [ORDER]
 Synchronize=1
-
-
-
-
-
-
 
 [Files]
 /deslocador2.vhd=-1
@@ -123,12 +117,17 @@ Synchronize=1
 .\src\desloc_shamt.vhd=VHDL Source Code
 .\src\mux5bits3op.vhd=VHDL Source Code
 .\src\reg32bitsEPC.vhd=VHDL Source Code
+.\compile\estagio3.vhd=VHDL Source Code
+.\compile\estagio2.vhd=VHDL Source Code
 .\compile\estagio1.vhd=VHDL Source Code
 .\compile\pipelineTotal.vhd=VHDL Source Code
-.\compile\estagio2.vhd=VHDL Source Code
 .\compile\estagio4.vhd=VHDL Source Code
 .\compile\estagio5.vhd=VHDL Source Code
-.\compile\estagio3.vhd=VHDL Source Code
+
+
+
+
+
 
 [file_out:/estagio1.bde]
 /..\compile\testes.vhd=-1

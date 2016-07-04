@@ -21,7 +21,7 @@ entity regestagio2 is
        	saida2521 : out std_logic_vector(4 downto 0);
 		saida2016 : out std_logic_vector(4 downto 0);
 		saidaPC: out std_logic_vector(31 downto 0);
-		saida32bits: out std_logic_vector(31 downto 0);
+		saidaShamt: out std_logic_vector(4 downto 0);
 		sctrlMux3 : out std_logic;
 		sctrlMux5 : out std_logic;
 		sctrlULA : out std_logic;
@@ -49,7 +49,7 @@ begin
 			sctrlMux5<=ctrlMux5;
 			sctrlULA<=ctrlULA;
 			sctrlMux32<=ctrlMux32;
-			saida32bits<=entrada32bits;
+			saidaShamt<=entrada32bits(10 downto 6);
 		end if;
 	end process;
 end reg2;

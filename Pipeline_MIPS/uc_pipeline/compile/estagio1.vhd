@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio1.vhd
--- Generated   : Sun Jul  3 18:58:31 2016
+-- Generated   : Sun Jul  3 20:27:50 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio1.bde
 -- By          : Bde2Vhdl ver. 2.6
 --

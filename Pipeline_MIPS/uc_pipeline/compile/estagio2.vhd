@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
--- Generated   : Sun Jul  3 18:58:32 2016
+-- Generated   : Sun Jul  3 21:13:48 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -53,7 +53,8 @@ entity estagio2 is
        saidaEstagio2 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
-       saidaPC : out STD_LOGIC_VECTOR(31 downto 0)
+       saidaPC : out STD_LOGIC_VECTOR(31 downto 0);
+       saidaShamt : out STD_LOGIC_VECTOR(4 downto 0)
   );
 end estagio2;
 
@@ -117,10 +118,10 @@ component regestagio2
        msaida : out STD_LOGIC;
        saida2016 : out STD_LOGIC_VECTOR(4 downto 0);
        saida2521 : out STD_LOGIC_VECTOR(4 downto 0);
-       saida32bits : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2016 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaGPR2521 : out STD_LOGIC_VECTOR(31 downto 0);
        saidaPC : out STD_LOGIC_VECTOR(31 downto 0);
+       saidaShamt : out STD_LOGIC_VECTOR(4 downto 0);
        sctrlMux3 : out STD_LOGIC;
        sctrlMux32 : out STD_LOGIC;
        sctrlMux5 : out STD_LOGIC;
@@ -201,6 +202,7 @@ U4 : regestagio2
        saidaGPR2016 => saidaGPR2016,
        saidaGPR2521 => saidaGPR2521,
        saidaPC => saidaPC,
+       saidaShamt => saidaShamt,
        sctrlMux3 => sctrlMux3,
        sctrlMux32 => sctrlMux32,
        sctrlMux5 => sctrlMux5,

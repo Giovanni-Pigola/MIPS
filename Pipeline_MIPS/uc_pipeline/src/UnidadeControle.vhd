@@ -24,6 +24,18 @@ begin
 	ctrl: process(opcode, func)
 	begin
 		if(opcode="000000" and func="100000") then
+			wb_m_exCtrl<='1';  
+			orCtrl<='0';
+			RegEst1<='1';
+			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
+			MuxEst3Ctrl<='0';
+			MuxEst3ulaCtrl<='0';
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';	
+		elsif(opcode="000000" and func="101010") then
 			wb_m_exCtrl<='0';  
 			orCtrl<='0';
 			RegEst1<='1';
@@ -32,26 +44,54 @@ begin
 			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';	
-		elsif(opcode="000000" and func="101010") then
-			
 		elsif(opcode="000000" and func="001000") then
-			
-		elsif(opcode="000000" and func="100001") then
-			
-		elsif(opcode="000000" and func="000000") then 
-			
-			
-		elsif(opcode="100011") then
-			wb_m_exCtrl<='1';  
-			orCtrl<='1';
+			wb_m_exCtrl<='0';  
+			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';	
+		elsif(opcode="000000" and func="100001") then  
+			wb_m_exCtrl<='0';  
+			orCtrl<='0';
+			RegEst1<='1';
+			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
+			MuxEst3Ctrl<='0';
+			MuxEst3ulaCtrl<='0';
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';	
+		elsif(opcode="000000" and func="000000") then 
+			wb_m_exCtrl<='1';  
+			orCtrl<='0';
+			RegEst1<='1';
+			Mux1UCEst3<='0';
+			Mux2UCEst3<='0';
+			MuxEst3ulaCtrl<='1';
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';	
+			
+		elsif(opcode="100011") then
+			wb_m_exCtrl<='0';  
+			orCtrl<='0';
+			RegEst1<='1';
+			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
+			MuxEst3Ctrl<='0';
+			MuxEst3ulaCtrl<='0';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="101011") then
@@ -59,18 +99,23 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';
 		elsif(opcode="001000") then
 			wb_m_exCtrl<='0';  
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="000100") then
@@ -78,9 +123,11 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="001010") then
@@ -88,9 +135,11 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="000101") then	
@@ -98,9 +147,11 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="000010") then
@@ -108,9 +159,11 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
+			MuxEst5Ctrl<='0';
 			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		elsif(opcode="000011") then
@@ -118,13 +171,25 @@ begin
 			orCtrl<='0';
 			RegEst1<='1';
 			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
 			MuxEst3Ctrl<='0';
 			MuxEst3ulaCtrl<='0';
-			MuxEst5Ctrl<='1';
-			MuxInicioCtrl<="00"; 
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
 			instrucaoInvalida<='0';
 		else
-			instrucaoInvalida<='1';
+			wb_m_exCtrl<='0';  
+			orCtrl<='0';
+			RegEst1<='1';
+			ULAEst3Ctrl<='0';
+			Mux1UCEst3<='1';
+			Mux2UCEst3<='1';
+			MuxEst3Ctrl<='0';
+			MuxEst3ulaCtrl<='0';
+			MuxEst5Ctrl<='0';
+			MuxInicioCtrl<="00";
+			instrucaoInvalida<='0';
 		end if;
 		
 	end process;

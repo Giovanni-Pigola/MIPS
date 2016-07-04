@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio3.vhd
--- Generated   : Sun Jul  3 18:56:53 2016
+-- Generated   : Sun Jul  3 21:13:52 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio3.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -38,7 +38,6 @@ entity estagio3 is
        wb_ctrl : in STD_LOGIC;
        wb_in : in STD_LOGIC;
        Ulaestagio4 : in STD_LOGIC_VECTOR(31 downto 0);
-       entrada : in STD_LOGIC_VECTOR(31 downto 0);
        entradaepc : in STD_LOGIC_VECTOR(31 downto 0);
        forwardingCtrl1 : in STD_LOGIC_VECTOR(1 downto 0);
        forwardingCtrl2 : in STD_LOGIC_VECTOR(1 downto 0);
@@ -48,6 +47,7 @@ entity estagio3 is
        i2521 : in STD_LOGIC_VECTOR(4 downto 0);
        muxEstagio5 : in STD_LOGIC_VECTOR(31 downto 0);
        muxctrl4 : in STD_LOGIC_VECTOR(1 downto 0);
+       shamt : in STD_LOGIC_VECTOR(4 downto 0);
        OVF : out STD_LOGIC;
        m_out : out STD_LOGIC;
        sctrlMux5 : out STD_LOGIC;
@@ -183,13 +183,9 @@ U14 : mux5bits3op
 
 U21 : desloc_shamt
   port map(
-       shamt(0) => entrada(6),
-       shamt(1) => entrada(7),
-       shamt(2) => entrada(8),
-       shamt(3) => entrada(9),
-       shamt(4) => entrada(10),
-       entrada => entrada,
-       saida => BUS2954
+       entrada => p1,
+       saida => BUS2954,
+       shamt => shamt
   );
 
 U3 : ula
