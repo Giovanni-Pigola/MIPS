@@ -1,4 +1,4 @@
-532
+533
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -74,4 +74,4 @@
 ~E 1 "./../src/ula.vhd" 5 ula
 ~A 1 "./../src/ula.vhd" 14 behavior
 ~E 1 "./../src/UnidadeControle.vhd" 4 unidadecontrole
-~A 1 "./../src/UnidadeControle.vhd" 22 behavior
+~A 1 "./../src/UnidadeControle.vhd" 23 behavior
