@@ -1,4 +1,4 @@
-533
+584
 ~E 1 "./../src/concatena.vhd" 5 concatena
 ~A 1 "./../src/concatena.vhd" 10 behavior
 ~E 1 "./../src/contadorBolhas.vhd" 6 contadorBolhas
@@ -18,13 +18,13 @@
 ~E 1 "./../src/gpr.vhd" 25 DualRegFile
 ~A 1 "./../src/gpr.vhd" 41 dualregfile
 ~E 1 "./../compile/estagio2.vhd" 28 estagio2
-~A 1 "./../compile/estagio2.vhd" 61 estagio2
+~A 1 "./../compile/estagio2.vhd" 64 estagio2
 ~E 1 "./../compile/estagio3.vhd" 28 estagio3
-~A 1 "./../compile/estagio3.vhd" 62 estagio3
+~A 1 "./../compile/estagio3.vhd" 64 estagio3
 ~E 1 "./../compile/estagio5.vhd" 28 estagio5
 ~A 1 "./../compile/estagio5.vhd" 41 estagio5
 ~E 1 "./../src/gpr.vhd" 25 gpr
-~A 1 "./../src/gpr.vhd" 42 gpr
+~A 1 "./../src/gpr.vhd" 44 gpr
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit
 ~A 1 "./../src/mux1bit2x1.vhd" 34 mux1bit
 ~E 1 "./../src/mux1bit2x1.vhd" 25 mux1bit2x1
@@ -37,6 +37,8 @@
 ~A 1 "./../src/mux2x1zero.vhd" 33 mux2x1zero
 ~E 1 "./../src/mux32bits.vhd" 4 mux32bits
 ~A 1 "./../src/mux32bits.vhd" 11 bev
+~E 1 "./../src/mux32bitsX2.vhd" 4 mux32bitsX2
+~A 1 "./../src/mux32bitsX2.vhd" 11 bev
 ~E 1 "./../src/mux3x1.vhd" 4 mux3x1
 ~A 1 "./../src/mux3x1.vhd" 11 bev
 ~E 1 "./../src/mux5bits.vhd" 4 mux5bits
@@ -57,9 +59,9 @@
 ~E 1 "./../src/regestagio1.vhd" 4 regestagio1
 ~A 1 "./../src/regestagio1.vhd" 16 reg
 ~E 1 "./../src/regestagio2.vhd" 4 regestagio2
-~A 1 "./../src/regestagio2.vhd" 35 reg2
+~A 1 "./../src/regestagio2.vhd" 37 reg2
 ~E 1 "./../src/regestagio3.vhd" 4 regestagio3
-~A 1 "./../src/regestagio3.vhd" 24 reg
+~A 1 "./../src/regestagio3.vhd" 26 reg
 ~E 1 "./../src/regestagio4.vhd" 4 regestagio4
 ~A 1 "./../src/regestagio4.vhd" 20 reg4
 ~E 1 "./../src/regpc.vhd" 4 regpc

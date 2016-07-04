@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio2.vhd
--- Generated   : Sun Jul  3 21:39:25 2016
+-- Generated   : Sun Jul  3 22:44:24 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,9 +30,11 @@ entity estagio2 is
        UCCtrl : in STD_LOGIC;
        UCCtrl2 : in STD_LOGIC;
        clock : in STD_LOGIC;
+       ctrlJal : in STD_LOGIC;
        ctrlMux3 : in STD_LOGIC;
        ctrlMux32 : in STD_LOGIC;
        ctrlMux5 : in STD_LOGIC;
+       ctrlMuxMEM : in STD_LOGIC;
        ctrlULA : in STD_LOGIC;
        hazardCtrl : in STD_LOGIC;
        reset : in STD_LOGIC;
@@ -46,6 +48,7 @@ entity estagio2 is
        sctrlMux3 : out STD_LOGIC;
        sctrlMux32 : out STD_LOGIC;
        sctrlMux5 : out STD_LOGIC;
+       sctrlMuxMEM : out STD_LOGIC;
        sctrlULA : out STD_LOGIC;
        wbsaida : out STD_LOGIC;
        saida1511 : out STD_LOGIC_VECTOR(4 downto 0);
@@ -82,10 +85,12 @@ component gpr
   );
 -- synthesis translate_on
   port (
+       ctrlJal : in STD_LOGIC;
        dadoina : in STD_LOGIC_VECTOR(4 downto 0);
        dadoinb : in STD_LOGIC_VECTOR(4 downto 0);
        enda : in STD_LOGIC_VECTOR(4 downto 0);
        endb : in STD_LOGIC_VECTOR(4 downto 0);
+       pcin : in STD_LOGIC_VECTOR(31 downto 0);
        reset : in STD_LOGIC;
        we : in STD_LOGIC;
        dadoouta : out STD_LOGIC_VECTOR(4 downto 0);
@@ -105,6 +110,7 @@ component regestagio2
        ctrlMux3 : in STD_LOGIC;
        ctrlMux32 : in STD_LOGIC;
        ctrlMux5 : in STD_LOGIC;
+       ctrlMuxMEM : in STD_LOGIC;
        ctrlULA : in STD_LOGIC;
        entrada32bits : in STD_LOGIC_VECTOR(31 downto 0);
        entradaGPR2016 : in STD_LOGIC_VECTOR(4 downto 0);
@@ -125,6 +131,7 @@ component regestagio2
        sctrlMux3 : out STD_LOGIC;
        sctrlMux32 : out STD_LOGIC;
        sctrlMux5 : out STD_LOGIC;
+       sctrlMuxMEM : out STD_LOGIC;
        sctrlULA : out STD_LOGIC;
        wbsaida : out STD_LOGIC
   );
@@ -161,24 +168,36 @@ U1 : concatena
 
 NET51 <= UCCtrl or hazardCtrl;
 
-U3 : gpr
+U4 : regestagio2
   port map(
-       enda(0) => entrada(21),
-       enda(1) => entrada(22),
-       enda(2) => entrada(23),
-       enda(3) => entrada(24),
-       enda(4) => entrada(25),
-       endb(0) => entrada(16),
-       endb(1) => entrada(17),
-       endb(2) => entrada(18),
-       endb(3) => entrada(19),
-       endb(4) => entrada(20),
-       dadoina => dadoina,
-       dadoinb => dadoinb,
-       dadoouta => BUS678,
-       dadooutb => BUS715,
-       reset => reset,
-       we => we
+       clock => clock,
+       ctrlMux3 => ctrlMux3,
+       ctrlMux32 => ctrlMux32,
+       ctrlMux5 => ctrlMux5,
+       ctrlMuxMEM => ctrlMuxMEM,
+       ctrlULA => ctrlULA,
+       entrada32bits => entrada,
+       entradaGPR2016 => BUS715,
+       entradaGPR2521 => BUS678,
+       entradaPC => B,
+       entradaSignExtend => BUS439,
+       ex => NET71,
+       exsaida => exsaida,
+       m => NET71,
+       msaida => msaida,
+       saida1511 => saida1511,
+       saida2016 => saida2016,
+       saidaGPR2016 => saidaGPR2016,
+       saidaGPR2521 => saidaGPR2521,
+       saidaPC => saidaPC,
+       saidaShamt => saidaShamt,
+       sctrlMux3 => sctrlMux3,
+       sctrlMux32 => sctrlMux32,
+       sctrlMux5 => sctrlMux5,
+       sctrlMuxMEM => sctrlMuxMEM,
+       sctrlULA => sctrlULA,
+       wb => NET71,
+       wbsaida => wbsaida
   );
 
 U5 : mux2x1zero
@@ -201,34 +220,26 @@ U7 : deslocador2
        saida => BUS417
   );
 
-U8 : regestagio2
+U8 : gpr
   port map(
-       clock => clock,
-       ctrlMux3 => ctrlMux3,
-       ctrlMux32 => ctrlMux32,
-       ctrlMux5 => ctrlMux5,
-       ctrlULA => ctrlULA,
-       entrada32bits => entrada,
-       entradaGPR2016 => BUS715,
-       entradaGPR2521 => BUS678,
-       entradaPC => B,
-       entradaSignExtend => BUS439,
-       ex => NET71,
-       exsaida => exsaida,
-       m => NET71,
-       msaida => msaida,
-       saida1511 => saida1511,
-       saida2016 => saida2016,
-       saidaGPR2016 => saidaGPR2016,
-       saidaGPR2521 => saidaGPR2521,
-       saidaPC => saidaPC,
-       saidaShamt => saidaShamt,
-       sctrlMux3 => sctrlMux3,
-       sctrlMux32 => sctrlMux32,
-       sctrlMux5 => sctrlMux5,
-       sctrlULA => sctrlULA,
-       wb => NET71,
-       wbsaida => wbsaida
+       enda(0) => entrada(21),
+       enda(1) => entrada(22),
+       enda(2) => entrada(23),
+       enda(3) => entrada(24),
+       enda(4) => entrada(25),
+       endb(0) => entrada(16),
+       endb(1) => entrada(17),
+       endb(2) => entrada(18),
+       endb(3) => entrada(19),
+       endb(4) => entrada(20),
+       ctrlJal => ctrlJal,
+       dadoina => dadoina,
+       dadoinb => dadoinb,
+       dadoouta => BUS678,
+       dadooutb => BUS715,
+       pcin => B,
+       reset => reset,
+       we => we
   );
 
 

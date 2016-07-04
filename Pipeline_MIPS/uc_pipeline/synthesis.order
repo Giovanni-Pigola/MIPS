@@ -27,3 +27,4 @@ i<>.\src\regestagio3.vhd
 i<>.\src\desloc_shamt.vhd
 i<>.\src\mux3x15bits.vhd
 i<>.\src\reg32bits.vhd
+i<>.\src\mux32bitsX2.vhd

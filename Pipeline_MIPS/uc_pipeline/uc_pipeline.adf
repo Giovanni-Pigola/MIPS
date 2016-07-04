@@ -51,18 +51,10 @@ Selected=
 Synchronize=1
 
 
-[file_out:/pipelineTotal.bde]
-/..\compile\pipelineTotal.vhd=-1
-
-[file_out:/estagio2.bde]
-/..\compile\estagio2.vhd=-1
 
 
-[file_out:/estagio5.bde]
-/..\compile\estagio5.vhd=-1
 
-[file_out:/estagio3.bde]
-/..\compile\estagio3.vhd=-1
+
 
 [Files]
 /deslocador2.vhd=-1
@@ -97,6 +89,7 @@ Synchronize=1
 /desloc_shamt.vhd=-1
 /mux5bits3op.vhd=-1
 /reg32bitsEPC.vhd=-1
+/mux32bitsX2.vhd=-1
 
 [Files.Data]
 .\src\deslocador2.vhd=VHDL Source Code
@@ -131,9 +124,24 @@ Synchronize=1
 .\src\desloc_shamt.vhd=VHDL Source Code
 .\src\mux5bits3op.vhd=VHDL Source Code
 .\src\reg32bitsEPC.vhd=VHDL Source Code
+.\src\mux32bitsX2.vhd=VHDL Source Code
+.\compile\estagio4.vhd=VHDL Source Code
+.\compile\estagio1.vhd=VHDL Source Code
+.\compile\pipelineTotal.vhd=VHDL Source Code
+.\compile\estagio2.vhd=VHDL Source Code
+.\compile\estagio5.vhd=VHDL Source Code
+.\compile\estagio3.vhd=VHDL Source Code
 
 [file_out:/estagio1.bde]
 /..\compile\testes.vhd=-1
 /..\compile\estagio1.vhd=-1
+[file_out:/pipelineTotal.bde]
+/..\compile\pipelineTotal.vhd=-1
+[file_out:/estagio2.bde]
+/..\compile\estagio2.vhd=-1
 [file_out:/estagio4.bde]
 /..\compile\estagio4.vhd=-1
+[file_out:/estagio5.bde]
+/..\compile\estagio5.vhd=-1
+[file_out:/estagio3.bde]
+/..\compile\estagio3.vhd=-1

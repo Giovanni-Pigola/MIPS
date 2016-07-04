@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\My_Designs\uc_pipeline\uc_pipeline\compile\estagio4.vhd
--- Generated   : Sun Jul  3 20:27:53 2016
+-- Generated   : Sun Jul  3 22:45:12 2016
 -- From        : C:\My_Designs\uc_pipeline\uc_pipeline\src\estagio4.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -29,19 +29,19 @@ entity estagio3 is
   port(
        clock : in STD_LOGIC;
        ctrlMux5 : in STD_LOGIC;
+       ctrlmuxMEM : in STD_LOGIC;
        wb : in STD_LOGIC;
-       entradaResULA : in STD_LOGIC_VECTOR(4 downto 0);
-       entradacache : in STD_LOGIC_VECTOR(4 downto 0);
-       resMUX : in STD_LOGIC_VECTOR(4 downto 0);
+       entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
+       entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
+       entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
+       muxest2 : in STD_LOGIC_VECTOR(31 downto 0);
+       resULA : in STD_LOGIC_VECTOR(31 downto 0);
        sctrlMux5 : out STD_LOGIC;
-       wbFowarding : out STD_LOGIC;
        wbsaida : out STD_LOGIC;
-       ResULACache : out STD_LOGIC_VECTOR(4 downto 0);
-       ResULAEstagio3 : out STD_LOGIC_VECTOR(4 downto 0);
-       muxFowarding : out STD_LOGIC_VECTOR(4 downto 0);
-       saida3 : out STD_LOGIC_VECTOR(4 downto 0);
-       saidaResULA : out STD_LOGIC_VECTOR(4 downto 0);
-       saidacache : out STD_LOGIC_VECTOR(4 downto 0)
+       saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
+       saidaParaCache : out STD_LOGIC_VECTOR(31 downto 0);
+       saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
+       saidacache : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end estagio3;
 
@@ -49,17 +49,25 @@ architecture estagio3 of estagio3 is
 
 ---- Component declarations -----
 
+component mux32bitsX2
+  port (
+       e1 : in STD_LOGIC_VECTOR(31 downto 0);
+       e2 : in STD_LOGIC_VECTOR(31 downto 0);
+       op : in STD_LOGIC;
+       saida : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component regestagio4
   port (
        clock : in STD_LOGIC;
        ctrlMux5 : in STD_LOGIC;
-       entrada3 : in STD_LOGIC_VECTOR(4 downto 0);
-       entradaResULA : in STD_LOGIC_VECTOR(4 downto 0);
-       entradacache : in STD_LOGIC_VECTOR(4 downto 0);
+       entradaImed : in STD_LOGIC_VECTOR(4 downto 0);
+       entradaResULA : in STD_LOGIC_VECTOR(31 downto 0);
+       entradaVemDocache : in STD_LOGIC_VECTOR(31 downto 0);
        wb : in STD_LOGIC;
-       saida3 : out STD_LOGIC_VECTOR(4 downto 0);
-       saidaResULA : out STD_LOGIC_VECTOR(4 downto 0);
-       saidacache : out STD_LOGIC_VECTOR(4 downto 0);
+       saidaImed : out STD_LOGIC_VECTOR(4 downto 0);
+       saidaResULA : out STD_LOGIC_VECTOR(31 downto 0);
+       saidacache : out STD_LOGIC_VECTOR(31 downto 0);
        sctrlMux5 : out STD_LOGIC;
        wbsaida : out STD_LOGIC
   );
@@ -67,8 +75,9 @@ end component;
 
 ---- Signal declarations used on the diagram ----
 
-signal NET269 : STD_LOGIC;
-signal entrada3 : STD_LOGIC_VECTOR(4 downto 0);
+signal e1 : STD_LOGIC_VECTOR(31 downto 0);
+signal e2 : STD_LOGIC_VECTOR(31 downto 0);
+signal saida : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -78,29 +87,34 @@ U1 : regestagio4
   port map(
        clock => clock,
        ctrlMux5 => ctrlMux5,
-       entrada3 => entrada3,
+       entradaImed => entradaImed,
        entradaResULA => entradaResULA,
-       entradacache => entradacache,
-       saida3 => saida3,
+       entradaVemDocache => entradaVemDocache,
+       saidaImed => saidaImed,
        saidaResULA => saidaResULA,
        saidacache => saidacache,
        sctrlMux5 => sctrlMux5,
-       wb => NET269,
+       wb => wb,
        wbsaida => wbsaida
+  );
+
+U4 : mux32bitsX2
+  port map(
+       e1 => e1,
+       e2 => e2,
+       op => ctrlmuxMEM,
+       saida => saida
   );
 
 
 ---- Terminal assignment ----
 
     -- Inputs terminals
-	entrada3 <= resMUX;
-	NET269 <= wb;
+	e2 <= muxest2;
+	e1 <= resULA;
 
     -- Output\buffer terminals
-	ResULACache <= entradaResULA;
-	ResULAEstagio3 <= entradaResULA;
-	muxFowarding <= entrada3;
-	wbFowarding <= NET269;
+	saidaParaCache <= saida;
 
 
 end estagio3;

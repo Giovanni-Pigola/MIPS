@@ -10,6 +10,7 @@ entity regestagio2 is
 		ctrlMux5 : in std_logic;
 		ctrlULA : in std_logic;
 		ctrlMux32: in std_logic;
+		ctrlMuxMEM: in std_logic;
 		clock: in std_logic;
        	entradaPC : in std_logic_vector(31 downto 0); 
 		entradaSignExtend : in std_logic_vector(31 downto 0);  
@@ -26,6 +27,7 @@ entity regestagio2 is
 		sctrlMux5 : out std_logic;
 		sctrlULA : out std_logic;
 		sctrlMux32: out std_logic;
+		sctrlMuxMEM: out std_logic;
 		wbsaida: out std_logic;
 		msaida:	out std_logic;
 		exsaida: out std_logic
@@ -49,6 +51,7 @@ begin
 			sctrlMux5<=ctrlMux5;
 			sctrlULA<=ctrlULA;
 			sctrlMux32<=ctrlMux32;
+			sctrlMuxMEM<=ctrlMuxMEM;
 			saidaShamt<=entrada32bits(10 downto 6);
 		end if;
 	end process;

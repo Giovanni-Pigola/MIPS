@@ -27,9 +27,11 @@ entity gpr is
        Tread: time := 5 ns;
        Twrite: time := 5 ns
   );
-  port(
+  port(	
+  	   ctrlJal: in std_logic;
   	   we : in std_logic;
   	   reset : in std_logic;
+	   pcin: in std_logic_vector(31 downto 0);
 	   dadoina : in std_logic_vector(4 downto 0);
        dadoinb : in std_logic_vector(4 downto 0);
        enda : in std_logic_vector(4 downto 0);
@@ -64,8 +66,12 @@ process (we, reset)
 begin
 	if(reset='0') then
         if (we = '1') then
+		  if (ctrlJal='0') then
            ram(to_integer(unsigned(enda))) <= "000000000000000000000000000"&dadoina after Twrite;	
 		   ram(to_integer(unsigned(endb))) <= "000000000000000000000000000"&dadoinb after Twrite;
+		  else
+			ram(7) <= pcin after Twrite;  
+		  end if;
         end if;
         enda_reg <= enda;
         endb_reg <= endb; 

@@ -8,6 +8,8 @@ entity regestagio3 is
 		clock: in std_logic;
 		ctrlMux5: in std_logic;
 		sctrlMux5: out std_logic;
+		ctrlMuxMEM: in std_logic;
+		sctrlMuxMEM: out std_logic;
        	D1 : in std_logic;
        	Q1 : out std_logic;
 		D2 : in std_logic;
@@ -32,6 +34,7 @@ begin
 				 Q3<=D3;
 				 Q4<=D4;
 				 Q5<=D5;
+				 sctrlMuxMEM<=ctrlMuxMEM;
 			 end if;
 		 end if;
 	end process;
